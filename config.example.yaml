@@ -1,0 +1,33 @@
+# =============================================================================
+# XICE Shareholder Tracker — Configuration
+# =============================================================================
+# Copy this file to config.yaml and fill in your details.
+
+# Email notification settings
+email:
+  # SMTP server settings (examples for common providers below)
+  smtp_host: "smtp.gmail.com"       # Gmail: smtp.gmail.com | Outlook: smtp.office365.com
+  smtp_port: 587                     # 587 for TLS (recommended) | 465 for SSL
+  smtp_user: "your-email@gmail.com"
+  smtp_password: "your-app-password" # For Gmail, use an App Password (not your login password)
+
+  # Sender and recipient addresses
+  from_address: "your-email@gmail.com"
+  recipients:
+    - "colleague1@company.is"
+    - "colleague2@company.is"
+    - "your-email@gmail.com"
+
+# Minimum ownership percentage change (in percentage points) to trigger an alert
+# e.g., 0.5 means a change from 10.0% to 10.5% or more will be flagged
+change_threshold_pct: 0.5
+
+# Seconds to wait between HTTP requests (be polite to servers)
+request_delay_seconds: 2
+
+# Set to true to receive an email even when no changes are detected
+send_no_change_emails: false
+
+# Schedule time in HH:MM UTC (used with --schedule flag)
+# 18:00 UTC = 18:00 IST (Iceland uses UTC year-round)
+schedule_time: "18:00"

@@ -1,0 +1,1447 @@
+2026-03-11 14:12:28,068 [INFO] === Starting XICE Shareholder Scan for 2026-03-11 ===
+2026-03-11 14:12:28,068 [INFO] Scraping ARION (Arion banki hf.) from https://www.arionbanki.is/english/about-us/investor-relations/equity-investors/
+2026-03-11 14:12:28,722 [INFO]   → Primary scrape failed for ARION, trying keldan.is...
+2026-03-11 14:12:29,106 [WARNING]   → No shareholder data found for ARION
+2026-03-11 14:12:31,107 [INFO] Scraping EIM (Eimskipafélag Íslands hf.) from https://www.eimskip.is/en/investors/share-information/shareholders/
+2026-03-11 14:12:31,627 [WARNING] Attempt 1 failed for https://www.eimskip.is/en/investors/share-information/shareholders/: 404 Client Error: Not Found for url: https://www.eimskip.is/en/investors/share-information/shareholders/
+2026-03-11 14:12:33,992 [WARNING] Attempt 2 failed for https://www.eimskip.is/en/investors/share-information/shareholders/: 404 Client Error: Not Found for url: https://www.eimskip.is/en/investors/share-information/shareholders/
+2026-03-11 14:12:38,365 [WARNING] Attempt 3 failed for https://www.eimskip.is/en/investors/share-information/shareholders/: 404 Client Error: Not Found for url: https://www.eimskip.is/en/investors/share-information/shareholders/
+2026-03-11 14:12:44,368 [INFO]   → Primary scrape failed for EIM, trying keldan.is...
+2026-03-11 14:12:44,640 [WARNING]   → No shareholder data found for EIM
+2026-03-11 14:12:46,640 [INFO] Scraping FESTI (Festi hf.) from https://www.festi.is/en/investors/shares/shareholders
+2026-03-11 14:12:47,283 [WARNING] Attempt 1 failed for https://www.festi.is/en/investors/shares/shareholders: 404 Client Error: Not Found for url: https://www.festi.is/en/investors/shares/shareholders
+2026-03-11 14:12:49,587 [WARNING] Attempt 2 failed for https://www.festi.is/en/investors/shares/shareholders: 404 Client Error: Not Found for url: https://www.festi.is/en/investors/shares/shareholders
+2026-03-11 14:12:53,875 [WARNING] Attempt 3 failed for https://www.festi.is/en/investors/shares/shareholders: 404 Client Error: Not Found for url: https://www.festi.is/en/investors/shares/shareholders
+2026-03-11 14:12:59,877 [INFO]   → Primary scrape failed for FESTI, trying keldan.is...
+2026-03-11 14:13:00,162 [WARNING]   → No shareholder data found for FESTI
+2026-03-11 14:13:02,162 [INFO] Scraping GRND (Grindavík ehf. (Brim hf.)) from https://www.bfrimi.is/en/investors/shareholders/
+2026-03-11 14:13:02,207 [WARNING] Attempt 1 failed for https://www.bfrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.bfrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.bfrimi.is', port=443): Failed to resolve 'www.bfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:13:04,209 [WARNING] Attempt 2 failed for https://www.bfrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.bfrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.bfrimi.is', port=443): Failed to resolve 'www.bfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:13:08,215 [WARNING] Attempt 3 failed for https://www.bfrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.bfrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.bfrimi.is', port=443): Failed to resolve 'www.bfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:13:14,215 [INFO]   → Primary scrape failed for GRND, trying keldan.is...
+2026-03-11 14:13:14,480 [WARNING]   → No shareholder data found for GRND
+2026-03-11 14:13:16,481 [INFO] Scraping HAGA (Hagar hf.) from https://www.hfrimi.is/en/investor-relations/shareholders/
+2026-03-11 14:13:16,527 [WARNING] Attempt 1 failed for https://www.hfrimi.is/en/investor-relations/shareholders/: HTTPSConnectionPool(host='www.hfrimi.is', port=443): Max retries exceeded with url: /en/investor-relations/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.hfrimi.is', port=443): Failed to resolve 'www.hfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:13:18,529 [WARNING] Attempt 2 failed for https://www.hfrimi.is/en/investor-relations/shareholders/: HTTPSConnectionPool(host='www.hfrimi.is', port=443): Max retries exceeded with url: /en/investor-relations/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.hfrimi.is', port=443): Failed to resolve 'www.hfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:13:22,534 [WARNING] Attempt 3 failed for https://www.hfrimi.is/en/investor-relations/shareholders/: HTTPSConnectionPool(host='www.hfrimi.is', port=443): Max retries exceeded with url: /en/investor-relations/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.hfrimi.is', port=443): Failed to resolve 'www.hfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:13:28,535 [INFO]   → Primary scrape failed for HAGA, trying keldan.is...
+2026-03-11 14:13:28,815 [WARNING]   → No shareholder data found for HAGA
+2026-03-11 14:13:30,816 [INFO] Scraping ICEAIR (Icelandair Group hf.) from https://www.icelandairgroup.is/investors/share-information/largest-shareholders/
+2026-03-11 14:13:31,667 [INFO]   → Primary scrape failed for ICEAIR, trying keldan.is...
+2026-03-11 14:13:31,983 [WARNING]   → No shareholder data found for ICEAIR
+2026-03-11 14:13:33,984 [INFO] Scraping ISB (Íslandsbanki hf.) from https://www.islandsbanki.is/en/article/hluthafar-eng
+2026-03-11 14:13:34,821 [INFO]   → Found 2 shareholders for ISB
+2026-03-11 14:13:36,822 [INFO] Scraping JBTM (JBT Marel Corporation) from https://ir.jbtmarel.com/stock-information/ownership
+2026-03-11 14:13:37,427 [WARNING] Attempt 1 failed for https://ir.jbtmarel.com/stock-information/ownership: 404 Client Error: Not Found for url: https://ir.jbtmarel.com/stock-information/ownership
+2026-03-11 14:13:39,779 [WARNING] Attempt 2 failed for https://ir.jbtmarel.com/stock-information/ownership: 404 Client Error: Not Found for url: https://ir.jbtmarel.com/stock-information/ownership
+2026-03-11 14:13:44,132 [WARNING] Attempt 3 failed for https://ir.jbtmarel.com/stock-information/ownership: 404 Client Error: Not Found for url: https://ir.jbtmarel.com/stock-information/ownership
+2026-03-11 14:13:50,135 [INFO]   → Primary scrape failed for JBTM, trying keldan.is...
+2026-03-11 14:13:50,407 [WARNING]   → No shareholder data found for JBTM
+2026-03-11 14:13:52,407 [INFO] Scraping KVIKA (Kvika banki hf.) from https://www.kvika.is/en/about/investor-relations/shareholders/
+2026-03-11 14:13:54,298 [WARNING] Attempt 1 failed for https://www.kvika.is/en/about/investor-relations/shareholders/: 404 Client Error: Not Found for url: https://kvika.is/en/about/investor-relations/shareholders/
+2026-03-11 14:13:57,007 [WARNING] Attempt 2 failed for https://www.kvika.is/en/about/investor-relations/shareholders/: 404 Client Error: Not Found for url: https://kvika.is/en/about/investor-relations/shareholders/
+2026-03-11 14:14:01,743 [WARNING] Attempt 3 failed for https://www.kvika.is/en/about/investor-relations/shareholders/: 404 Client Error: Not Found for url: https://kvika.is/en/about/investor-relations/shareholders/
+2026-03-11 14:14:07,745 [INFO]   → Primary scrape failed for KVIKA, trying keldan.is...
+2026-03-11 14:14:08,090 [WARNING]   → No shareholder data found for KVIKA
+2026-03-11 14:14:10,090 [INFO] Scraping LAIS (Landsbankinn hf.) from https://www.landsbankinn.is/en/about-us/investor-relations/
+2026-03-11 14:14:11,970 [WARNING] Attempt 1 failed for https://www.landsbankinn.is/en/about-us/investor-relations/: 500 Server Error: Internal Server Error for url: https://www.landsbankinn.is/en/about-us/investor-relations
+2026-03-11 14:14:14,809 [WARNING] Attempt 2 failed for https://www.landsbankinn.is/en/about-us/investor-relations/: 500 Server Error: Internal Server Error for url: https://www.landsbankinn.is/en/about-us/investor-relations
+2026-03-11 14:14:19,538 [WARNING] Attempt 3 failed for https://www.landsbankinn.is/en/about-us/investor-relations/: 500 Server Error: Internal Server Error for url: https://www.landsbankinn.is/en/about-us/investor-relations
+2026-03-11 14:14:25,540 [INFO]   → Primary scrape failed for LAIS, trying keldan.is...
+2026-03-11 14:14:25,941 [WARNING]   → No shareholder data found for LAIS
+2026-03-11 14:14:27,942 [INFO] Scraping MARL (Marel hf.) from https://marel.com/en/investors/share/shareholders/
+2026-03-11 14:14:29,382 [WARNING] Attempt 1 failed for https://marel.com/en/investors/share/shareholders/: 404 Client Error: Not Found for url: https://jbtmarel.com/en/investors/share/shareholders/
+2026-03-11 14:14:32,472 [WARNING] Attempt 2 failed for https://marel.com/en/investors/share/shareholders/: 404 Client Error: Not Found for url: https://jbtmarel.com/en/investors/share/shareholders/
+2026-03-11 14:14:37,569 [WARNING] Attempt 3 failed for https://marel.com/en/investors/share/shareholders/: 404 Client Error: Not Found for url: https://jbtmarel.com/en/investors/share/shareholders/
+2026-03-11 14:14:43,572 [INFO]   → Primary scrape failed for MARL, trying keldan.is...
+2026-03-11 14:14:43,953 [WARNING]   → No shareholder data found for MARL
+2026-03-11 14:14:45,953 [INFO] Scraping NYHER (Nýherji hf.) from https://www.nyherji.is/en/investor-relations/shareholders/
+2026-03-11 14:14:46,398 [WARNING] Attempt 1 failed for https://www.nyherji.is/en/investor-relations/shareholders/: HTTPSConnectionPool(host='www.nyherji.is', port=443): Max retries exceeded with url: /en/investor-relations/shareholders/ (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.nyherji.is'. (_ssl.c:1081)")))
+2026-03-11 14:14:48,742 [WARNING] Attempt 2 failed for https://www.nyherji.is/en/investor-relations/shareholders/: HTTPSConnectionPool(host='www.nyherji.is', port=443): Max retries exceeded with url: /en/investor-relations/shareholders/ (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.nyherji.is'. (_ssl.c:1081)")))
+2026-03-11 14:14:53,149 [WARNING] Attempt 3 failed for https://www.nyherji.is/en/investor-relations/shareholders/: HTTPSConnectionPool(host='www.nyherji.is', port=443): Max retries exceeded with url: /en/investor-relations/shareholders/ (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.nyherji.is'. (_ssl.c:1081)")))
+2026-03-11 14:14:59,150 [INFO]   → Primary scrape failed for NYHER, trying keldan.is...
+2026-03-11 14:14:59,562 [WARNING]   → No shareholder data found for NYHER
+2026-03-11 14:15:01,563 [INFO] Scraping ORS (Origo hf.) from https://www.origo.is/en/investors/shareholders/
+2026-03-11 14:15:02,116 [INFO]   → Primary scrape failed for ORS, trying keldan.is...
+2026-03-11 14:15:02,524 [WARNING]   → No shareholder data found for ORS
+2026-03-11 14:15:04,524 [INFO] Scraping PLAY (Fly Play hf.) from https://www.flyplay.com/en/investors/shareholders
+2026-03-11 14:15:04,578 [WARNING] Attempt 1 failed for https://www.flyplay.com/en/investors/shareholders: HTTPSConnectionPool(host='www.flyplay.com', port=443): Max retries exceeded with url: /en/investors/shareholders (Caused by NameResolutionError("HTTPSConnection(host='www.flyplay.com', port=443): Failed to resolve 'www.flyplay.com' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:15:06,580 [WARNING] Attempt 2 failed for https://www.flyplay.com/en/investors/shareholders: HTTPSConnectionPool(host='www.flyplay.com', port=443): Max retries exceeded with url: /en/investors/shareholders (Caused by NameResolutionError("HTTPSConnection(host='www.flyplay.com', port=443): Failed to resolve 'www.flyplay.com' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:15:10,586 [WARNING] Attempt 3 failed for https://www.flyplay.com/en/investors/shareholders: HTTPSConnectionPool(host='www.flyplay.com', port=443): Max retries exceeded with url: /en/investors/shareholders (Caused by NameResolutionError("HTTPSConnection(host='www.flyplay.com', port=443): Failed to resolve 'www.flyplay.com' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:15:16,587 [INFO]   → Primary scrape failed for PLAY, trying keldan.is...
+2026-03-11 14:15:16,906 [WARNING]   → No shareholder data found for PLAY
+2026-03-11 14:15:18,907 [INFO] Scraping REGINN (Reitir fasteignafélag hf.) from https://www.rfrimi.is/en/investors/shareholders/
+2026-03-11 14:15:18,956 [WARNING] Attempt 1 failed for https://www.rfrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.rfrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.rfrimi.is', port=443): Failed to resolve 'www.rfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:15:20,959 [WARNING] Attempt 2 failed for https://www.rfrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.rfrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.rfrimi.is', port=443): Failed to resolve 'www.rfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:15:24,965 [WARNING] Attempt 3 failed for https://www.rfrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.rfrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.rfrimi.is', port=443): Failed to resolve 'www.rfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:15:30,965 [INFO]   → Primary scrape failed for REGINN, trying keldan.is...
+2026-03-11 14:15:31,366 [WARNING]   → No shareholder data found for REGINN
+2026-03-11 14:15:33,366 [INFO] Scraping SIMINN (Síminn hf.) from https://www.siminn.is/en/investors/shareholders/
+2026-03-11 14:15:33,912 [INFO]   → Primary scrape failed for SIMINN, trying keldan.is...
+2026-03-11 14:15:34,251 [WARNING]   → No shareholder data found for SIMINN
+2026-03-11 14:15:36,251 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.) from https://www.sjova.is/en/about-sjova/investor-relations/shareholders/
+2026-03-11 14:15:37,111 [WARNING] Attempt 1 failed for https://www.sjova.is/en/about-sjova/investor-relations/shareholders/: 404 Client Error: Not Found for url: https://www.sjova.is/en/about-sjova/investor-relations/shareholders
+2026-03-11 14:15:39,547 [WARNING] Attempt 2 failed for https://www.sjova.is/en/about-sjova/investor-relations/shareholders/: 404 Client Error: Not Found for url: https://www.sjova.is/en/about-sjova/investor-relations/shareholders
+2026-03-11 14:15:44,021 [WARNING] Attempt 3 failed for https://www.sjova.is/en/about-sjova/investor-relations/shareholders/: 404 Client Error: Not Found for url: https://www.sjova.is/en/about-sjova/investor-relations/shareholders
+2026-03-11 14:15:50,023 [INFO]   → Primary scrape failed for SJOVA, trying keldan.is...
+2026-03-11 14:15:50,388 [WARNING]   → No shareholder data found for SJOVA
+2026-03-11 14:15:52,389 [INFO] Scraping SOLID (Solidus ehf. (Sólís hf.)) from https://www.solidus.is/en/investors/shareholders/
+2026-03-11 14:15:52,435 [WARNING] Attempt 1 failed for https://www.solidus.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.solidus.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.solidus.is', port=443): Failed to resolve 'www.solidus.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:15:54,438 [WARNING] Attempt 2 failed for https://www.solidus.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.solidus.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.solidus.is', port=443): Failed to resolve 'www.solidus.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:15:58,444 [WARNING] Attempt 3 failed for https://www.solidus.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.solidus.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.solidus.is', port=443): Failed to resolve 'www.solidus.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:16:04,445 [INFO]   → Primary scrape failed for SOLID, trying keldan.is...
+2026-03-11 14:16:04,865 [WARNING]   → No shareholder data found for SOLID
+2026-03-11 14:16:06,866 [INFO] Scraping SVN (Síldarvinnslan hf.) from https://www.svn.is/en/investors/shareholders/
+2026-03-11 14:16:11,280 [WARNING] Attempt 1 failed for https://www.svn.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://svn.is/en/investors/shareholders/
+2026-03-11 14:16:18,428 [WARNING] Attempt 2 failed for https://www.svn.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://svn.is/en/investors/shareholders/
+2026-03-11 14:16:26,292 [WARNING] Attempt 3 failed for https://www.svn.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://svn.is/en/investors/shareholders/
+2026-03-11 14:16:32,296 [INFO]   → Primary scrape failed for SVN, trying keldan.is...
+2026-03-11 14:16:32,725 [WARNING]   → No shareholder data found for SVN
+2026-03-11 14:16:34,725 [INFO] Scraping TM (Tryggingamiðstöðin hf. (TM)) from https://www.tm.is/en/investors/shareholders/
+2026-03-11 14:16:35,337 [WARNING] Attempt 1 failed for https://www.tm.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.tm.is/en/fjarfestar
+2026-03-11 14:16:37,863 [WARNING] Attempt 2 failed for https://www.tm.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.tm.is/en/fjarfestar
+2026-03-11 14:16:42,546 [WARNING] Attempt 3 failed for https://www.tm.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.tm.is/en/fjarfestar
+2026-03-11 14:16:48,547 [INFO]   → Primary scrape failed for TM, trying keldan.is...
+2026-03-11 14:16:49,027 [WARNING]   → No shareholder data found for TM
+2026-03-11 14:16:51,027 [INFO] Scraping VIS (Vátryggingafélag Íslands hf. (VÍS)) from https://www.vis.is/en/about/investor-relations/shareholders/
+2026-03-11 14:16:52,784 [WARNING] Attempt 1 failed for https://www.vis.is/en/about/investor-relations/shareholders/: 404 Client Error: Not Found for url: https://vis.is/en/about/investor-relations/shareholders/
+2026-03-11 14:16:55,554 [WARNING] Attempt 2 failed for https://www.vis.is/en/about/investor-relations/shareholders/: 404 Client Error: Not Found for url: https://vis.is/en/about/investor-relations/shareholders/
+2026-03-11 14:17:00,301 [WARNING] Attempt 3 failed for https://www.vis.is/en/about/investor-relations/shareholders/: 404 Client Error: Not Found for url: https://vis.is/en/about/investor-relations/shareholders/
+2026-03-11 14:17:06,305 [INFO]   → Primary scrape failed for VIS, trying keldan.is...
+2026-03-11 14:17:06,707 [WARNING]   → No shareholder data found for VIS
+2026-03-11 14:17:08,707 [INFO] Scraping RVKFN (Reykjavík fasteignafélag hf.) from https://www.rffrimi.is/en/investors/shareholders/
+2026-03-11 14:17:08,757 [WARNING] Attempt 1 failed for https://www.rffrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.rffrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.rffrimi.is', port=443): Failed to resolve 'www.rffrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:17:10,759 [WARNING] Attempt 2 failed for https://www.rffrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.rffrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.rffrimi.is', port=443): Failed to resolve 'www.rffrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:17:14,772 [WARNING] Attempt 3 failed for https://www.rffrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.rffrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.rffrimi.is', port=443): Failed to resolve 'www.rffrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:17:20,773 [INFO]   → Primary scrape failed for RVKFN, trying keldan.is...
+2026-03-11 14:17:22,478 [WARNING]   → No shareholder data found for RVKFN
+2026-03-11 14:17:24,479 [INFO] Scraping SKEL (Skeljungur hf.) from https://www.skeljungur.is/en/investors/shareholders/
+2026-03-11 14:17:25,605 [WARNING] Attempt 1 failed for https://www.skeljungur.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.skeljungur.is/en/investors/shareholders
+2026-03-11 14:17:28,162 [WARNING] Attempt 2 failed for https://www.skeljungur.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.skeljungur.is/en/investors/shareholders
+2026-03-11 14:17:32,762 [WARNING] Attempt 3 failed for https://www.skeljungur.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.skeljungur.is/en/investors/shareholders
+2026-03-11 14:17:38,764 [INFO]   → Primary scrape failed for SKEL, trying keldan.is...
+2026-03-11 14:17:39,207 [WARNING]   → No shareholder data found for SKEL
+2026-03-11 14:17:41,208 [INFO] Scraping SYN (Sýn hf.) from https://www.syn.is/en/investors/shareholders/
+2026-03-11 14:17:41,737 [WARNING] Attempt 1 failed for https://www.syn.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.syn.is/en/investors/shareholders
+2026-03-11 14:17:44,642 [WARNING] Attempt 2 failed for https://www.syn.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.syn.is/en/investors/shareholders
+2026-03-11 14:17:49,365 [WARNING] Attempt 3 failed for https://www.syn.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.syn.is/en/investors/shareholders
+2026-03-11 14:17:55,368 [INFO]   → Primary scrape failed for SYN, trying keldan.is...
+2026-03-11 14:17:56,052 [WARNING]   → No shareholder data found for SYN
+2026-03-11 14:17:58,052 [INFO] Scraping VFB (Vörður tryggingar hf.) from https://www.vfrimi.is/en/investors/shareholders/
+2026-03-11 14:17:58,110 [WARNING] Attempt 1 failed for https://www.vfrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.vfrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.vfrimi.is', port=443): Failed to resolve 'www.vfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:18:00,112 [WARNING] Attempt 2 failed for https://www.vfrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.vfrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.vfrimi.is', port=443): Failed to resolve 'www.vfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:18:04,125 [WARNING] Attempt 3 failed for https://www.vfrimi.is/en/investors/shareholders/: HTTPSConnectionPool(host='www.vfrimi.is', port=443): Max retries exceeded with url: /en/investors/shareholders/ (Caused by NameResolutionError("HTTPSConnection(host='www.vfrimi.is', port=443): Failed to resolve 'www.vfrimi.is' ([Errno 11001] getaddrinfo failed)"))
+2026-03-11 14:18:10,125 [INFO]   → Primary scrape failed for VFB, trying keldan.is...
+2026-03-11 14:18:10,510 [WARNING]   → No shareholder data found for VFB
+2026-03-11 14:18:12,511 [INFO] Scraping BRIM (Brim hf.) from https://www.brim.is/en/investors/shareholders/
+2026-03-11 14:18:13,358 [WARNING] Attempt 1 failed for https://www.brim.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.brim.is/en/investors/shareholders
+2026-03-11 14:18:15,920 [WARNING] Attempt 2 failed for https://www.brim.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.brim.is/en/investors/shareholders
+2026-03-11 14:18:20,374 [WARNING] Attempt 3 failed for https://www.brim.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.brim.is/en/investors/shareholders
+2026-03-11 14:18:26,376 [INFO]   → Primary scrape failed for BRIM, trying keldan.is...
+2026-03-11 14:18:26,837 [WARNING]   → No shareholder data found for BRIM
+2026-03-11 14:18:28,837 [INFO] Scraping OLGERD (Ölgerðin Egill Skallagrímsson hf.) from https://www.olgerdin.is/en/investors/shareholders/
+2026-03-11 14:18:29,157 [WARNING] Attempt 1 failed for https://www.olgerdin.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.olgerdin.is/en/investors/shareholders/
+2026-03-11 14:18:31,464 [WARNING] Attempt 2 failed for https://www.olgerdin.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.olgerdin.is/en/investors/shareholders/
+2026-03-11 14:18:35,775 [WARNING] Attempt 3 failed for https://www.olgerdin.is/en/investors/shareholders/: 404 Client Error: Not Found for url: https://www.olgerdin.is/en/investors/shareholders/
+2026-03-11 14:18:41,776 [INFO]   → Primary scrape failed for OLGERD, trying keldan.is...
+2026-03-11 14:18:42,232 [WARNING]   → No shareholder data found for OLGERD
+2026-03-11 14:18:44,233 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-11.json
+2026-03-11 14:18:44,233 [INFO] No previous snapshot found — this is the first run. No diffs computed.
+2026-03-11 14:18:44,264 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 14:18:44,265 [INFO] === Scan complete. 0 companies with changes. ===
+2026-03-11 14:37:24,669 [INFO] === XICE Scan 2026-03-11 ===
+2026-03-11 14:37:24,670 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-11 14:37:55,088 [WARNING] Attempt 1 failed for https://investors.alvotech.com/shareholders: HTTPSConnectionPool(host='investors.alvotech.com', port=443): Read timed out. (read timeout=30)
+2026-03-11 14:38:27,450 [WARNING] Attempt 2 failed for https://investors.alvotech.com/shareholders: HTTPSConnectionPool(host='investors.alvotech.com', port=443): Read timed out. (read timeout=30)
+2026-03-11 14:38:53,528 [WARNING] Attempt 3 failed for https://investors.alvotech.com/shareholders: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-03-11 14:38:59,529 [WARNING]   -> Failed to fetch page for ALVO
+2026-03-11 14:39:01,530 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-11 14:39:01,909 [INFO]   -> Found 7 shareholders for AMRQ
+2026-03-11 14:39:03,910 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-11 14:39:04,518 [INFO]   -> Found 1 shareholders for ARION
+2026-03-11 14:39:06,519 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-11 14:39:06,883 [WARNING]   -> Page loaded but no shareholders parsed for BERA
+2026-03-11 14:39:08,884 [INFO] Scraping BRIM (Brim hf.)
+2026-03-11 14:39:09,271 [INFO]   -> Found 20 shareholders for BRIM
+2026-03-11 14:39:11,272 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-11 14:39:13,876 [WARNING]   -> Page loaded but no shareholders parsed for EIK
+2026-03-11 14:39:15,877 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-11 14:39:16,475 [WARNING]   -> Page loaded but no shareholders parsed for EIM
+2026-03-11 14:39:18,476 [INFO] Scraping FESTI (Festi hf.)
+2026-03-11 14:39:18,921 [WARNING]   -> Page loaded but no shareholders parsed for FESTI
+2026-03-11 14:39:20,922 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-11 14:39:21,539 [INFO]   -> Found 20 shareholders for HAGA
+2026-03-11 14:39:23,540 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-11 14:39:24,192 [INFO]   -> Found 20 shareholders for HAMP
+2026-03-11 14:39:26,193 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-11 14:39:27,597 [WARNING]   -> Page loaded but no shareholders parsed for HEIMAR
+2026-03-11 14:39:29,599 [INFO] Scraping ICEAIR (Icelandair Group hf.)
+2026-03-11 14:39:30,076 [WARNING]   -> Page loaded but no shareholders parsed for ICEAIR
+2026-03-11 14:39:32,077 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-11 14:39:32,787 [WARNING]   -> Page loaded but no shareholders parsed for ICESEA
+2026-03-11 14:39:34,788 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-11 14:39:36,283 [WARNING]   -> Page loaded but no shareholders parsed for ISB
+2026-03-11 14:39:38,283 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-11 14:39:39,349 [WARNING]   -> Page loaded but no shareholders parsed for ISF
+2026-03-11 14:39:41,350 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL configured
+2026-03-11 14:39:43,350 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-11 14:39:43,905 [INFO]   -> Found 11 shareholders for KALD
+2026-03-11 14:39:45,906 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-11 14:39:46,430 [INFO]   -> Found 16 shareholders for KVIKA
+2026-03-11 14:39:48,431 [INFO] Scraping NOVA (Nova hf.)
+2026-03-11 14:39:49,448 [INFO]   -> Found 20 shareholders for NOVA
+2026-03-11 14:39:51,448 [INFO] Skipping OCS (Oculis Holding AG) - no URL configured
+2026-03-11 14:39:53,449 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-11 14:39:53,895 [WARNING]   -> Page loaded but no shareholders parsed for REITIR
+2026-03-11 14:39:55,896 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-11 14:39:57,382 [INFO]   -> Found 10 shareholders for SIMINN
+2026-03-11 14:39:59,383 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-11 14:39:59,841 [INFO]   -> Found 20 shareholders for SJOVA
+2026-03-11 14:40:01,842 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-11 14:40:02,163 [WARNING]   -> Page loaded but no shareholders parsed for SKAGI
+2026-03-11 14:40:04,164 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-11 14:40:05,740 [WARNING]   -> Page loaded but no shareholders parsed for SKEL
+2026-03-11 14:40:07,741 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-11 14:40:08,604 [WARNING]   -> Page loaded but no shareholders parsed for SVN
+2026-03-11 14:40:10,604 [INFO] Scraping SYN (Sýn hf.)
+2026-03-11 14:40:11,212 [INFO]   -> Found 20 shareholders for SYN
+2026-03-11 14:40:13,217 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-11.json
+2026-03-11 14:40:13,218 [INFO] First run - no previous snapshot to diff against.
+2026-03-11 14:40:13,245 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 14:40:13,245 [INFO] === Done. 11/27 scraped, 0 with changes. ===
+2026-03-11 14:55:43,918 [INFO] === XICE Scan 2026-03-11 ===
+2026-03-11 14:55:43,919 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-11 14:57:27,507 [INFO] === XICE Scan 2026-03-11 ===
+2026-03-11 14:57:27,508 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-11 14:57:57,920 [WARNING] Attempt 1 failed for https://investors.alvotech.com/shareholders: HTTPSConnectionPool(host='investors.alvotech.com', port=443): Read timed out. (read timeout=30)
+2026-03-11 14:58:19,521 [WARNING] Attempt 2 failed for https://investors.alvotech.com/shareholders: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-03-11 14:58:53,894 [WARNING] Attempt 3 failed for https://investors.alvotech.com/shareholders: HTTPSConnectionPool(host='investors.alvotech.com', port=443): Read timed out. (read timeout=30)
+2026-03-11 14:58:59,895 [INFO]   -> HTTP fetch failed for ALVO, trying Selenium...
+2026-03-11 14:58:59,895 [INFO] Starting headless Chrome...
+2026-03-11 14:58:59,896 [INFO] ====== WebDriver manager ======
+2026-03-11 14:59:01,187 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 14:59:01,920 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 14:59:02,451 [INFO] There is no [win64] chromedriver "145.0.7632.117" for browser google-chrome "145.0.7632" in cache
+2026-03-11 14:59:02,452 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 14:59:03,662 [INFO] WebDriver version 145.0.7632.117 selected
+2026-03-11 14:59:03,670 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/145.0.7632.117/win32/chromedriver-win32.zip
+2026-03-11 14:59:03,671 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/145.0.7632.117/win32/chromedriver-win32.zip
+2026-03-11 14:59:04,140 [INFO] Driver downloading response is 200
+2026-03-11 14:59:04,697 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 14:59:05,362 [INFO] Driver has been saved in cache [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117]
+2026-03-11 14:59:15,665 [INFO] Headless Chrome ready.
+2026-03-11 14:59:25,499 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-11 14:59:27,500 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-11 14:59:28,133 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-11 14:59:30,134 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-11 14:59:39,713 [INFO]   -> Found 17 shareholders for ARION (Selenium)
+2026-03-11 14:59:41,714 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-11 15:00:03,337 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-11 15:00:05,338 [INFO] Scraping BRIM (Brim hf.)
+2026-03-11 15:00:05,909 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-11 15:00:07,910 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-11 15:00:28,612 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-11 15:00:30,613 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-11 15:00:50,916 [INFO]   -> Found 1 shareholders for EIM (Selenium)
+2026-03-11 15:00:52,918 [INFO] Scraping FESTI (Festi hf.)
+2026-03-11 15:01:02,220 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-11 15:01:04,221 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-11 15:01:04,935 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-11 15:01:06,935 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-11 15:01:07,550 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-11 15:01:09,551 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-11 15:01:19,716 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-11 15:01:21,717 [INFO] Scraping ICEAIR (Icelandair Group hf.)
+2026-03-11 15:01:31,546 [INFO]   -> Found 5 shareholders for ICEAIR (Selenium)
+2026-03-11 15:01:33,547 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-11 15:01:56,127 [WARNING]   -> Selenium loaded page but no shareholders parsed for ICESEA
+2026-03-11 15:01:58,129 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-11 15:02:09,306 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-11 15:02:11,307 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-11 15:02:33,571 [WARNING]   -> Selenium loaded page but no shareholders parsed for ISF
+2026-03-11 15:02:35,572 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-11 15:02:37,574 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-11 15:02:38,500 [INFO]   -> Found 11 shareholders for KALD (HTTP)
+2026-03-11 15:02:40,501 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-11 15:02:41,400 [INFO]   -> Found 16 shareholders for KVIKA (HTTP)
+2026-03-11 15:02:43,401 [INFO] Scraping NOVA (Nova hf.)
+2026-03-11 15:02:44,447 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-11 15:02:46,447 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-11 15:02:48,448 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-11 15:02:57,362 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-11 15:02:59,363 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-11 15:03:09,741 [INFO]   -> Found 10 shareholders for SIMINN (Selenium)
+2026-03-11 15:03:11,742 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-11 15:03:20,563 [INFO]   -> Found 20 shareholders for SJOVA (Selenium)
+2026-03-11 15:03:22,564 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-11 15:03:31,115 [INFO]   -> Found 20 shareholders for SKAGI (Selenium)
+2026-03-11 15:03:33,116 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-11 15:03:52,110 [WARNING]   -> Selenium loaded page but no shareholders parsed for SKEL
+2026-03-11 15:03:54,110 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-11 15:04:15,126 [WARNING]   -> Selenium loaded page but no shareholders parsed for SVN
+2026-03-11 15:04:17,126 [INFO] Scraping SYN (Sýn hf.)
+2026-03-11 15:04:17,557 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-11 15:04:21,965 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-11.json
+2026-03-11 15:04:21,966 [INFO] First run - no previous snapshot to diff against.
+2026-03-11 15:04:21,981 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 15:04:21,981 [INFO] === Done. 20/27 scraped, 0 with changes. ===
+2026-03-11 16:04:44,796 [INFO] === XICE Scan 2026-03-11 ===
+2026-03-11 16:04:44,797 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-11 16:04:44,797 [INFO] Starting headless Chrome...
+2026-03-11 16:04:44,797 [INFO] ====== WebDriver manager ======
+2026-03-11 16:04:45,943 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:04:46,353 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:04:46,667 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:04:47,962 [INFO] Headless Chrome ready.
+2026-03-11 16:04:59,116 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-11 16:05:01,117 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-11 16:05:01,569 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-11 16:05:03,569 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-11 16:05:13,544 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-11 16:05:15,545 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-11 16:05:36,780 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-11 16:05:38,781 [INFO] Scraping BRIM (Brim hf.)
+2026-03-11 16:05:39,391 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-11 16:05:41,392 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-11 16:06:05,328 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-11 16:06:07,329 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-11 16:06:33,199 [INFO]   -> Found 1 shareholders for EIM (Selenium)
+2026-03-11 16:06:35,200 [INFO] Scraping FESTI (Festi hf.)
+2026-03-11 16:06:44,790 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-11 16:06:46,791 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-11 16:06:47,469 [INFO]   -> Found 19 shareholders for HAGA (HTTP)
+2026-03-11 16:06:49,470 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-11 16:06:50,088 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-11 16:06:52,089 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-11 16:07:04,896 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-11 16:07:06,897 [INFO] Skipping ICEAIR (Icelandair Group hf.) - Page shows owner-distribution-by-holding-size, not a top-20 list
+2026-03-11 16:07:08,898 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-11 16:07:30,697 [WARNING]   -> Selenium loaded page but no shareholders parsed for ICESEA
+2026-03-11 16:07:32,698 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-11 16:07:44,316 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-11 16:07:46,317 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-11 16:08:07,436 [WARNING]   -> Selenium loaded page but no shareholders parsed for ISF
+2026-03-11 16:08:09,437 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-11 16:08:11,437 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-11 16:08:12,017 [INFO]   -> Found 11 shareholders for KALD (HTTP)
+2026-03-11 16:08:14,018 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-11 16:08:14,584 [INFO]   -> Found 16 shareholders for KVIKA (HTTP)
+2026-03-11 16:08:16,584 [INFO] Scraping NOVA (Nova hf.)
+2026-03-11 16:08:17,529 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-11 16:08:19,530 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-11 16:08:21,530 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-11 16:08:30,830 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-11 16:08:32,830 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-11 16:08:43,875 [INFO]   -> Found 10 shareholders for SIMINN (Selenium)
+2026-03-11 16:08:45,876 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-11 16:08:55,614 [INFO]   -> Found 19 shareholders for SJOVA (Selenium)
+2026-03-11 16:08:57,615 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-11 16:09:06,146 [INFO]   -> Found 19 shareholders for SKAGI (Selenium)
+2026-03-11 16:09:08,147 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-11 16:09:28,697 [WARNING]   -> Selenium loaded page but no shareholders parsed for SKEL
+2026-03-11 16:09:30,697 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-11 16:09:53,096 [WARNING]   -> Selenium loaded page but no shareholders parsed for SVN
+2026-03-11 16:09:55,097 [INFO] Scraping SYN (Sýn hf.)
+2026-03-11 16:09:55,630 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-11 16:10:00,070 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-11.json
+2026-03-11 16:10:00,070 [INFO] First run - no previous snapshot to diff against.
+2026-03-11 16:10:00,087 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 16:10:00,087 [INFO] === Done. 19/27 scraped, 0 with changes. ===
+2026-03-11 16:19:23,042 [INFO] === XICE Scan 2026-03-11 ===
+2026-03-11 16:19:23,042 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-11 16:19:23,042 [INFO] Starting headless Chrome...
+2026-03-11 16:19:23,042 [INFO] ====== WebDriver manager ======
+2026-03-11 16:19:24,657 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:19:24,968 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:19:25,250 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:19:26,570 [INFO] Headless Chrome ready.
+2026-03-11 16:19:42,250 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-11 16:19:44,251 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-11 16:19:44,568 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-11 16:19:46,569 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-11 16:20:00,616 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-11 16:20:02,617 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-11 16:20:17,770 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-11 16:20:19,771 [INFO] Scraping BRIM (Brim hf.)
+2026-03-11 16:20:20,142 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-11 16:20:22,143 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-11 16:20:36,681 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-11 16:20:38,682 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-11 16:20:54,249 [INFO]   -> Found 1 shareholders for EIM (Selenium)
+2026-03-11 16:20:56,249 [INFO] Scraping FESTI (Festi hf.)
+2026-03-11 16:21:09,932 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-11 16:21:11,933 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-11 16:21:12,451 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-11 16:21:14,452 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-11 16:21:15,058 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-11 16:21:17,059 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-11 16:21:31,781 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-11 16:21:33,782 [INFO] Skipping ICEAIR (Icelandair Group hf.) - Page shows owner-distribution-by-holding-size, not a top-20 list
+2026-03-11 16:21:35,783 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-11 16:21:49,784 [WARNING]   -> Selenium loaded page but no shareholders parsed for ICESEA
+2026-03-11 16:21:51,785 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-11 16:22:06,763 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-11 16:22:08,764 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-11 16:22:23,990 [WARNING]   -> Selenium loaded page but no shareholders parsed for ISF
+2026-03-11 16:22:25,991 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-11 16:22:27,992 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-11 16:22:28,471 [INFO]   -> Found 11 shareholders for KALD (HTTP)
+2026-03-11 16:22:30,472 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-11 16:22:30,984 [INFO]   -> Found 20 shareholders for KVIKA (HTTP)
+2026-03-11 16:22:32,985 [INFO] Scraping NOVA (Nova hf.)
+2026-03-11 16:22:34,053 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-11 16:22:36,054 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-11 16:22:38,055 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-11 16:22:51,535 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-11 16:22:53,536 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-11 16:23:08,233 [INFO]   -> Found 10 shareholders for SIMINN (Selenium)
+2026-03-11 16:23:10,234 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-11 16:23:24,264 [INFO]   -> Found 19 shareholders for SJOVA (Selenium)
+2026-03-11 16:23:26,265 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-11 16:23:39,563 [INFO]   -> Found 19 shareholders for SKAGI (Selenium)
+2026-03-11 16:23:41,564 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-11 16:23:55,300 [WARNING]   -> Selenium loaded page but no shareholders parsed for SKEL
+2026-03-11 16:23:57,301 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-11 16:24:11,743 [WARNING]   -> Selenium loaded page but no shareholders parsed for SVN
+2026-03-11 16:24:13,744 [INFO] Scraping SYN (Sýn hf.)
+2026-03-11 16:24:14,101 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-11 16:24:18,422 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-11.json
+2026-03-11 16:24:18,423 [INFO] First run - no previous snapshot to diff against.
+2026-03-11 16:24:18,439 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 16:24:18,440 [INFO] === Done. 19/27 scraped, 0 with changes. ===
+2026-03-11 16:25:08,390 [INFO] Debug: fetching ICESEA (Iceland Seafood International hf.) from https://icelandseafood.com/investors/shareholders/
+2026-03-11 16:25:08,952 [INFO] Debug: using Selenium for ICESEA...
+2026-03-11 16:25:08,953 [INFO] Starting headless Chrome...
+2026-03-11 16:25:08,953 [INFO] ====== WebDriver manager ======
+2026-03-11 16:25:09,973 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:25:10,265 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:25:10,558 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:25:11,777 [INFO] Headless Chrome ready.
+2026-03-11 16:25:27,856 [INFO] Debug: saved raw HTML (327,148 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_ICESEA.html
+2026-03-11 16:25:27,880 [WARNING] Debug: parser returned 0 shareholders. Inspect C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_ICESEA.html to diagnose.
+2026-03-11 16:26:10,723 [INFO] Debug: fetching ISF (Ísfélag hf.) from https://isfelag.is/fjarfestar/
+2026-03-11 16:26:11,662 [INFO] Debug: using Selenium for ISF...
+2026-03-11 16:26:11,663 [INFO] Starting headless Chrome...
+2026-03-11 16:26:11,663 [INFO] ====== WebDriver manager ======
+2026-03-11 16:26:12,649 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:26:12,934 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:26:13,228 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:26:14,448 [INFO] Headless Chrome ready.
+2026-03-11 16:26:31,711 [INFO] Debug: saved raw HTML (155,508 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_ISF.html
+2026-03-11 16:26:31,728 [WARNING] Debug: parser returned 0 shareholders. Inspect C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_ISF.html to diagnose.
+2026-03-11 16:28:06,471 [INFO] Debug: fetching SKEL (Skeljungur hf.) from https://skel.is/hluthafar/staerstu-hluthafar
+2026-03-11 16:28:07,185 [INFO] Debug: using Selenium for SKEL...
+2026-03-11 16:28:07,185 [INFO] Starting headless Chrome...
+2026-03-11 16:28:07,185 [INFO] ====== WebDriver manager ======
+2026-03-11 16:28:08,151 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:28:08,440 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:28:08,731 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:28:09,947 [INFO] Headless Chrome ready.
+2026-03-11 16:28:25,527 [INFO] Debug: saved raw HTML (62,190 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_SKEL.html
+2026-03-11 16:28:25,532 [WARNING] Debug: parser returned 0 shareholders. Inspect C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_SKEL.html to diagnose.
+2026-03-11 16:28:56,679 [INFO] Debug: fetching SVN (Síldarvinnslan hf.) from https://svn.is/fjarfestar/
+2026-03-11 16:28:57,163 [INFO] Debug: using Selenium for SVN...
+2026-03-11 16:28:57,163 [INFO] Starting headless Chrome...
+2026-03-11 16:28:57,164 [INFO] ====== WebDriver manager ======
+2026-03-11 16:28:58,179 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:28:58,468 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:28:58,764 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:28:59,981 [INFO] Headless Chrome ready.
+2026-03-11 16:29:17,647 [INFO] Debug: saved raw HTML (165,909 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_SVN.html
+2026-03-11 16:29:17,659 [WARNING] Debug: parser returned 0 shareholders. Inspect C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_SVN.html to diagnose.
+2026-03-11 16:33:04,842 [INFO] Debug: fetching EIM (Eimskipafélag Íslands hf.) from https://www.eimskip.com/investors/share-information/
+2026-03-11 16:33:05,471 [INFO] Debug: using Selenium for EIM...
+2026-03-11 16:33:05,472 [INFO] Starting headless Chrome...
+2026-03-11 16:33:05,472 [INFO] ====== WebDriver manager ======
+2026-03-11 16:33:06,497 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:33:06,792 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:33:07,084 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:33:08,306 [INFO] Headless Chrome ready.
+2026-03-11 16:33:25,573 [INFO] Debug: saved raw HTML (128,624 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_EIM.html
+2026-03-11 16:33:25,589 [INFO] Debug: parsed 1 shareholders:
+2026-03-11 16:33:25,589 [INFO]   # 1  Change                                          0.38%  (           0 shares)
+2026-03-11 16:33:41,764 [INFO] Debug: fetching KALD (Kaldalón hf.) from https://kaldalon.is/fjarfestar/
+2026-03-11 16:33:42,218 [INFO] Debug: saved raw HTML (126,158 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_KALD.html
+2026-03-11 16:33:42,240 [INFO] Debug: parsed 11 shareholders:
+2026-03-11 16:33:42,240 [INFO]   # 1  1.085.818.344                                  15.76%  (           0 shares)
+2026-03-11 16:33:42,240 [INFO]   # 2  8,98%                                           8.68%  (           0 shares)
+2026-03-11 16:33:42,240 [INFO]   # 3  5,94%                                           5.21%  (           0 shares)
+2026-03-11 16:33:42,240 [INFO]   # 4  5,21%                                           4.43%  (           0 shares)
+2026-03-11 16:33:42,240 [INFO]   # 5  3,70%                                            3.2%  (           0 shares)
+2026-03-11 16:33:42,240 [INFO]   # 6  2,57%                                           2.49%  (           0 shares)
+2026-03-11 16:33:42,240 [INFO]   # 7  2,24%                                           2.17%  (           0 shares)
+2026-03-11 16:33:42,240 [INFO]   # 8  2,00%                                           1.81%  (           0 shares)
+2026-03-11 16:33:42,241 [INFO]   # 9  1,23%                                            1.2%  (           0 shares)
+2026-03-11 16:33:42,241 [INFO]   #10  0,92%                                           0.89%  (           0 shares)
+2026-03-11 16:33:42,241 [INFO]   #11  0,88%                                          20.48%  (           0 shares)
+2026-03-11 16:34:59,888 [INFO] === XICE Scan 2026-03-11 ===
+2026-03-11 16:34:59,888 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-11 16:34:59,888 [INFO] Starting headless Chrome...
+2026-03-11 16:34:59,889 [INFO] ====== WebDriver manager ======
+2026-03-11 16:35:00,856 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:35:01,156 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:35:01,441 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:35:02,654 [INFO] Headless Chrome ready.
+2026-03-11 16:35:18,383 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-11 16:35:20,384 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-11 16:35:20,794 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-11 16:35:22,795 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-11 16:35:36,801 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-11 16:35:38,802 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-11 16:35:54,113 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-11 16:35:56,114 [INFO] Scraping BRIM (Brim hf.)
+2026-03-11 16:35:56,569 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-11 16:35:58,569 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-11 16:36:12,887 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-11 16:36:14,888 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-11 16:36:30,053 [INFO]   -> Found 1 shareholders for EIM (Selenium)
+2026-03-11 16:36:32,054 [INFO] Scraping FESTI (Festi hf.)
+2026-03-11 16:36:45,733 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-11 16:36:47,734 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-11 16:36:48,345 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-11 16:36:50,346 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-11 16:36:50,844 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-11 16:36:52,844 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-11 16:37:08,011 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-11 16:37:10,012 [INFO] Skipping ICEAIR (Icelandair Group hf.) - Page shows owner-distribution-by-holding-size, not a top-20 list
+2026-03-11 16:37:12,013 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-11 16:37:27,775 [WARNING]   -> Selenium loaded page but no shareholders parsed for ICESEA
+2026-03-11 16:37:29,776 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-11 16:37:44,725 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-11 16:37:46,726 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-11 16:38:02,230 [WARNING]   -> Selenium loaded page but no shareholders parsed for ISF
+2026-03-11 16:38:04,231 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-11 16:38:06,232 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-11 16:38:06,779 [INFO]   -> Found 11 shareholders for KALD (HTTP)
+2026-03-11 16:38:08,780 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-11 16:38:09,462 [INFO]   -> Found 20 shareholders for KVIKA (HTTP)
+2026-03-11 16:38:11,463 [INFO] Scraping NOVA (Nova hf.)
+2026-03-11 16:38:12,320 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-11 16:38:14,320 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-11 16:38:16,321 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-11 16:38:30,085 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-11 16:38:32,085 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-11 16:38:47,192 [INFO]   -> Found 20 shareholders for SIMINN (Selenium)
+2026-03-11 16:38:49,193 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-11 16:39:02,722 [INFO]   -> Found 20 shareholders for SJOVA (Selenium)
+2026-03-11 16:39:04,723 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-11 16:39:18,275 [INFO]   -> Found 20 shareholders for SKAGI (Selenium)
+2026-03-11 16:39:20,276 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-11 16:39:34,054 [WARNING]   -> Selenium loaded page but no shareholders parsed for SKEL
+2026-03-11 16:39:36,055 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-11 16:39:50,834 [WARNING]   -> Selenium loaded page but no shareholders parsed for SVN
+2026-03-11 16:39:52,835 [INFO] Scraping SYN (Sýn hf.)
+2026-03-11 16:39:53,232 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-11 16:39:57,623 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-11.json
+2026-03-11 16:39:57,624 [INFO] First run - no previous snapshot to diff against.
+2026-03-11 16:39:57,636 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 16:39:57,637 [INFO] === Done. 19/27 scraped, 0 with changes. ===
+2026-03-11 16:40:49,878 [INFO] Debug: fetching SKEL (Skeljungur hf.) from https://skel.is/hluthafar/staerstu-hluthafar
+2026-03-11 16:40:50,712 [INFO] Debug: using Selenium for SKEL...
+2026-03-11 16:40:50,713 [INFO] Starting headless Chrome...
+2026-03-11 16:40:50,713 [INFO] ====== WebDriver manager ======
+2026-03-11 16:40:52,427 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:40:52,730 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:40:53,023 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:40:54,334 [INFO] Headless Chrome ready.
+2026-03-11 16:41:13,173 [INFO] Debug: saved raw HTML (62,190 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_SKEL.html
+2026-03-11 16:41:13,177 [WARNING] Debug: parser returned 0 shareholders. Inspect C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_SKEL.html to diagnose.
+2026-03-11 16:41:34,633 [INFO] Debug: fetching EIM (Eimskipafélag Íslands hf.) from https://www.eimskip.com/investors/share-information/
+2026-03-11 16:41:35,271 [INFO] Debug: using Selenium for EIM...
+2026-03-11 16:41:35,272 [INFO] Starting headless Chrome...
+2026-03-11 16:41:35,272 [INFO] ====== WebDriver manager ======
+2026-03-11 16:41:36,242 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:41:36,533 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:41:36,826 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:41:38,084 [INFO] Headless Chrome ready.
+2026-03-11 16:41:56,127 [INFO] Debug: saved raw HTML (128,633 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_EIM.html
+2026-03-11 16:41:56,144 [INFO] Debug: parsed 1 shareholders:
+2026-03-11 16:41:56,144 [INFO]   # 1  Change                                          0.38%  (           0 shares)
+2026-03-11 16:42:09,407 [INFO] Debug: fetching KALD (Kaldalón hf.) from https://kaldalon.is/fjarfestar/
+2026-03-11 16:42:09,765 [INFO] Debug: saved raw HTML (126,158 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_KALD.html
+2026-03-11 16:42:09,786 [INFO] Debug: parsed 11 shareholders:
+2026-03-11 16:42:09,786 [INFO]   # 1  1.085.818.344                                  15.76%  (           0 shares)
+2026-03-11 16:42:09,787 [INFO]   # 2  8,98%                                           8.68%  (           0 shares)
+2026-03-11 16:42:09,787 [INFO]   # 3  5,94%                                           5.21%  (           0 shares)
+2026-03-11 16:42:09,787 [INFO]   # 4  5,21%                                           4.43%  (           0 shares)
+2026-03-11 16:42:09,787 [INFO]   # 5  3,70%                                            3.2%  (           0 shares)
+2026-03-11 16:42:09,787 [INFO]   # 6  2,57%                                           2.49%  (           0 shares)
+2026-03-11 16:42:09,787 [INFO]   # 7  2,24%                                           2.17%  (           0 shares)
+2026-03-11 16:42:09,787 [INFO]   # 8  2,00%                                           1.81%  (           0 shares)
+2026-03-11 16:42:09,787 [INFO]   # 9  1,23%                                            1.2%  (           0 shares)
+2026-03-11 16:42:09,788 [INFO]   #10  0,92%                                           0.89%  (           0 shares)
+2026-03-11 16:42:09,788 [INFO]   #11  0,88%                                          20.48%  (           0 shares)
+2026-03-11 16:47:03,661 [INFO] Debug: fetching KALD (Kaldalón hf.) from https://kaldalon.is/fjarfestar/
+2026-03-11 16:47:04,041 [INFO] Debug: saved raw HTML (126,158 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_KALD.html
+2026-03-11 16:47:04,064 [INFO] Debug: parsed 11 shareholders:
+2026-03-11 16:47:04,065 [INFO]   # 1  1.085.818.344                                  15.76%  (           0 shares)
+2026-03-11 16:47:04,065 [INFO]   # 2  8,98%                                           8.68%  (           0 shares)
+2026-03-11 16:47:04,065 [INFO]   # 3  5,94%                                           5.21%  (           0 shares)
+2026-03-11 16:47:04,065 [INFO]   # 4  5,21%                                           4.43%  (           0 shares)
+2026-03-11 16:47:04,065 [INFO]   # 5  3,70%                                            3.2%  (           0 shares)
+2026-03-11 16:47:04,065 [INFO]   # 6  2,57%                                           2.49%  (           0 shares)
+2026-03-11 16:47:04,065 [INFO]   # 7  2,24%                                           2.17%  (           0 shares)
+2026-03-11 16:47:04,065 [INFO]   # 8  2,00%                                           1.81%  (           0 shares)
+2026-03-11 16:47:04,065 [INFO]   # 9  1,23%                                            1.2%  (           0 shares)
+2026-03-11 16:47:04,065 [INFO]   #10  0,92%                                           0.89%  (           0 shares)
+2026-03-11 16:47:04,065 [INFO]   #11  0,88%                                          20.48%  (           0 shares)
+2026-03-11 16:47:47,743 [INFO] Debug: fetching EIM (Eimskipafélag Íslands hf.) from https://www.eimskip.com/investors/share-information/
+2026-03-11 16:47:48,280 [INFO] Debug: using Selenium for EIM...
+2026-03-11 16:47:48,280 [INFO] Starting headless Chrome...
+2026-03-11 16:47:48,280 [INFO] ====== WebDriver manager ======
+2026-03-11 16:47:49,239 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:47:49,519 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:47:49,809 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:47:51,016 [INFO] Headless Chrome ready.
+2026-03-11 16:48:08,845 [INFO] Debug: saved raw HTML (128,624 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_EIM.html
+2026-03-11 16:48:08,861 [INFO] Debug: parsed 1 shareholders:
+2026-03-11 16:48:08,861 [INFO]   # 1  Change                                          0.38%  (           0 shares)
+2026-03-11 16:49:33,321 [INFO] Debug: fetching KALD (Kaldalón hf.) from https://kaldalon.is/fjarfestar/
+2026-03-11 16:49:33,322 [INFO] Debug: using Selenium for KALD...
+2026-03-11 16:49:33,322 [INFO] Starting headless Chrome...
+2026-03-11 16:49:33,322 [INFO] ====== WebDriver manager ======
+2026-03-11 16:49:34,945 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:49:35,259 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:49:35,553 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:49:36,861 [INFO] Headless Chrome ready.
+2026-03-11 16:49:51,083 [INFO] Debug: saved raw HTML (127,267 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_KALD.html
+2026-03-11 16:49:51,083 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-11 16:50:04,371 [INFO]   -> Found 20 shareholders for KALD (parallel columns)
+2026-03-11 16:50:06,496 [INFO] Debug: found 20 shareholders:
+2026-03-11 16:50:06,496 [INFO]   # 1  Skel fjárfestingafélag hf.                     15.76%  (           0 shares)
+2026-03-11 16:50:06,497 [INFO]   # 2  Stapi lífeyrissjóður                            8.98%  (           0 shares)
+2026-03-11 16:50:06,497 [INFO]   # 3  Norvik hf.                                      8.68%  (           0 shares)
+2026-03-11 16:50:06,498 [INFO]   # 4  Lífeyrissj.starfsm.rík. A-deild                 5.94%  (           0 shares)
+2026-03-11 16:50:06,498 [INFO]   # 5  Loran ehf.                                      5.21%  (           0 shares)
+2026-03-11 16:50:06,498 [INFO]   # 6  Premier eignarhaldsfélag ehf.                   5.21%  (           0 shares)
+2026-03-11 16:50:06,498 [INFO]   # 7  Frjálsi lífeyrissjóðurinn                       4.43%  (           0 shares)
+2026-03-11 16:50:06,499 [INFO]   # 8  Birta lífeyrissjóður                             3.7%  (           0 shares)
+2026-03-11 16:50:06,499 [INFO]   # 9  Stefnir – Innlend hlutabréf hs.                  3.2%  (           0 shares)
+2026-03-11 16:50:06,499 [INFO]   #10  Sjóvá-Almennar tryggingar hf.                   2.57%  (           0 shares)
+2026-03-11 16:50:06,499 [INFO]   #11  Búbót ehf.                                      2.49%  (           0 shares)
+2026-03-11 16:50:06,499 [INFO]   #12  Kaldalón hf.                                    2.24%  (           0 shares)
+2026-03-11 16:50:06,499 [INFO]   #13  Lífeyrissjóður Vestmannaeyja                    2.17%  (           0 shares)
+2026-03-11 16:50:06,500 [INFO]   #14  IREF ehf.                                        2.0%  (           0 shares)
+2026-03-11 16:50:06,500 [INFO]   #15  Kvika - Innlend hlutabréf                       1.81%  (           0 shares)
+2026-03-11 16:50:06,500 [INFO]   #16  Stefnir - ÍS 5 hs.                              1.23%  (           0 shares)
+2026-03-11 16:50:06,500 [INFO]   #17  TM tryggingar hf.                                1.2%  (           0 shares)
+2026-03-11 16:50:06,500 [INFO]   #18  Kvika - IHF hs.                                 0.92%  (           0 shares)
+2026-03-11 16:50:06,500 [INFO]   #19  Kvika Banki - Safnreikningur                    0.89%  (           0 shares)
+2026-03-11 16:50:06,500 [INFO]   #20  Landsbréf - Hekla hs.                           0.88%  (           0 shares)
+2026-03-11 16:50:29,994 [INFO] Debug: fetching EIM (Eimskipafélag Íslands hf.) from https://www.eimskip.com/investors/share-information/
+2026-03-11 16:50:29,994 [INFO] Debug: using Selenium for EIM...
+2026-03-11 16:50:29,994 [INFO] Starting headless Chrome...
+2026-03-11 16:50:29,995 [INFO] ====== WebDriver manager ======
+2026-03-11 16:50:30,955 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:50:31,244 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:50:31,542 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:50:32,743 [INFO] Headless Chrome ready.
+2026-03-11 16:50:59,397 [INFO] Debug: saved raw HTML (128,624 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_EIM.html
+2026-03-11 16:50:59,398 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-11 16:51:07,148 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-11 16:51:07,149 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-11 16:51:09,310 [INFO] Debug: found 20 shareholders:
+2026-03-11 16:51:09,310 [INFO]   # 1  Seley ehf.                                     33.55%  (           0 shares)
+2026-03-11 16:51:09,311 [INFO]   # 2  Gildi - lífeyrissjóður                         13.84%  (           0 shares)
+2026-03-11 16:51:09,311 [INFO]   # 3  Lífeyrissjóður verzlunarmanna                   12.6%  (           0 shares)
+2026-03-11 16:51:09,311 [INFO]   # 4  Birta lífeyrissjóður                            6.43%  (           0 shares)
+2026-03-11 16:51:09,312 [INFO]   # 5  Lífeyrissj.starfsm.rík. A-deild                 4.09%  (           0 shares)
+2026-03-11 16:51:09,312 [INFO]   # 6  Stapi lífeyrissjóður                             3.7%  (           0 shares)
+2026-03-11 16:51:09,312 [INFO]   # 7  Almenni-Lífsverk lífeyrissjóður                 3.38%  (           0 shares)
+2026-03-11 16:51:09,312 [INFO]   # 8  Festa - lífeyrissjóður                          2.54%  (           0 shares)
+2026-03-11 16:51:09,312 [INFO]   # 9  Eimskipafélag Íslands hf.                        2.4%  (           0 shares)
+2026-03-11 16:51:09,312 [INFO]   #10  Sjóvá-Almennar tryggingar hf.                   1.72%  (           0 shares)
+2026-03-11 16:51:09,312 [INFO]   #11  Söfnunarsjóður lífeyrisréttinda                 1.33%  (           0 shares)
+2026-03-11 16:51:09,312 [INFO]   #12  Landsbréf - Úrvalsbréf hs.                      1.03%  (           0 shares)
+2026-03-11 16:51:09,312 [INFO]   #13  Vanguard Total International S                  0.91%  (           0 shares)
+2026-03-11 16:51:09,313 [INFO]   #14  Lífeyrissj.starfsm.rík. B-deild                 0.87%  (           0 shares)
+2026-03-11 16:51:09,313 [INFO]   #15  Vanguard Emerging Markets Stock                 0.84%  (           0 shares)
+2026-03-11 16:51:09,313 [INFO]   #16  Stefnir - Innlend hlutabréf hs.                 0.66%  (           0 shares)
+2026-03-11 16:51:09,313 [INFO]   #17  Íslenski lífeyrissj-Lífsbraut 1                 0.54%  (           0 shares)
+2026-03-11 16:51:09,313 [INFO]   #18  Global Macro Absolute Return Ad                 0.49%  (           0 shares)
+2026-03-11 16:51:09,313 [INFO]   #19  Landsbréf - Öndvegisbréf hs.                    0.48%  (           0 shares)
+2026-03-11 16:51:09,313 [INFO]   #20  Vanguard Fiduciary Trust Compa                  0.46%  (           0 shares)
+2026-03-11 16:57:12,035 [INFO] Debug: fetching SKEL (Skeljungur hf.) from https://skel.is/hluthafar/staerstu-hluthafar
+2026-03-11 16:57:12,036 [INFO] Debug: using Selenium for SKEL...
+2026-03-11 16:57:12,036 [INFO] Starting headless Chrome...
+2026-03-11 16:57:12,036 [INFO] ====== WebDriver manager ======
+2026-03-11 16:57:12,980 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:57:13,290 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 16:57:13,592 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 16:57:14,776 [INFO] Headless Chrome ready.
+2026-03-11 16:57:28,343 [INFO] Debug: saved raw HTML (62,190 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_SKEL.html
+2026-03-11 16:57:28,343 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-11 16:57:28,343 [INFO]   -> Using LiveMarket widget scraper for SKEL...
+2026-03-11 16:57:40,819 [INFO]   -> Got 21,911 chars from LiveMarket shadow DOM for SKEL
+2026-03-11 16:57:40,822 [INFO]   -> Found 20 shareholders for SKEL (LiveMarket widget)
+2026-03-11 16:57:42,959 [INFO] Debug: found 20 shareholders:
+2026-03-11 16:57:42,959 [INFO]   # 1  Strengur hf.                                   51.59%  ( 969,152,089 shares)
+2026-03-11 16:57:42,959 [INFO]   # 2  Frjálsi lífeyrissjóðurinn                       8.15%  ( 153,070,970 shares)
+2026-03-11 16:57:42,959 [INFO]   # 3  Birta lífeyrissjóður                            5.63%  ( 105,698,256 shares)
+2026-03-11 16:57:42,959 [INFO]   # 4  NO.9 Investments Limited                         3.1%  (  58,293,084 shares)
+2026-03-11 16:57:42,959 [INFO]   # 5  Íslandsbanki hf.                                2.26%  (  42,375,050 shares)
+2026-03-11 16:57:42,960 [INFO]   # 6  VÍS tryggingar hf.                              2.13%  (  40,000,000 shares)
+2026-03-11 16:57:42,960 [INFO]   # 7  Lífeyrissjóður Vestmannaeyja                    1.94%  (  36,531,140 shares)
+2026-03-11 16:57:42,960 [INFO]   # 8  Hofgarðar ehf.                                  1.26%  (  23,683,333 shares)
+2026-03-11 16:57:42,960 [INFO]   # 9  Kvika - Innlend hlutabréf                       1.25%  (  23,448,578 shares)
+2026-03-11 16:57:42,960 [INFO]   #10  Eftirlaunasjóður FÍA                            1.06%  (  19,982,086 shares)
+2026-03-11 16:57:42,960 [INFO]   #11  TM tryggingar hf.                               0.83%  (  15,500,000 shares)
+2026-03-11 16:57:42,960 [INFO]   #12  Vörður tryggingar hf.                           0.78%  (  14,749,405 shares)
+2026-03-11 16:57:42,960 [INFO]   #13  Birkir Baldvinsson ehf.                         0.74%  (  13,998,623 shares)
+2026-03-11 16:57:42,960 [INFO]   #14  Arion banki hf.                                 0.74%  (  13,833,878 shares)
+2026-03-11 16:57:42,960 [INFO]   #15  Stefan John Cassar                              0.66%  (  12,453,548 shares)
+2026-03-11 16:57:42,960 [INFO]   #16  John Daniel Mccarthy                            0.66%  (  12,307,356 shares)
+2026-03-11 16:57:42,960 [INFO]   #17  Trausttak ehf.                                   0.6%  (  11,279,213 shares)
+2026-03-11 16:57:42,960 [INFO]   #18  Kvika - IHF hs.                                 0.58%  (  10,921,898 shares)
+2026-03-11 16:57:42,960 [INFO]   #19  ÍV Hlutabréf hs.                                0.55%  (  10,316,394 shares)
+2026-03-11 16:57:42,960 [INFO]   #20  IS Hlutabréfasjóðurinn                           0.5%  (   9,457,067 shares)
+2026-03-11 17:00:21,346 [INFO] === XICE Scan 2026-03-11 ===
+2026-03-11 17:00:21,347 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-11 17:00:21,347 [INFO] Starting headless Chrome...
+2026-03-11 17:00:21,347 [INFO] ====== WebDriver manager ======
+2026-03-11 17:00:22,336 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 17:00:22,639 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 17:00:22,939 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 17:00:24,172 [INFO] Headless Chrome ready.
+2026-03-11 17:00:40,371 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-11 17:00:42,372 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-11 17:00:42,673 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-11 17:00:44,673 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-11 17:00:59,067 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-11 17:01:01,068 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-11 17:01:16,493 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-11 17:01:18,494 [INFO] Scraping BRIM (Brim hf.)
+2026-03-11 17:01:18,885 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-11 17:01:20,886 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-11 17:01:35,869 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-11 17:01:37,869 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-11 17:01:45,393 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-11 17:01:45,393 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-11 17:01:47,394 [INFO] Scraping FESTI (Festi hf.)
+2026-03-11 17:02:01,356 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-11 17:02:03,356 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-11 17:02:03,880 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-11 17:02:05,881 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-11 17:02:06,451 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-11 17:02:08,452 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-11 17:02:24,676 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-11 17:02:26,677 [INFO] Skipping ICEAIR (Icelandair Group hf.) - Page shows owner-distribution-by-holding-size, not a top-20 list
+2026-03-11 17:02:28,679 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-11 17:02:28,679 [INFO]   -> Using LiveMarket widget scraper for ICESEA...
+2026-03-11 17:02:43,162 [INFO]   -> Got 21,698 chars from LiveMarket shadow DOM for ICESEA
+2026-03-11 17:02:43,165 [INFO]   -> Found 20 shareholders for ICESEA (LiveMarket widget)
+2026-03-11 17:02:45,166 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-11 17:03:00,720 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-11 17:03:02,721 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-11 17:03:02,721 [INFO]   -> Using LiveMarket widget scraper for ISF...
+2026-03-11 17:03:17,175 [INFO]   -> Got 21,682 chars from LiveMarket shadow DOM for ISF
+2026-03-11 17:03:17,179 [INFO]   -> Found 20 shareholders for ISF (LiveMarket widget)
+2026-03-11 17:03:19,180 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-11 17:03:21,180 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-11 17:03:35,003 [INFO]   -> Found 20 shareholders for KALD (parallel columns)
+2026-03-11 17:03:37,004 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-11 17:03:37,593 [INFO]   -> Found 20 shareholders for KVIKA (HTTP)
+2026-03-11 17:03:39,594 [INFO] Scraping NOVA (Nova hf.)
+2026-03-11 17:03:40,237 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-11 17:03:42,237 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-11 17:03:44,238 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-11 17:03:57,909 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-11 17:03:59,910 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-11 17:04:16,047 [INFO]   -> Found 20 shareholders for SIMINN (Selenium)
+2026-03-11 17:04:18,048 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-11 17:04:31,741 [INFO]   -> Found 20 shareholders for SJOVA (Selenium)
+2026-03-11 17:04:33,741 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-11 17:04:47,229 [INFO]   -> Found 20 shareholders for SKAGI (Selenium)
+2026-03-11 17:04:49,229 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-11 17:04:49,230 [INFO]   -> Using LiveMarket widget scraper for SKEL...
+2026-03-11 17:05:01,817 [INFO]   -> Got 21,936 chars from LiveMarket shadow DOM for SKEL
+2026-03-11 17:05:01,820 [INFO]   -> Found 20 shareholders for SKEL (LiveMarket widget)
+2026-03-11 17:05:03,820 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-11 17:05:03,821 [INFO]   -> Using LiveMarket widget scraper for SVN...
+2026-03-11 17:05:17,547 [INFO]   -> Got 28,822 chars from LiveMarket shadow DOM for SVN
+2026-03-11 17:05:17,552 [INFO]   -> Found 20 shareholders for SVN (LiveMarket widget)
+2026-03-11 17:05:19,552 [INFO] Scraping SYN (Sýn hf.)
+2026-03-11 17:05:19,953 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-11 17:05:24,326 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-11.json
+2026-03-11 17:05:24,327 [INFO] First run - no previous snapshot to diff against.
+2026-03-11 17:05:24,344 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 17:05:24,345 [INFO] === Done. 23/27 scraped, 0 with changes. ===
+2026-03-11 17:09:27,669 [INFO] Debug: fetching KVIKA (Kvika banki hf.) from https://kvika.is/fjarfestaupplysingar/?category=shareholderCatalog
+2026-03-11 17:09:28,123 [INFO] Debug: saved raw HTML (675,252 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_KVIKA.html
+2026-03-11 17:09:28,123 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-11 17:09:28,480 [INFO]   -> Found 20 shareholders for KVIKA (HTTP)
+2026-03-11 17:09:28,480 [INFO] Debug: found 20 shareholders:
+2026-03-11 17:09:28,481 [INFO]   # 1  Lífeyrissjóður verzlunarmanna                   9.14%  ( 423,083,679 shares)
+2026-03-11 17:09:28,481 [INFO]   # 2  Gildi - lífeyrissjóður                          7.86%  ( 363,879,756 shares)
+2026-03-11 17:09:28,481 [INFO]   # 3  Lífeyrissj.starfsm.rík. A-deild                 7.78%  ( 360,287,313 shares)
+2026-03-11 17:09:28,481 [INFO]   # 4  Birta lífeyrissjóður                            7.17%  ( 332,072,141 shares)
+2026-03-11 17:09:28,482 [INFO]   # 5  Kvika banki hf.                                 6.31%  ( 292,167,380 shares)
+2026-03-11 17:09:28,482 [INFO]   # 6  Almenni-Lífsverk lífeyrissjóður                 5.14%  ( 237,896,173 shares)
+2026-03-11 17:09:28,482 [INFO]   # 7  Stoðir hf.                                      5.07%  ( 235,000,000 shares)
+2026-03-11 17:09:28,482 [INFO]   # 8  Frjálsi lífeyrissjóðurinn                       2.68%  ( 123,922,448 shares)
+2026-03-11 17:09:28,482 [INFO]   # 9  Stapi lífeyrissjóður                            2.39%  ( 110,909,112 shares)
+2026-03-11 17:09:28,482 [INFO]   #10  Arion banki hf.                                 2.11%  (  97,900,550 shares)
+2026-03-11 17:09:28,482 [INFO]   #11  Lífeyrissj.starfsm.rík. B-deild                 1.45%  (  66,964,445 shares)
+2026-03-11 17:09:28,482 [INFO]   #12  Vanguard Total International S                  1.39%  (  64,199,255 shares)
+2026-03-11 17:09:28,482 [INFO]   #13  Landsbankinn hf.                                1.34%  (  62,117,256 shares)
+2026-03-11 17:09:28,483 [INFO]   #14  Vanguard Emerging Markets Stock                 1.23%  (  56,864,717 shares)
+2026-03-11 17:09:28,483 [INFO]   #15  Landsbréf - Úrvalsbréf hs.                      1.07%  (  49,513,692 shares)
+2026-03-11 17:09:28,483 [INFO]   #16  IS0000034734                                    11.2%  ( 560,000,000 shares)
+2026-03-11 17:09:28,483 [INFO]   #17  IS0000033769                                    10.1%  (2,000,000,000 shares)
+2026-03-11 17:09:28,483 [INFO]   #18  IS0000033694                                     9.1%  (4,500,000,000 shares)
+2026-03-11 17:09:28,483 [INFO]   #19  IS0000033595                                     8.1%  (  11,400,000 shares)
+2026-03-11 17:09:28,483 [INFO]   #20  IS0000033082                                     7.2%  (3,220,000,000 shares)
+2026-03-11 17:11:10,132 [INFO] Debug: fetching KVIKA (Kvika banki hf.) from https://kvika.is/fjarfestaupplysingar/?category=shareholderCatalog
+2026-03-11 17:11:10,665 [INFO] Debug: saved raw HTML (675,252 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_KVIKA.html
+2026-03-11 17:11:10,665 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-11 17:11:11,136 [INFO]   -> Found 15 shareholders for KVIKA (HTTP)
+2026-03-11 17:11:11,136 [INFO] Debug: found 15 shareholders:
+2026-03-11 17:11:11,136 [INFO]   # 1  Lífeyrissjóður verzlunarmanna                   9.14%  ( 423,083,679 shares)
+2026-03-11 17:11:11,136 [INFO]   # 2  Gildi - lífeyrissjóður                          7.86%  ( 363,879,756 shares)
+2026-03-11 17:11:11,136 [INFO]   # 3  Lífeyrissj.starfsm.rík. A-deild                 7.78%  ( 360,287,313 shares)
+2026-03-11 17:11:11,136 [INFO]   # 4  Birta lífeyrissjóður                            7.17%  ( 332,072,141 shares)
+2026-03-11 17:11:11,136 [INFO]   # 5  Kvika banki hf.                                 6.31%  ( 292,167,380 shares)
+2026-03-11 17:11:11,136 [INFO]   # 6  Almenni-Lífsverk lífeyrissjóður                 5.14%  ( 237,896,173 shares)
+2026-03-11 17:11:11,136 [INFO]   # 7  Stoðir hf.                                      5.07%  ( 235,000,000 shares)
+2026-03-11 17:11:11,137 [INFO]   # 8  Frjálsi lífeyrissjóðurinn                       2.68%  ( 123,922,448 shares)
+2026-03-11 17:11:11,137 [INFO]   # 9  Stapi lífeyrissjóður                            2.39%  ( 110,909,112 shares)
+2026-03-11 17:11:11,137 [INFO]   #10  Arion banki hf.                                 2.11%  (  97,900,550 shares)
+2026-03-11 17:11:11,137 [INFO]   #11  Lífeyrissj.starfsm.rík. B-deild                 1.45%  (  66,964,445 shares)
+2026-03-11 17:11:11,137 [INFO]   #12  Vanguard Total International S                  1.39%  (  64,199,255 shares)
+2026-03-11 17:11:11,137 [INFO]   #13  Landsbankinn hf.                                1.34%  (  62,117,256 shares)
+2026-03-11 17:11:11,137 [INFO]   #14  Vanguard Emerging Markets Stock                 1.23%  (  56,864,717 shares)
+2026-03-11 17:11:11,137 [INFO]   #15  Landsbréf - Úrvalsbréf hs.                      1.07%  (  49,513,692 shares)
+2026-03-11 17:11:39,636 [INFO] === XICE Scan 2026-03-11 ===
+2026-03-11 17:11:39,636 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-11 17:11:39,637 [INFO] Starting headless Chrome...
+2026-03-11 17:11:39,637 [INFO] ====== WebDriver manager ======
+2026-03-11 17:11:40,639 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 17:11:40,970 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 17:11:41,266 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 17:11:42,484 [INFO] Headless Chrome ready.
+2026-03-11 17:11:57,991 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-11 17:11:59,992 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-11 17:12:00,492 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-11 17:12:02,493 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-11 17:12:16,553 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-11 17:12:18,553 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-11 17:12:34,104 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-11 17:12:36,105 [INFO] Scraping BRIM (Brim hf.)
+2026-03-11 17:12:36,531 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-11 17:12:38,532 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-11 17:12:53,093 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-11 17:12:55,094 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-11 17:13:02,078 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-11 17:13:02,079 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-11 17:13:04,079 [INFO] Scraping FESTI (Festi hf.)
+2026-03-11 17:13:17,790 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-11 17:13:19,791 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-11 17:13:20,324 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-11 17:13:22,325 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-11 17:13:22,837 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-11 17:13:24,837 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-11 17:13:39,712 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-11 17:13:41,713 [INFO] Skipping ICEAIR (Icelandair Group hf.) - Page shows owner-distribution-by-holding-size, not a top-20 list
+2026-03-11 17:13:43,714 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-11 17:13:43,714 [INFO]   -> Using LiveMarket widget scraper for ICESEA...
+2026-03-11 17:13:58,297 [INFO]   -> Got 21,673 chars from LiveMarket shadow DOM for ICESEA
+2026-03-11 17:13:58,300 [INFO]   -> Found 20 shareholders for ICESEA (LiveMarket widget)
+2026-03-11 17:14:00,300 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-11 17:14:15,221 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-11 17:14:17,221 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-11 17:14:17,222 [INFO]   -> Using LiveMarket widget scraper for ISF...
+2026-03-11 17:14:33,541 [INFO]   -> Got 21,657 chars from LiveMarket shadow DOM for ISF
+2026-03-11 17:14:33,546 [INFO]   -> Found 20 shareholders for ISF (LiveMarket widget)
+2026-03-11 17:14:35,547 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-11 17:14:37,547 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-11 17:14:51,852 [INFO]   -> Found 20 shareholders for KALD (parallel columns)
+2026-03-11 17:14:53,853 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-11 17:14:54,527 [INFO]   -> Found 15 shareholders for KVIKA (HTTP)
+2026-03-11 17:14:56,527 [INFO] Scraping NOVA (Nova hf.)
+2026-03-11 17:14:57,192 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-11 17:14:59,193 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-11 17:15:01,194 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-11 17:15:15,381 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-11 17:15:17,382 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-11 17:15:33,236 [INFO]   -> Found 20 shareholders for SIMINN (Selenium)
+2026-03-11 17:15:35,237 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-11 17:15:48,843 [INFO]   -> Found 20 shareholders for SJOVA (Selenium)
+2026-03-11 17:15:50,843 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-11 17:16:04,143 [INFO]   -> Found 20 shareholders for SKAGI (Selenium)
+2026-03-11 17:16:06,144 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-11 17:16:06,144 [INFO]   -> Using LiveMarket widget scraper for SKEL...
+2026-03-11 17:16:20,859 [INFO]   -> Got 21,936 chars from LiveMarket shadow DOM for SKEL
+2026-03-11 17:16:20,864 [INFO]   -> Found 20 shareholders for SKEL (LiveMarket widget)
+2026-03-11 17:16:22,864 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-11 17:16:22,865 [INFO]   -> Using LiveMarket widget scraper for SVN...
+2026-03-11 17:16:36,607 [INFO]   -> Got 28,847 chars from LiveMarket shadow DOM for SVN
+2026-03-11 17:16:36,613 [INFO]   -> Found 20 shareholders for SVN (LiveMarket widget)
+2026-03-11 17:16:38,613 [INFO] Scraping SYN (Sýn hf.)
+2026-03-11 17:16:39,164 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-11 17:16:43,541 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-11.json
+2026-03-11 17:16:43,542 [INFO] First run - no previous snapshot to diff against.
+2026-03-11 17:16:43,560 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 17:16:43,560 [INFO] === Done. 23/27 scraped, 0 with changes. ===
+2026-03-11 17:18:46,259 [INFO] Debug: fetching ICEAIR (Icelandair Group hf.) from https://www.icelandairgroup.com/investors
+2026-03-11 17:18:46,259 [INFO] Debug: using Selenium for ICEAIR...
+2026-03-11 17:18:46,259 [INFO] Starting headless Chrome...
+2026-03-11 17:18:46,259 [INFO] ====== WebDriver manager ======
+2026-03-11 17:18:47,932 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 17:18:48,255 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 17:18:48,564 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 17:18:49,792 [INFO] Headless Chrome ready.
+2026-03-11 17:19:03,626 [INFO] Debug: saved raw HTML (989,591 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_ICEAIR.html
+2026-03-11 17:19:03,626 [INFO] Skipping ICEAIR (Icelandair Group hf.) - Page shows owner-distribution-by-holding-size, not a top-20 list
+2026-03-11 17:19:05,800 [WARNING] Debug: no shareholders found for ICEAIR.
+2026-03-11 17:19:43,413 [INFO] Debug: fetching ICEAIR (Icelandair Group hf.) from https://www.icelandairgroup.com/investors
+2026-03-11 17:19:43,414 [INFO] Debug: using Selenium for ICEAIR...
+2026-03-11 17:19:43,414 [INFO] Starting headless Chrome...
+2026-03-11 17:19:43,414 [INFO] ====== WebDriver manager ======
+2026-03-11 17:19:44,381 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 17:19:44,679 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 17:19:44,969 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 17:19:46,271 [INFO] Headless Chrome ready.
+2026-03-11 17:20:00,059 [INFO] Debug: saved raw HTML (989,591 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_ICEAIR.html
+2026-03-11 17:20:00,059 [INFO] Scraping ICEAIR (Icelandair Group hf.)
+2026-03-11 17:20:00,059 [INFO]   -> Using LiveMarket widget scraper for ICEAIR...
+2026-03-11 17:20:12,360 [WARNING]   -> Could not find 'Shareholders list' tab for ICEAIR
+2026-03-11 17:20:12,363 [WARNING]   -> No shadow DOM content found for ICEAIR (widget may not have loaded)
+2026-03-11 17:20:12,363 [INFO]   -> LiveMarket widget empty, trying Keldan iframe for ICEAIR...
+2026-03-11 17:20:20,519 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe)
+2026-03-11 17:20:20,519 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe fallback)
+2026-03-11 17:20:22,661 [INFO] Debug: found 20 shareholders:
+2026-03-11 17:20:22,661 [INFO]   # 1  Blue Issuer Designated Activit                  17.2%  (           0 shares)
+2026-03-11 17:20:22,662 [INFO]   # 2  Gildi - lífeyrissjóður                          4.73%  (           0 shares)
+2026-03-11 17:20:22,662 [INFO]   # 3  Almenni-Lífsverk lífeyrissjóður                  4.0%  (           0 shares)
+2026-03-11 17:20:22,662 [INFO]   # 4  Brú Lífeyrissjóður starfs sveit                  3.6%  (           0 shares)
+2026-03-11 17:20:22,663 [INFO]   # 5  Lífeyrissj.starfsm.rík. A-deild                 3.53%  (           0 shares)
+2026-03-11 17:20:22,663 [INFO]   # 6  Fossar markaðir Safnreikningur                  3.13%  (           0 shares)
+2026-03-11 17:20:22,664 [INFO]   # 7  Arion banki hf.                                 2.09%  (           0 shares)
+2026-03-11 17:20:22,664 [INFO]   # 8  Birta lífeyrissjóður                            1.74%  (           0 shares)
+2026-03-11 17:20:22,664 [INFO]   # 9  Sólvöllur ehf.                                  1.61%  (           0 shares)
+2026-03-11 17:20:22,664 [INFO]   #10  Stefnir - Innlend hlutabréf hs.                 1.52%  (           0 shares)
+2026-03-11 17:20:22,664 [INFO]   #11  Lífeyrissjóður verzlunarmanna                   1.25%  (           0 shares)
+2026-03-11 17:20:22,664 [INFO]   #12  Einstaklingur 5                                 1.02%  (           0 shares)
+2026-03-11 17:20:22,665 [INFO]   #13  Arcus Invest ehf.                               1.02%  (           0 shares)
+2026-03-11 17:20:22,665 [INFO]   #14  Landsbréf - Úrvalsbréf hs.                      0.88%  (           0 shares)
+2026-03-11 17:20:22,665 [INFO]   #15  Lífeyrissjóður Vestmannaeyja                    0.87%  (           0 shares)
+2026-03-11 17:20:22,665 [INFO]   #16  Söfnunarsjóður lífeyrisréttinda                 0.82%  (           0 shares)
+2026-03-11 17:20:22,666 [INFO]   #17  Nautica ehf                                     0.75%  (           0 shares)
+2026-03-11 17:20:22,666 [INFO]   #18  Stefnir - ÍS 5 hs.                              0.71%  (           0 shares)
+2026-03-11 17:20:22,666 [INFO]   #19  Frjálsi lífeyrissjóðurinn                        0.7%  (           0 shares)
+2026-03-11 17:20:22,666 [INFO]   #20  Vanguard Total International S                   0.7%  (           0 shares)
+2026-03-11 17:21:41,056 [INFO] === XICE Scan 2026-03-11 ===
+2026-03-11 17:21:41,056 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-11 17:21:41,056 [INFO] Starting headless Chrome...
+2026-03-11 17:21:41,056 [INFO] ====== WebDriver manager ======
+2026-03-11 17:21:42,030 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 17:21:42,323 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-11 17:21:42,615 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-11 17:21:43,841 [INFO] Headless Chrome ready.
+2026-03-11 17:22:00,167 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-11 17:22:02,168 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-11 17:22:02,480 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-11 17:22:04,481 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-11 17:22:19,065 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-11 17:22:21,066 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-11 17:22:36,534 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-11 17:22:38,535 [INFO] Scraping BRIM (Brim hf.)
+2026-03-11 17:22:39,075 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-11 17:22:41,075 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-11 17:22:55,868 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-11 17:22:57,868 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-11 17:23:06,223 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-11 17:23:06,224 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-11 17:23:08,224 [INFO] Scraping FESTI (Festi hf.)
+2026-03-11 17:23:22,098 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-11 17:23:24,099 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-11 17:23:24,706 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-11 17:23:26,707 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-11 17:23:27,277 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-11 17:23:29,277 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-11 17:23:43,939 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-11 17:23:45,940 [INFO] Scraping ICEAIR (Icelandair Group hf.)
+2026-03-11 17:23:45,940 [INFO]   -> Using LiveMarket widget scraper for ICEAIR...
+2026-03-11 17:23:58,711 [WARNING]   -> Could not find 'Shareholders list' tab for ICEAIR
+2026-03-11 17:23:58,715 [WARNING]   -> No shadow DOM content found for ICEAIR (widget may not have loaded)
+2026-03-11 17:23:58,715 [INFO]   -> LiveMarket widget empty, trying Keldan iframe for ICEAIR...
+2026-03-11 17:24:05,017 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe)
+2026-03-11 17:24:05,017 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe fallback)
+2026-03-11 17:24:07,018 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-11 17:24:07,018 [INFO]   -> Using LiveMarket widget scraper for ICESEA...
+2026-03-11 17:24:21,270 [INFO]   -> Got 21,673 chars from LiveMarket shadow DOM for ICESEA
+2026-03-11 17:24:21,275 [INFO]   -> Found 20 shareholders for ICESEA (LiveMarket widget)
+2026-03-11 17:24:23,275 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-11 17:24:38,286 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-11 17:24:40,287 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-11 17:24:40,287 [INFO]   -> Using LiveMarket widget scraper for ISF...
+2026-03-11 17:24:55,042 [INFO]   -> Got 21,632 chars from LiveMarket shadow DOM for ISF
+2026-03-11 17:24:55,045 [INFO]   -> Found 20 shareholders for ISF (LiveMarket widget)
+2026-03-11 17:24:57,046 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-11 17:24:59,047 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-11 17:25:12,866 [INFO]   -> Found 20 shareholders for KALD (parallel columns)
+2026-03-11 17:25:14,867 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-11 17:25:15,575 [INFO]   -> Found 15 shareholders for KVIKA (HTTP)
+2026-03-11 17:25:17,575 [INFO] Scraping NOVA (Nova hf.)
+2026-03-11 17:25:18,274 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-11 17:25:20,275 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-11 17:25:22,276 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-11 17:25:35,857 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-11 17:25:37,858 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-11 17:25:53,032 [INFO]   -> Found 20 shareholders for SIMINN (Selenium)
+2026-03-11 17:25:55,033 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-11 17:26:08,622 [INFO]   -> Found 20 shareholders for SJOVA (Selenium)
+2026-03-11 17:26:10,623 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-11 17:26:23,939 [INFO]   -> Found 20 shareholders for SKAGI (Selenium)
+2026-03-11 17:26:25,940 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-11 17:26:25,940 [INFO]   -> Using LiveMarket widget scraper for SKEL...
+2026-03-11 17:26:39,988 [INFO]   -> Got 21,936 chars from LiveMarket shadow DOM for SKEL
+2026-03-11 17:26:39,991 [INFO]   -> Found 20 shareholders for SKEL (LiveMarket widget)
+2026-03-11 17:26:41,992 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-11 17:26:41,992 [INFO]   -> Using LiveMarket widget scraper for SVN...
+2026-03-11 17:26:55,637 [INFO]   -> Got 28,847 chars from LiveMarket shadow DOM for SVN
+2026-03-11 17:26:55,642 [INFO]   -> Found 20 shareholders for SVN (LiveMarket widget)
+2026-03-11 17:26:57,643 [INFO] Scraping SYN (Sýn hf.)
+2026-03-11 17:26:58,118 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-11 17:27:02,478 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-11.json
+2026-03-11 17:27:02,479 [INFO] First run - no previous snapshot to diff against.
+2026-03-11 17:27:02,497 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 17:27:02,497 [INFO] === Done. 24/27 scraped, 0 with changes. ===
+2026-03-11 17:37:07,377 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 17:38:35,923 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 17:39:04,079 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 17:46:51,972 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-11 17:58:01,036 [ERROR] Email failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-03-11 17:59:05,296 [ERROR] Email failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-03-11 18:00:22,797 [ERROR] Email failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-03-11 18:02:04,618 [ERROR] Email failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-03-11 18:04:48,684 [ERROR] Email failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-03-12 09:12:15,264 [INFO] === XICE Scan 2026-03-12 ===
+2026-03-12 09:12:15,264 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-12 09:12:15,264 [INFO] Starting headless Chrome...
+2026-03-12 09:12:15,264 [INFO] ====== WebDriver manager ======
+2026-03-12 09:12:16,916 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 09:12:17,415 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 09:12:17,732 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 09:12:18,458 [INFO] WebDriver version 145.0.7632.117 selected
+2026-03-12 09:12:18,462 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/145.0.7632.117/win32/chromedriver-win32.zip
+2026-03-12 09:12:18,462 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/145.0.7632.117/win32/chromedriver-win32.zip
+2026-03-12 09:12:18,749 [INFO] Driver downloading response is 200
+2026-03-12 09:12:19,377 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 09:12:19,768 [INFO] Driver has been saved in cache [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117]
+2026-03-12 09:12:24,783 [INFO] Headless Chrome ready.
+2026-03-12 09:12:40,410 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-12 09:12:42,411 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-12 09:12:42,997 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-12 09:12:44,998 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-12 09:12:59,053 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-12 09:13:01,053 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-12 09:13:16,980 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-12 09:13:18,980 [INFO] Scraping BRIM (Brim hf.)
+2026-03-12 09:13:19,445 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-12 09:13:21,446 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-12 09:13:37,264 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-12 09:13:39,265 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-12 09:13:46,693 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-12 09:13:46,693 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-12 09:13:48,694 [INFO] Scraping FESTI (Festi hf.)
+2026-03-12 09:14:02,802 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-12 09:14:04,803 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-12 09:14:05,577 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-12 09:14:07,578 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-12 09:14:08,130 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-12 09:14:10,131 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-12 09:14:25,202 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-12 09:14:27,203 [INFO] Scraping ICEAIR (Icelandair Group hf.)
+2026-03-12 09:14:27,203 [INFO]   -> Using LiveMarket widget scraper for ICEAIR...
+2026-03-12 09:14:40,363 [WARNING]   -> Could not find 'Shareholders list' tab for ICEAIR
+2026-03-12 09:14:40,367 [WARNING]   -> No shadow DOM content found for ICEAIR (widget may not have loaded)
+2026-03-12 09:14:40,367 [INFO]   -> LiveMarket widget empty, trying Keldan iframe for ICEAIR...
+2026-03-12 09:14:46,652 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe)
+2026-03-12 09:14:46,653 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe fallback)
+2026-03-12 09:14:48,653 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-12 09:14:48,654 [INFO]   -> Using LiveMarket widget scraper for ICESEA...
+2026-03-12 09:15:03,650 [INFO]   -> Got 21,800 chars from LiveMarket shadow DOM for ICESEA
+2026-03-12 09:15:03,654 [INFO]   -> Found 20 shareholders for ICESEA (LiveMarket widget)
+2026-03-12 09:15:05,655 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-12 09:15:20,974 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-12 09:15:22,975 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-12 09:15:22,975 [INFO]   -> Using LiveMarket widget scraper for ISF...
+2026-03-12 09:15:39,149 [INFO]   -> Got 21,682 chars from LiveMarket shadow DOM for ISF
+2026-03-12 09:15:39,153 [INFO]   -> Found 20 shareholders for ISF (LiveMarket widget)
+2026-03-12 09:15:41,153 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-12 09:15:43,154 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-12 09:15:56,906 [INFO]   -> Found 20 shareholders for KALD (parallel columns)
+2026-03-12 09:15:58,906 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-12 09:15:59,525 [INFO]   -> Found 15 shareholders for KVIKA (HTTP)
+2026-03-12 09:16:01,526 [INFO] Scraping NOVA (Nova hf.)
+2026-03-12 09:16:02,150 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-12 09:16:04,150 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-12 09:16:06,151 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-12 09:16:20,331 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-12 09:16:22,331 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-12 09:16:37,964 [INFO]   -> Found 20 shareholders for SIMINN (Selenium)
+2026-03-12 09:16:39,965 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-12 09:16:53,748 [INFO]   -> Found 20 shareholders for SJOVA (Selenium)
+2026-03-12 09:16:55,749 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-12 09:17:09,264 [INFO]   -> Found 20 shareholders for SKAGI (Selenium)
+2026-03-12 09:17:11,265 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-12 09:17:11,266 [INFO]   -> Using LiveMarket widget scraper for SKEL...
+2026-03-12 09:17:24,282 [INFO]   -> Got 22,045 chars from LiveMarket shadow DOM for SKEL
+2026-03-12 09:17:24,285 [INFO]   -> Found 20 shareholders for SKEL (LiveMarket widget)
+2026-03-12 09:17:26,286 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-12 09:17:26,286 [INFO]   -> Using LiveMarket widget scraper for SVN...
+2026-03-12 09:17:39,930 [INFO]   -> Got 28,847 chars from LiveMarket shadow DOM for SVN
+2026-03-12 09:17:39,936 [INFO]   -> Found 20 shareholders for SVN (LiveMarket widget)
+2026-03-12 09:17:41,936 [INFO] Scraping SYN (Sýn hf.)
+2026-03-12 09:17:42,316 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-12 09:17:46,645 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-12.json
+2026-03-12 09:17:46,671 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 09:17:46,715 [INFO] Attached dashboard: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 09:18:07,781 [ERROR] Email failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-03-12 09:18:07,783 [INFO] === Done. 24/27 scraped, 1 with changes. ===
+2026-03-12 09:29:29,811 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 09:31:14,113 [INFO] === XICE Scan 2026-03-12 ===
+2026-03-12 09:31:14,113 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-12 09:31:14,113 [INFO] Starting headless Chrome...
+2026-03-12 09:31:14,114 [INFO] ====== WebDriver manager ======
+2026-03-12 09:31:15,695 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 09:31:16,018 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 09:31:16,333 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 09:31:17,660 [INFO] Headless Chrome ready.
+2026-03-12 09:31:35,847 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-12 09:31:37,847 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-12 09:31:40,227 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-12 09:31:42,228 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-12 09:31:56,188 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-12 09:31:58,189 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-12 09:32:13,580 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-12 09:32:15,581 [INFO] Scraping BRIM (Brim hf.)
+2026-03-12 09:32:15,933 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-12 09:32:17,934 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-12 09:32:32,850 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-12 09:32:34,851 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-12 09:32:42,061 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-12 09:32:42,061 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-12 09:32:44,062 [INFO] Scraping FESTI (Festi hf.)
+2026-03-12 09:32:57,871 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-12 09:32:59,872 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-12 09:33:00,453 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-12 09:33:02,454 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-12 09:33:02,966 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-12 09:33:04,966 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-12 09:33:19,838 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-12 09:33:21,839 [INFO] Scraping ICEAIR (Icelandair Group hf.)
+2026-03-12 09:33:21,840 [INFO]   -> Using LiveMarket widget scraper for ICEAIR...
+2026-03-12 09:33:34,555 [WARNING]   -> Could not find 'Shareholders list' tab for ICEAIR
+2026-03-12 09:33:34,558 [WARNING]   -> No shadow DOM content found for ICEAIR (widget may not have loaded)
+2026-03-12 09:33:34,559 [INFO]   -> LiveMarket widget empty, trying Keldan iframe for ICEAIR...
+2026-03-12 09:33:40,927 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe)
+2026-03-12 09:33:40,927 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe fallback)
+2026-03-12 09:33:42,927 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-12 09:33:42,928 [INFO]   -> Using LiveMarket widget scraper for ICESEA...
+2026-03-12 09:33:56,956 [INFO]   -> Got 21,800 chars from LiveMarket shadow DOM for ICESEA
+2026-03-12 09:33:56,959 [INFO]   -> Found 20 shareholders for ICESEA (LiveMarket widget)
+2026-03-12 09:33:58,959 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-12 09:34:14,115 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-12 09:34:16,116 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-12 09:34:16,116 [INFO]   -> Using LiveMarket widget scraper for ISF...
+2026-03-12 09:34:31,888 [INFO]   -> Got 21,682 chars from LiveMarket shadow DOM for ISF
+2026-03-12 09:34:31,892 [INFO]   -> Found 20 shareholders for ISF (LiveMarket widget)
+2026-03-12 09:34:33,893 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-12 09:34:35,894 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-12 09:34:49,639 [INFO]   -> Found 20 shareholders for KALD (parallel columns)
+2026-03-12 09:34:51,639 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-12 09:34:52,165 [INFO]   -> Found 15 shareholders for KVIKA (HTTP)
+2026-03-12 09:34:54,166 [INFO] Scraping NOVA (Nova hf.)
+2026-03-12 09:34:54,813 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-12 09:34:56,813 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-12 09:34:58,814 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-12 09:35:12,274 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-12 09:35:14,275 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-12 09:35:28,946 [INFO]   -> Found 20 shareholders for SIMINN (Selenium)
+2026-03-12 09:35:30,947 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-12 09:35:44,660 [INFO]   -> Found 20 shareholders for SJOVA (Selenium)
+2026-03-12 09:35:46,661 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-12 09:36:00,154 [INFO]   -> Found 20 shareholders for SKAGI (Selenium)
+2026-03-12 09:36:02,155 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-12 09:36:02,156 [INFO]   -> Using LiveMarket widget scraper for SKEL...
+2026-03-12 09:36:14,794 [INFO]   -> Got 22,045 chars from LiveMarket shadow DOM for SKEL
+2026-03-12 09:36:14,796 [INFO]   -> Found 20 shareholders for SKEL (LiveMarket widget)
+2026-03-12 09:36:16,797 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-12 09:36:16,797 [INFO]   -> Using LiveMarket widget scraper for SVN...
+2026-03-12 09:36:30,792 [INFO]   -> Got 28,847 chars from LiveMarket shadow DOM for SVN
+2026-03-12 09:36:30,796 [INFO]   -> Found 20 shareholders for SVN (LiveMarket widget)
+2026-03-12 09:36:32,797 [INFO] Scraping SYN (Sýn hf.)
+2026-03-12 09:36:33,166 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-12 09:36:37,452 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-12.json
+2026-03-12 09:36:37,468 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 09:36:37,509 [INFO] Attached dashboard: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 09:36:58,558 [ERROR] Email failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-03-12 09:36:58,560 [INFO] === Done. 24/27 scraped, 1 with changes. ===
+2026-03-12 09:43:49,801 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 09:50:18,498 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 09:53:58,024 [INFO] === XICE Scan 2026-03-12 ===
+2026-03-12 09:53:58,025 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-12 09:53:58,025 [INFO] Starting headless Chrome...
+2026-03-12 09:53:58,025 [INFO] ====== WebDriver manager ======
+2026-03-12 09:53:59,106 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 09:53:59,427 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 09:53:59,732 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 09:54:00,922 [INFO] Headless Chrome ready.
+2026-03-12 09:54:18,352 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-12 09:54:20,353 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-12 09:54:20,667 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-12 09:54:22,668 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-12 09:54:37,190 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-12 09:54:39,191 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-12 09:54:55,684 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-12 09:54:57,685 [INFO] Scraping BRIM (Brim hf.)
+2026-03-12 09:54:58,008 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-12 09:55:00,009 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-12 09:55:15,542 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-12 09:55:17,542 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-12 09:55:24,918 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-12 09:55:24,918 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-12 09:55:26,919 [INFO] Scraping FESTI (Festi hf.)
+2026-03-12 09:55:42,202 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-12 09:55:44,203 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-12 09:55:44,934 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-12 09:55:46,935 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-12 09:55:47,481 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-12 09:55:49,482 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-12 09:56:04,522 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-12 09:56:06,524 [INFO] Scraping ICEAIR (Icelandair Group hf.)
+2026-03-12 09:56:06,524 [INFO]   -> Using LiveMarket widget scraper for ICEAIR...
+2026-03-12 09:56:19,938 [WARNING]   -> Could not find 'Shareholders list' tab for ICEAIR
+2026-03-12 09:56:19,942 [WARNING]   -> No shadow DOM content found for ICEAIR (widget may not have loaded)
+2026-03-12 09:56:19,943 [INFO]   -> LiveMarket widget empty, trying Keldan iframe for ICEAIR...
+2026-03-12 09:56:26,352 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe)
+2026-03-12 09:56:26,352 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe fallback)
+2026-03-12 09:56:28,353 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-12 09:56:28,353 [INFO]   -> Using LiveMarket widget scraper for ICESEA...
+2026-03-12 09:56:41,826 [INFO]   -> Got 21,800 chars from LiveMarket shadow DOM for ICESEA
+2026-03-12 09:56:41,830 [INFO]   -> Found 20 shareholders for ICESEA (LiveMarket widget)
+2026-03-12 09:56:43,830 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-12 09:57:00,936 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-12 09:57:02,937 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-12 09:57:02,937 [INFO]   -> Using LiveMarket widget scraper for ISF...
+2026-03-12 09:57:18,210 [INFO]   -> Got 21,657 chars from LiveMarket shadow DOM for ISF
+2026-03-12 09:57:18,214 [INFO]   -> Found 20 shareholders for ISF (LiveMarket widget)
+2026-03-12 09:57:20,215 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-12 09:57:22,215 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-12 09:57:35,978 [INFO]   -> Found 20 shareholders for KALD (parallel columns)
+2026-03-12 09:57:37,979 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-12 09:57:38,621 [INFO]   -> Found 15 shareholders for KVIKA (HTTP)
+2026-03-12 09:57:40,621 [INFO] Scraping NOVA (Nova hf.)
+2026-03-12 09:57:41,353 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-12 09:57:43,353 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-12 09:57:45,354 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-12 09:57:59,148 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-12 09:58:01,148 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-12 09:58:16,433 [INFO]   -> Found 20 shareholders for SIMINN (Selenium)
+2026-03-12 09:58:18,434 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-12 09:58:32,222 [INFO]   -> Found 20 shareholders for SJOVA (Selenium)
+2026-03-12 09:58:34,223 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-12 09:58:47,842 [INFO]   -> Found 20 shareholders for SKAGI (Selenium)
+2026-03-12 09:58:49,843 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-12 09:58:49,843 [INFO]   -> Using LiveMarket widget scraper for SKEL...
+2026-03-12 09:59:02,818 [INFO]   -> Got 22,045 chars from LiveMarket shadow DOM for SKEL
+2026-03-12 09:59:02,822 [INFO]   -> Found 20 shareholders for SKEL (LiveMarket widget)
+2026-03-12 09:59:04,822 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-12 09:59:04,823 [INFO]   -> Using LiveMarket widget scraper for SVN...
+2026-03-12 09:59:18,500 [INFO]   -> Got 28,822 chars from LiveMarket shadow DOM for SVN
+2026-03-12 09:59:18,504 [INFO]   -> Found 20 shareholders for SVN (LiveMarket widget)
+2026-03-12 09:59:20,504 [INFO] Scraping SYN (Sýn hf.)
+2026-03-12 09:59:20,889 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-12 09:59:25,271 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-12.json
+2026-03-12 09:59:25,289 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 09:59:25,330 [INFO] Attached dashboard: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 09:59:46,393 [ERROR] Email failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-03-12 09:59:46,396 [INFO] === Done. 24/27 scraped, 1 with changes. ===
+2026-03-12 10:00:33,461 [INFO] === XICE Scan 2026-03-12 ===
+2026-03-12 10:00:33,461 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-12 10:00:33,461 [INFO] Starting headless Chrome...
+2026-03-12 10:00:33,461 [INFO] ====== WebDriver manager ======
+2026-03-12 10:00:34,477 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 10:00:34,799 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 10:00:35,124 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 10:00:36,336 [INFO] Headless Chrome ready.
+2026-03-12 10:00:53,167 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-12 10:00:55,167 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-12 10:00:55,539 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-12 10:00:57,540 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-12 10:01:11,174 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-12 10:01:13,175 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-12 10:01:28,234 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-12 10:01:30,235 [INFO] Scraping BRIM (Brim hf.)
+2026-03-12 10:01:30,656 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-12 10:01:32,657 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-12 10:01:46,997 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-12 10:01:48,998 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-12 10:01:56,418 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-12 10:01:56,418 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-12 10:01:58,419 [INFO] Scraping FESTI (Festi hf.)
+2026-03-12 10:02:12,090 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-12 10:02:14,091 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-12 10:02:14,649 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-12 10:02:16,650 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-12 10:02:17,195 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-12 10:02:19,195 [INFO] Scraping HEIMAR (Heimavellir hf.)
+2026-03-12 10:02:35,201 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-12 10:02:37,203 [INFO] Scraping ICEAIR (Icelandair Group hf.)
+2026-03-12 10:02:37,204 [INFO]   -> Using LiveMarket widget scraper for ICEAIR...
+2026-03-12 10:02:50,218 [WARNING]   -> Could not find 'Shareholders list' tab for ICEAIR
+2026-03-12 10:02:50,223 [WARNING]   -> No shadow DOM content found for ICEAIR (widget may not have loaded)
+2026-03-12 10:02:50,223 [INFO]   -> LiveMarket widget empty, trying Keldan iframe for ICEAIR...
+2026-03-12 10:02:56,580 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe)
+2026-03-12 10:02:56,580 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe fallback)
+2026-03-12 10:02:58,581 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-12 10:02:58,582 [INFO]   -> Using LiveMarket widget scraper for ICESEA...
+2026-03-12 10:03:13,107 [INFO]   -> Got 21,776 chars from LiveMarket shadow DOM for ICESEA
+2026-03-12 10:03:13,111 [INFO]   -> Found 20 shareholders for ICESEA (LiveMarket widget)
+2026-03-12 10:03:15,112 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-12 10:03:31,003 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-12 10:03:33,004 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-12 10:03:33,004 [INFO]   -> Using LiveMarket widget scraper for ISF...
+2026-03-12 10:03:48,477 [INFO]   -> Got 21,658 chars from LiveMarket shadow DOM for ISF
+2026-03-12 10:03:48,481 [INFO]   -> Found 20 shareholders for ISF (LiveMarket widget)
+2026-03-12 10:03:50,482 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-12 10:03:52,483 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-12 10:04:07,733 [INFO]   -> Found 20 shareholders for KALD (parallel columns)
+2026-03-12 10:04:09,734 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-12 10:04:10,597 [INFO]   -> Found 15 shareholders for KVIKA (HTTP)
+2026-03-12 10:04:12,598 [INFO] Scraping NOVA (Nova hf.)
+2026-03-12 10:04:13,306 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-12 10:04:15,307 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-12 10:04:17,308 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-12 10:04:30,899 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-12 10:04:32,900 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-12 10:04:47,555 [INFO]   -> Found 20 shareholders for SIMINN (Selenium)
+2026-03-12 10:04:49,556 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-12 10:05:03,187 [INFO]   -> Found 20 shareholders for SJOVA (Selenium)
+2026-03-12 10:05:05,188 [INFO] Scraping SKAGI (Skaginn 3X hf.)
+2026-03-12 10:05:18,560 [INFO]   -> Found 20 shareholders for SKAGI (Selenium)
+2026-03-12 10:05:20,561 [INFO] Scraping SKEL (Skeljungur hf.)
+2026-03-12 10:05:20,561 [INFO]   -> Using LiveMarket widget scraper for SKEL...
+2026-03-12 10:05:34,400 [INFO]   -> Got 22,021 chars from LiveMarket shadow DOM for SKEL
+2026-03-12 10:05:34,402 [INFO]   -> Found 20 shareholders for SKEL (LiveMarket widget)
+2026-03-12 10:05:36,403 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-12 10:05:36,403 [INFO]   -> Using LiveMarket widget scraper for SVN...
+2026-03-12 10:05:52,985 [INFO]   -> Got 28,848 chars from LiveMarket shadow DOM for SVN
+2026-03-12 10:05:52,990 [INFO]   -> Found 20 shareholders for SVN (LiveMarket widget)
+2026-03-12 10:05:54,991 [INFO] Scraping SYN (Sýn hf.)
+2026-03-12 10:05:55,507 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-12 10:05:59,888 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-12.json
+2026-03-12 10:05:59,907 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 10:05:59,946 [INFO] Attached dashboard: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 10:06:21,008 [ERROR] Email failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-03-12 10:06:21,009 [INFO] === Done. 24/27 scraped, 1 with changes. ===
+2026-03-12 10:12:41,667 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 10:20:18,779 [INFO] === XICE Scan 2026-03-12 ===
+2026-03-12 10:20:18,780 [INFO] Scraping ALVO (Alvotech hf.)
+2026-03-12 10:20:18,780 [INFO] Starting headless Chrome...
+2026-03-12 10:20:18,780 [INFO] ====== WebDriver manager ======
+2026-03-12 10:20:20,453 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 10:20:20,931 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 10:20:21,239 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 10:20:22,621 [INFO] Headless Chrome ready.
+2026-03-12 10:20:38,219 [INFO]   -> Found 20 shareholders for ALVO (Selenium)
+2026-03-12 10:20:40,219 [INFO] Scraping AMRQ (Amaroq Minerals Ltd.)
+2026-03-12 10:20:40,576 [INFO]   -> Found 7 shareholders for AMRQ (HTTP)
+2026-03-12 10:20:42,576 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-12 10:20:56,538 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-12 10:20:58,538 [INFO] Scraping BERA (Bera (Ölgerðin Egill Skallagrímsson hf.))
+2026-03-12 10:21:13,845 [WARNING]   -> Selenium loaded page but no shareholders parsed for BERA
+2026-03-12 10:21:15,846 [INFO] Scraping BRIM (Brim hf.)
+2026-03-12 10:21:16,265 [INFO]   -> Found 20 shareholders for BRIM (HTTP)
+2026-03-12 10:21:18,265 [INFO] Scraping EIK (Eik fasteignafélag hf.)
+2026-03-12 10:21:32,690 [INFO]   -> Found 20 shareholders for EIK (Selenium)
+2026-03-12 10:21:34,690 [INFO] Scraping EIM (Eimskipafélag Íslands hf.)
+2026-03-12 10:21:42,157 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-12 10:21:42,158 [INFO]   -> Found 20 shareholders for EIM (Keldan iframe)
+2026-03-12 10:21:44,159 [INFO] Scraping FESTI (Festi hf.)
+2026-03-12 10:21:57,974 [INFO]   -> Found 20 shareholders for FESTI (Selenium)
+2026-03-12 10:21:59,975 [INFO] Scraping HAGA (Hagar hf.)
+2026-03-12 10:22:00,516 [INFO]   -> Found 20 shareholders for HAGA (HTTP)
+2026-03-12 10:22:02,516 [INFO] Scraping HAMP (Hampiðjan hf.)
+2026-03-12 10:22:03,111 [INFO]   -> Found 20 shareholders for HAMP (HTTP)
+2026-03-12 10:22:05,111 [INFO] Scraping HEIMAR (Heimar hf.)
+2026-03-12 10:22:19,927 [INFO]   -> Found 20 shareholders for HEIMAR (Selenium)
+2026-03-12 10:22:21,929 [INFO] Scraping ICEAIR (Icelandair Group hf.)
+2026-03-12 10:22:21,930 [INFO]   -> Using LiveMarket widget scraper for ICEAIR...
+2026-03-12 10:22:34,821 [WARNING]   -> Could not find 'Shareholders list' tab for ICEAIR
+2026-03-12 10:22:34,825 [WARNING]   -> No shadow DOM content found for ICEAIR (widget may not have loaded)
+2026-03-12 10:22:34,825 [INFO]   -> LiveMarket widget empty, trying Keldan iframe for ICEAIR...
+2026-03-12 10:22:41,109 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe)
+2026-03-12 10:22:41,109 [INFO]   -> Found 20 shareholders for ICEAIR (Keldan iframe fallback)
+2026-03-12 10:22:43,110 [INFO] Scraping ICESEA (Iceland Seafood International hf.)
+2026-03-12 10:22:43,111 [INFO]   -> Using LiveMarket widget scraper for ICESEA...
+2026-03-12 10:22:57,427 [INFO]   -> Got 21,751 chars from LiveMarket shadow DOM for ICESEA
+2026-03-12 10:22:57,432 [INFO]   -> Found 20 shareholders for ICESEA (LiveMarket widget)
+2026-03-12 10:22:59,433 [INFO] Scraping ISB (Íslandsbanki hf.)
+2026-03-12 10:23:14,400 [INFO]   -> Found 13 shareholders for ISB (Selenium)
+2026-03-12 10:23:16,401 [INFO] Scraping ISF (Ísfélag hf.)
+2026-03-12 10:23:16,401 [INFO]   -> Using LiveMarket widget scraper for ISF...
+2026-03-12 10:23:32,294 [INFO]   -> Got 21,658 chars from LiveMarket shadow DOM for ISF
+2026-03-12 10:23:32,299 [INFO]   -> Found 20 shareholders for ISF (LiveMarket widget)
+2026-03-12 10:23:34,299 [INFO] Skipping JBTM (JBT Marel Corporation) - no URL
+2026-03-12 10:23:36,300 [INFO] Scraping KALD (Kaldalón hf.)
+2026-03-12 10:23:50,066 [INFO]   -> Found 20 shareholders for KALD (parallel columns)
+2026-03-12 10:23:52,066 [INFO] Scraping KVIKA (Kvika banki hf.)
+2026-03-12 10:23:52,600 [INFO]   -> Found 15 shareholders for KVIKA (HTTP)
+2026-03-12 10:23:54,600 [INFO] Scraping NOVA (Nova hf.)
+2026-03-12 10:23:55,272 [INFO]   -> Found 20 shareholders for NOVA (HTTP)
+2026-03-12 10:23:57,272 [INFO] Skipping OCS (Oculis Holding AG) - no URL
+2026-03-12 10:23:59,274 [INFO] Scraping REITIR (Reitir fasteignafélag hf.)
+2026-03-12 10:24:12,841 [INFO]   -> Found 20 shareholders for REITIR (Selenium)
+2026-03-12 10:24:14,843 [INFO] Scraping SIMINN (Síminn hf.)
+2026-03-12 10:24:29,674 [INFO]   -> Found 20 shareholders for SIMINN (Selenium)
+2026-03-12 10:24:31,674 [INFO] Scraping SJOVA (Sjóvá-Almennar tryggingar hf.)
+2026-03-12 10:24:45,369 [INFO]   -> Found 20 shareholders for SJOVA (Selenium)
+2026-03-12 10:24:47,370 [INFO] Scraping SKAGI (Skagi hf.)
+2026-03-12 10:25:00,685 [INFO]   -> Found 20 shareholders for SKAGI (Selenium)
+2026-03-12 10:25:02,686 [INFO] Scraping SKEL (Skel fjárfestingafélag hf.)
+2026-03-12 10:25:02,686 [INFO]   -> Using LiveMarket widget scraper for SKEL...
+2026-03-12 10:25:15,292 [INFO]   -> Got 22,021 chars from LiveMarket shadow DOM for SKEL
+2026-03-12 10:25:15,295 [INFO]   -> Found 20 shareholders for SKEL (LiveMarket widget)
+2026-03-12 10:25:17,296 [INFO] Scraping SVN (Síldarvinnslan hf.)
+2026-03-12 10:25:17,296 [INFO]   -> Using LiveMarket widget scraper for SVN...
+2026-03-12 10:25:34,250 [INFO]   -> Got 28,848 chars from LiveMarket shadow DOM for SVN
+2026-03-12 10:25:34,254 [INFO]   -> Found 20 shareholders for SVN (LiveMarket widget)
+2026-03-12 10:25:36,255 [INFO] Scraping SYN (Sýn hf.)
+2026-03-12 10:25:36,649 [INFO]   -> Found 20 shareholders for SYN (HTTP)
+2026-03-12 10:25:41,023 [INFO] Snapshot saved: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\data\snapshots\2026-03-12.json
+2026-03-12 10:25:41,045 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 10:25:41,166 [INFO] Attached dashboard: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 10:26:02,228 [ERROR] Email failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-03-12 10:26:02,229 [INFO] === Done. 24/27 scraped, 1 with changes. ===
+2026-03-12 10:26:11,119 [INFO] Dashboard generated: C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\dashboard\index.html
+2026-03-12 11:36:03,261 [INFO] Debug: fetching ARION (Arion banki hf.) from https://www.arionbanki.is/bankinn/fjarfestar/hlutabref/hluthafalisti/
+2026-03-12 11:36:03,261 [INFO] Debug: using Selenium for ARION...
+2026-03-12 11:36:03,261 [INFO] Starting headless Chrome...
+2026-03-12 11:36:03,261 [INFO] ====== WebDriver manager ======
+2026-03-12 11:36:04,296 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 11:36:04,659 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-12 11:36:04,965 [INFO] Driver [C:\Users\tryggvi.bergstad\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 11:36:06,278 [INFO] Headless Chrome ready.
+2026-03-12 11:36:20,413 [INFO] Debug: saved raw HTML (186,090 chars) to C:\Users\tryggvi.bergstad\Desktop\xice-shareholder-tracker\debug_ARION.html
+2026-03-12 11:36:20,413 [INFO] Scraping ARION (Arion banki hf.)
+2026-03-12 11:36:33,810 [INFO]   -> Found 16 shareholders for ARION (Selenium)
+2026-03-12 11:36:35,983 [INFO] Debug: found 16 shareholders:
+2026-03-12 11:36:35,984 [INFO]   # 1  Gildi Pension Fund                              9.51%  ( 135,065,033 shares)
+2026-03-12 11:36:35,984 [INFO]   # 2  Live Pension Fund                               9.38%  ( 133,195,490 shares)
+2026-03-12 11:36:35,985 [INFO]   # 3  LSR Pension Fund                                9.07%  ( 128,747,402 shares)
+2026-03-12 11:36:35,985 [INFO]   # 4  Stoðir hf.                                      5.07%  (  72,000,000 shares)
+2026-03-12 11:36:35,985 [INFO]   # 5  Brú Pension Fund                                5.05%  (  71,704,804 shares)
+2026-03-12 11:36:35,986 [INFO]   # 6  Vanguard                                        4.06%  (  57,707,440 shares)
+2026-03-12 11:36:35,986 [INFO]   # 7  Frjálsi Pension Fund                            3.92%  (  55,684,104 shares)
+2026-03-12 11:36:35,986 [INFO]   # 8  Almenni-Lífsverk Pension Fund                   3.52%  (  49,914,881 shares)
+2026-03-12 11:36:35,986 [INFO]   # 9  Arion banki hf.                                 3.44%  (  48,862,884 shares)
+2026-03-12 11:36:35,987 [INFO]   #10  Birta Pension Fund                              2.95%  (  41,927,444 shares)
+2026-03-12 11:36:35,987 [INFO]   #11  Stapi Pension Fund                              2.74%  (  38,879,849 shares)
+2026-03-12 11:36:35,987 [INFO]   #12  Festa Pension Fund                              2.61%  (  37,101,422 shares)
+2026-03-12 11:36:35,987 [INFO]   #13  Hvalur hf.                                      2.59%  (  36,771,350 shares)
+2026-03-12 11:36:35,987 [INFO]   #14  Íslandsbanki hf.                                1.68%  (  23,907,490 shares)
+2026-03-12 11:36:35,988 [INFO]   #15  Stefnir Funds                                   1.53%  (  21,773,291 shares)
+2026-03-12 11:36:35,988 [INFO]   #16  Landsbréf hf.                                   1.07%  (  15,134,699 shares)
