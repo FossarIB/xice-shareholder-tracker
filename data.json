@@ -1,6 +1,6 @@
 {
   "date": "2026-03-13",
-  "generated_at": "2026-03-13T10:50:35.520351+00:00",
+  "generated_at": "2026-03-13T14:46:38.119625+00:00",
   "companies": [
     {
       "ticker": "ALVO",
@@ -1073,8 +1073,8 @@
         },
         {
           "name": "Brú lífeyrissjóður",
-          "shares": 144132949,
-          "pct": 7.13,
+          "shares": 143132949,
+          "pct": 7.08,
           "rank": 4
         },
         {
@@ -1103,20 +1103,20 @@
         },
         {
           "name": "Sigla ehf.",
-          "shares": 65000000,
-          "pct": 3.21,
+          "shares": 67000000,
+          "pct": 3.31,
           "rank": 9
+        },
+        {
+          "name": "Heimar hf.",
+          "shares": 64643000,
+          "pct": 3.2,
+          "rank": 10
         },
         {
           "name": "Almenni - Lífsverk lífeyrissjóður",
           "shares": 64498644,
           "pct": 3.19,
-          "rank": 10
-        },
-        {
-          "name": "Heimar hf.",
-          "shares": 62423000,
-          "pct": 3.09,
           "rank": 11
         },
         {
@@ -1139,8 +1139,8 @@
         },
         {
           "name": "Íslandsbanki hf.",
-          "shares": 48107881,
-          "pct": 2.38,
+          "shares": 48728253,
+          "pct": 2.41,
           "rank": 15
         },
         {
@@ -1150,15 +1150,15 @@
           "rank": 16
         },
         {
-          "name": "Stefnir hf.",
-          "shares": 34706448,
-          "pct": 1.72,
+          "name": "Arion banki hf.",
+          "shares": 35436766,
+          "pct": 1.75,
           "rank": 17
         },
         {
-          "name": "Arion banki hf.",
-          "shares": 30436766,
-          "pct": 1.51,
+          "name": "Stefnir hf.",
+          "shares": 28976448,
+          "pct": 1.43,
           "rank": 18
         },
         {
@@ -3841,8 +3841,8 @@
           },
           {
             "name": "Brú lífeyrissjóður",
-            "shares": 144132949,
-            "pct": 7.13,
+            "shares": 143132949,
+            "pct": 7.08,
             "rank": 4
           },
           {
@@ -3871,20 +3871,20 @@
           },
           {
             "name": "Sigla ehf.",
-            "shares": 65000000,
-            "pct": 3.21,
+            "shares": 67000000,
+            "pct": 3.31,
             "rank": 9
+          },
+          {
+            "name": "Heimar hf.",
+            "shares": 64643000,
+            "pct": 3.2,
+            "rank": 10
           },
           {
             "name": "Almenni - Lífsverk lífeyrissjóður",
             "shares": 64498644,
             "pct": 3.19,
-            "rank": 10
-          },
-          {
-            "name": "Heimar hf.",
-            "shares": 62423000,
-            "pct": 3.09,
             "rank": 11
           },
           {
@@ -3907,8 +3907,8 @@
           },
           {
             "name": "Íslandsbanki hf.",
-            "shares": 48107881,
-            "pct": 2.38,
+            "shares": 48728253,
+            "pct": 2.41,
             "rank": 15
           },
           {
@@ -3918,15 +3918,15 @@
             "rank": 16
           },
           {
-            "name": "Stefnir hf.",
-            "shares": 34706448,
-            "pct": 1.72,
+            "name": "Arion banki hf.",
+            "shares": 35436766,
+            "pct": 1.75,
             "rank": 17
           },
           {
-            "name": "Arion banki hf.",
-            "shares": 30436766,
-            "pct": 1.51,
+            "name": "Stefnir hf.",
+            "shares": 28976448,
+            "pct": 1.43,
             "rank": 18
           },
           {
