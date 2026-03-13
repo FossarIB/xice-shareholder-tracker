@@ -55,7 +55,7 @@ except ImportError:
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 SNAPSHOTS_DIR = DATA_DIR / "snapshots"
-DASHBOARD_DIR = BASE_DIR
+DASHBOARD_DIR = BASE_DIR / "dashboard"
 CONFIG_PATH = BASE_DIR / "config.yaml"
 LOG_PATH = BASE_DIR / "tracker.log"
 
@@ -983,7 +983,12 @@ DASHBOARD_HTML = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 .company-card-header .name{font-size:13px;color:var(--text-muted);max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .company-card-body{padding:14px 20px}.shareholder-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;font-size:13px;border-bottom:1px solid rgba(255,255,255,.03)}
 .shareholder-row:last-child{border-bottom:none}.shareholder-row .rank{color:var(--text-muted);font-family:'JetBrains Mono',monospace;font-size:11px;width:24px}
-.shareholder-row .sh-name{flex:1;padding:0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.shareholder-row .pct{font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--accent);font-size:12px}
+.shareholder-row .sh-name{flex:1;padding:0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;transition:color .15s}.shareholder-row .sh-name:hover{color:var(--accent);text-decoration:underline}.shareholder-row .pct{font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--accent);font-size:12px}
+.sh-profile-section{margin-bottom:20px}.sh-profile-section h3{font-size:14px;font-weight:600;margin-bottom:10px;color:var(--text)}.sh-profile-section h3 .sh-section-badge{font-size:11px;font-weight:700;font-family:'JetBrains Mono',monospace;margin-left:8px;padding:2px 8px;border-radius:4px}
+.sh-holding-card{background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:14px 18px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.sh-holding-left{display:flex;align-items:center;gap:12px}.sh-holding-ticker{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--accent);font-size:14px;min-width:60px}.sh-holding-name{font-size:13px;color:var(--text-muted)}
+.sh-holding-right{display:flex;align-items:center;gap:16px;font-family:'JetBrains Mono',monospace;font-size:13px}.sh-holding-pct{font-weight:700;color:var(--accent)}.sh-holding-rank{color:var(--text-muted);font-size:11px}
+.sh-timeline{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}.sh-timeline-dot{font-size:11px;font-family:'JetBrains Mono',monospace;padding:2px 6px;border-radius:4px;background:var(--surface);border:1px solid var(--border)}
 .no-data{color:var(--text-muted);font-style:italic;font-size:13px;padding:12px 0}
 .controls{display:flex;gap:12px;margin-bottom:24px}.search-input{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 16px;color:var(--text);font-size:14px;width:300px;outline:none}
 .search-input:focus{border-color:var(--accent)}.search-input::placeholder{color:var(--text-muted)}
@@ -1033,9 +1038,9 @@ h+='</div></div>';cs.innerHTML=h}else{cs.innerHTML='<div class="panel"><div clas
 renderGrid(d.companies);document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.toLowerCase();renderGrid(d.companies.filter(c=>c.ticker.toLowerCase().includes(q)||c.name.toLowerCase().includes(q)||c.shareholders.some(s=>s.name.toLowerCase().includes(q))))})}
 function renderGrid(cs){const g=document.getElementById('company-grid');if(!cs.length){g.innerHTML='<div class="empty-state"><p>No matches.</p></div>';return}
 _cardData={};
-g.innerHTML=cs.map((c,i)=>{const id='card-'+i;_cardData[id]={shareholders:c.shareholders,ticker:c.ticker,name:c.name};const hasMore=c.shareholders.length>10;return'<div class="company-card"><div class="company-card-header" data-card="'+id+'"><span class="ticker">'+c.ticker+'</span><span class="name" title="'+c.name.replace(/"/g,'&quot;')+'">'+c.name+'</span></div><div class="company-card-body"><div id="'+id+'-rows">'+( c.shareholders.length?c.shareholders.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join(''):'<div class="no-data">No data available</div>')+'</div>'+(hasMore?'<div class="toggle-row" data-toggle="'+id+'" data-expanded="0" style="text-align:center;color:var(--accent);font-size:12px;cursor:pointer;user-select:none;padding:8px 0">&#9660; Show all '+c.shareholders.length+'</div>':'')+'</div></div>'}).join('')}
-document.getElementById('company-grid').addEventListener('click',function(e){var hdr=e.target.closest('.company-card-header');if(hdr&&hdr.dataset.card){var d=_cardData[hdr.dataset.card];if(d)openHistory(d.ticker,d.name);return}var tog=e.target.closest('.toggle-row');if(tog&&tog.dataset.toggle){toggleCard(tog,tog.dataset.toggle)}});
-function toggleCard(el,id){var d=_cardData[id];if(!d)return;var sh=d.shareholders;var rows=document.getElementById(id+'-rows');var expanded=el.getAttribute('data-expanded')==='1';if(expanded){rows.innerHTML=sh.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join('');el.innerHTML='&#9660; Show all '+sh.length;el.setAttribute('data-expanded','0')}else{rows.innerHTML=sh.map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join('');el.innerHTML='&#9650; Show less';el.setAttribute('data-expanded','1')}}
+g.innerHTML=cs.map((c,i)=>{const id='card-'+i;_cardData[id]={shareholders:c.shareholders,ticker:c.ticker,name:c.name};const hasMore=c.shareholders.length>10;return'<div class="company-card"><div class="company-card-header" data-card="'+id+'"><span class="ticker">'+c.ticker+'</span><span class="name" title="'+c.name.replace(/"/g,'&quot;')+'">'+c.name+'</span></div><div class="company-card-body"><div id="'+id+'-rows">'+( c.shareholders.length?c.shareholders.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join(''):'<div class="no-data">No data available</div>')+'</div>'+(hasMore?'<div class="toggle-row" data-toggle="'+id+'" data-expanded="0" style="text-align:center;color:var(--accent);font-size:12px;cursor:pointer;user-select:none;padding:8px 0">&#9660; Show all '+c.shareholders.length+'</div>':'')+'</div></div>'}).join('')}
+document.getElementById('company-grid').addEventListener('click',function(e){var shEl=e.target.closest('.sh-name[data-sh]');if(shEl){e.stopPropagation();openShareholderProfile(shEl.dataset.sh);return}var hdr=e.target.closest('.company-card-header');if(hdr&&hdr.dataset.card){var d=_cardData[hdr.dataset.card];if(d)openHistory(d.ticker,d.name);return}var tog=e.target.closest('.toggle-row');if(tog&&tog.dataset.toggle){toggleCard(tog,tog.dataset.toggle)}});
+function toggleCard(el,id){var d=_cardData[id];if(!d)return;var sh=d.shareholders;var rows=document.getElementById(id+'-rows');var expanded=el.getAttribute('data-expanded')==='1';if(expanded){rows.innerHTML=sh.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join('');el.innerHTML='&#9660; Show all '+sh.length;el.setAttribute('data-expanded','0')}else{rows.innerHTML=sh.map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join('');el.innerHTML='&#9650; Show less';el.setAttribute('data-expanded','1')}}
 function openHistory(ticker,name){if(!_allData||!_allData.history||_allData.history.length<1)return;
 document.getElementById('modal-title').textContent=name;document.getElementById('modal-ticker').textContent=ticker;
 const hist=_allData.history.filter(h=>h.companies&&h.companies[ticker]&&h.companies[ticker].length>0);
@@ -1048,6 +1053,41 @@ sh.forEach((s,idx)=>{let deltaHtml='';if(prevSh){if(prevMap[s.name]!==undefined)
 html+=`<tr><td style="color:var(--text-muted);font-family:'JetBrains Mono',monospace;font-size:11px">${idx+1}</td><td>${s.name}</td><td class="pct-cell">${s.pct}%</td>${deltaHtml}</tr>`});
 if(prevSh){const curNames=new Set(sh.map(s=>s.name));prevSh.forEach(s=>{if(!curNames.has(s.name)){html+=`<tr style="opacity:.6"><td></td><td style="text-decoration:line-through">${s.name}</td><td class="pct-cell">${s.pct}%</td><td class="delta-cell delta-exit">EXIT</td></tr>`}})}
 html+='</tbody></table></div>'}
+document.getElementById('modal-body').innerHTML=html;document.getElementById('modal-overlay').classList.add('active')}
+function openShareholderProfile(name){if(!_allData)return;
+document.getElementById('modal-title').textContent=name;document.getElementById('modal-ticker').textContent='SHAREHOLDER';
+var html='';
+/* Current holdings */
+var holdings=[];
+_allData.companies.forEach(function(c){c.shareholders.forEach(function(s){if(s.name===name)holdings.push({ticker:c.ticker,company:c.name,pct:s.pct,rank:s.rank,shares:s.shares})})});
+if(holdings.length>0){
+html+='<div class="sh-profile-section"><h3>Current Holdings<span class="sh-section-badge" style="background:var(--green-bg);color:var(--green)">'+holdings.length+' companies</span></h3>';
+holdings.sort(function(a,b){return b.pct-a.pct});
+holdings.forEach(function(h){html+='<div class="sh-holding-card"><div class="sh-holding-left"><span class="sh-holding-ticker">'+h.ticker+'</span><span class="sh-holding-name">'+h.company+'</span></div><div class="sh-holding-right"><span class="sh-holding-rank">#'+h.rank+'</span><span class="sh-holding-pct">'+h.pct+'%</span></div></div>'});
+html+='</div>'}else{html+='<div class="sh-profile-section"><h3>Current Holdings</h3><div class="empty-state" style="padding:16px">Not currently in any top-20 list.</div></div>'}
+/* Historical timeline per company */
+if(_allData.history&&_allData.history.length>0){
+var companySet={};
+_allData.history.forEach(function(snap){Object.keys(snap.companies).forEach(function(ticker){var shs=snap.companies[ticker];if(shs)shs.forEach(function(s){if(s.name===name){if(!companySet[ticker])companySet[ticker]=[];companySet[ticker].push({date:snap.date,pct:s.pct,rank:s.rank})}})})});
+/* Also check current holdings for tickers not in history */
+holdings.forEach(function(h){if(!companySet[h.ticker])companySet[h.ticker]=[]});
+var tickers=Object.keys(companySet).sort();
+if(tickers.length>0){
+html+='<div class="sh-profile-section"><h3>Historical Positions</h3>';
+tickers.forEach(function(ticker){
+var entries=companySet[ticker];
+var companyName=ticker;
+_allData.companies.forEach(function(c){if(c.ticker===ticker)companyName=c.name});
+html+='<div class="sh-holding-card" style="flex-direction:column;align-items:stretch"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><div class="sh-holding-left"><span class="sh-holding-ticker">'+ticker+'</span><span class="sh-holding-name">'+companyName+'</span></div></div>';
+if(entries.length>0){
+html+='<table class="hist-table" style="margin:0"><thead><tr><th>Date</th><th style="text-align:right">Ownership</th><th style="text-align:right">Rank</th><th style="text-align:right">Change</th></tr></thead><tbody>';
+entries.sort(function(a,b){return b.date.localeCompare(a.date)});
+for(var i=0;i<entries.length;i++){var e=entries[i];var prev=i<entries.length-1?entries[i+1]:null;var deltaHtml='<td class="delta-cell" style="color:var(--text-muted)">\u2014</td>';
+if(prev){var d=Math.round((e.pct-prev.pct)*100)/100;if(d>0)deltaHtml='<td class="delta-cell delta-up">\u25B2 +'+d+'pp</td>';else if(d<0)deltaHtml='<td class="delta-cell delta-down">\u25BC '+d+'pp</td>'}else if(entries.length>1){deltaHtml='<td class="delta-cell delta-new">NEW</td>'}
+html+='<tr><td style="font-family:JetBrains Mono,monospace;font-size:12px;color:var(--accent)">'+e.date+'</td><td class="pct-cell">'+e.pct+'%</td><td style="text-align:right;color:var(--text-muted);font-family:JetBrains Mono,monospace;font-size:11px">#'+e.rank+'</td>'+deltaHtml+'</tr>'}
+html+='</tbody></table>'}else{html+='<div style="font-size:12px;color:var(--text-muted);font-style:italic">Current position only (no prior history)</div>'}
+html+='</div>'});
+html+='</div>'}}
 document.getElementById('modal-body').innerHTML=html;document.getElementById('modal-overlay').classList.add('active')}
 function closeModal(){document.getElementById('modal-overlay').classList.remove('active')}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
