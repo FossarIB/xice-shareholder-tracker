@@ -1,0 +1,19 @@
+# Logs
+tracker.log
+
+# Archived email notifications
+email_*.html
+
+# Local config (contains SMTP credentials)
+config.yaml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
