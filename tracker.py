@@ -989,8 +989,16 @@ DASHBOARD_HTML = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 .sh-holding-left{display:flex;align-items:center;gap:12px}.sh-holding-ticker{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--accent);font-size:14px;min-width:60px}.sh-holding-name{font-size:13px;color:var(--text-muted)}
 .sh-holding-right{display:flex;align-items:center;gap:16px;font-family:'JetBrains Mono',monospace;font-size:13px}.sh-holding-pct{font-weight:700;color:var(--accent)}.sh-holding-rank{color:var(--text-muted);font-size:11px}
 .sh-timeline{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}.sh-timeline-dot{font-size:11px;font-family:'JetBrains Mono',monospace;padding:2px 6px;border-radius:4px;background:var(--surface);border:1px solid var(--border)}
+.top-movers-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.mover-card{background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;transition:border-color .2s}.mover-card:hover{border-color:var(--accent)}
+.mover-rank{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;min-width:32px;text-align:center}
+.mover-info{flex:1;min-width:0}.mover-name{font-weight:500;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mover-detail{font-size:12px;color:var(--text-muted);margin-top:2px}
+.mover-delta{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:15px;text-align:right;white-space:nowrap}
+.mover-delta.up{color:var(--green)}.mover-delta.down{color:var(--amber)}.mover-delta.enter{color:var(--green)}.mover-delta.exit{color:var(--red)}
+.export-btn{background:var(--surface);border:1px solid var(--border);color:var(--accent);font-size:13px;padding:9px 18px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:500;transition:all .15s;display:inline-flex;align-items:center;gap:6px}.export-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.controls{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap;align-items:center}
 .no-data{color:var(--text-muted);font-style:italic;font-size:13px;padding:12px 0}
-.controls{display:flex;gap:12px;margin-bottom:24px}.search-input{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 16px;color:var(--text);font-size:14px;width:300px;outline:none}
+.search-input{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 16px;color:var(--text);font-size:14px;width:300px;outline:none}
 .search-input:focus{border-color:var(--accent)}.search-input::placeholder{color:var(--text-muted)}
 .section-title{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:16px;font-weight:600}
 .empty-state{text-align:center;padding:48px 24px;color:var(--text-muted)}
@@ -1016,8 +1024,9 @@ DASHBOARD_HTML = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 </style></head><body>
 <div class="top-bar"><div class="logo"><div class="logo-mark">XI</div><h1><span>XICE</span> Shareholder Tracker</h1></div><div class="meta" id="last-updated">Loading...</div></div>
 <div class="container"><div class="stats-row" id="stats-row"></div><div id="changes-section"></div>
+<div id="top-movers-section"></div>
 <div class="section-title" style="margin-top:32px">All Companies</div>
-<div class="controls"><input type="text" class="search-input" id="search" placeholder="Search by company or shareholder name..."></div>
+<div class="controls"><input type="text" class="search-input" id="search" placeholder="Search by company or shareholder name..."><button class="export-btn" onclick="exportToExcel()">&#11123; Export to Excel</button></div>
 <div class="company-grid" id="company-grid"></div></div>
 <div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this)closeModal()">
 <div class="modal"><div class="modal-header"><div><h2 id="modal-title">History</h2></div><div style="display:flex;align-items:center;gap:12px"><span class="ticker-badge" id="modal-ticker"></span><button class="modal-close" onclick="closeModal()">&times;</button></div></div>
@@ -1035,7 +1044,51 @@ for(const ch of d.changes_today){for(const e of ch.entered)h+=`<div class="chang
 for(const e of ch.exited)h+=`<div class="change-item"><span class="badge badge-exit">EXIT</span><div class="change-info"><div class="change-name">${e.name}</div><div class="change-detail">Was ${e.pct}% - rank #${e.rank}</div></div><span class="change-company">${ch.ticker}</span></div>`;
 for(const c of ch.changed){const dr=c.delta>0?'up':'down',a=c.delta>0?'\u25B2':'\u25BC';h+=`<div class="change-item"><span class="badge badge-${dr}">${a} ${Math.abs(c.delta)}pp</span><div class="change-info"><div class="change-name">${c.name}</div><div class="change-detail">${c.old_pct}% \u2192 ${c.new_pct}%</div></div><span class="change-company">${ch.ticker}</span></div>`}}
 h+='</div></div>';cs.innerHTML=h}else{cs.innerHTML='<div class="panel"><div class="panel-header"><h2>Today\'s Changes</h2></div><div class="panel-body"><div class="empty-state" style="padding:24px"><p>No changes detected, or first scan.</p></div></div></div>'}
+renderTopMovers(d);
 renderGrid(d.companies);document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.toLowerCase();renderGrid(d.companies.filter(c=>c.ticker.toLowerCase().includes(q)||c.name.toLowerCase().includes(q)||c.shareholders.some(s=>s.name.toLowerCase().includes(q))))})}
+function renderTopMovers(d){const tm=document.getElementById('top-movers-section');if(!d.history||d.history.length<2){tm.innerHTML='';return}
+const latest=d.history[0],prev=d.history[d.history.length-1];
+const moves=[];const tickers=Object.keys(latest.companies);
+tickers.forEach(function(ticker){const cur=latest.companies[ticker]||[];const old=prev.companies[ticker]||[];
+const oldMap={};old.forEach(function(s){oldMap[s.name]=s.pct});
+const curMap={};cur.forEach(function(s){curMap[s.name]=s.pct});
+cur.forEach(function(s){if(oldMap[s.name]!==undefined){const delta=Math.round((s.pct-oldMap[s.name])*100)/100;if(delta!==0)moves.push({name:s.name,ticker:ticker,pct:s.pct,oldPct:oldMap[s.name],delta:delta,type:delta>0?'up':'down'})}else{moves.push({name:s.name,ticker:ticker,pct:s.pct,oldPct:0,delta:s.pct,type:'enter'})}});
+old.forEach(function(s){if(curMap[s.name]===undefined){moves.push({name:s.name,ticker:ticker,pct:0,oldPct:s.pct,delta:-s.pct,type:'exit'})}})});
+if(moves.length===0){tm.innerHTML='';return}
+moves.sort(function(a,b){return Math.abs(b.delta)-Math.abs(a.delta)});
+const top=moves.slice(0,12);
+let h='<div class="panel" style="margin-top:24px"><div class="panel-header"><h2>Top Movers <span style="font-size:12px;color:var(--text-muted);font-weight:400;margin-left:8px">'+prev.date+' \u2192 '+latest.date+'</span></h2></div><div class="panel-body"><div class="top-movers-grid">';
+top.forEach(function(m,i){
+var arrow='',cls='';
+if(m.type==='enter'){arrow='\u25B2 NEW';cls='enter'}
+else if(m.type==='exit'){arrow='\u25BC EXIT';cls='exit'}
+else if(m.delta>0){arrow='\u25B2 +'+m.delta+'pp';cls='up'}
+else{arrow='\u25BC '+m.delta+'pp';cls='down'}
+var detail='';
+if(m.type==='enter')detail=m.ticker+' \u2014 entered at '+m.pct+'%';
+else if(m.type==='exit')detail=m.ticker+' \u2014 exited from '+m.oldPct+'%';
+else detail=m.ticker+' \u2014 '+m.oldPct+'% \u2192 '+m.pct+'%';
+h+='<div class="mover-card" data-mover-sh="'+m.name.replace(/"/g,'&quot;')+'"><div class="mover-rank" style="color:var(--text-muted)">'+(i+1)+'</div><div class="mover-info"><div class="mover-name">'+m.name+'</div><div class="mover-detail">'+detail+'</div></div><div class="mover-delta '+cls+'">'+arrow+'</div></div>'});
+h+='</div></div></div>';
+tm.innerHTML=h;
+tm.addEventListener('click',function(e){var card=e.target.closest('.mover-card[data-mover-sh]');if(card)openShareholderProfile(card.dataset.moverSh)})}
+function exportToExcel(){if(!_allData)return;
+var sep=',';
+var rows=[['Ticker','Company','Rank','Shareholder','Ownership %']];
+_allData.companies.forEach(function(c){c.shareholders.forEach(function(s){rows.push([c.ticker,'"'+c.name.replace(/"/g,'""')+'"',s.rank,'"'+s.name.replace(/"/g,'""')+'"',s.pct])})});
+rows.push([]);rows.push(['--- Changes Today ---']);rows.push(['Ticker','Company','Type','Shareholder','Detail']);
+_allData.changes_today.forEach(function(ch){
+ch.entered.forEach(function(e){rows.push([ch.ticker,'"'+ch.company.replace(/"/g,'""')+'"','ENTER','"'+e.name.replace(/"/g,'""')+'"',e.pct+'% rank #'+e.rank])});
+ch.exited.forEach(function(e){rows.push([ch.ticker,'"'+ch.company.replace(/"/g,'""')+'"','EXIT','"'+e.name.replace(/"/g,'""')+'"','Was '+e.pct+'% rank #'+e.rank])});
+ch.changed.forEach(function(c){rows.push([ch.ticker,'"'+ch.company.replace(/"/g,'""')+'"','SHIFT','"'+c.name.replace(/"/g,'""')+'"',c.old_pct+'% -> '+c.new_pct+'% ('+((c.delta>0)?'+':'')+c.delta+'pp)'])})});
+if(_allData.history&&_allData.history.length>0){rows.push([]);rows.push(['--- Historical Data ---']);
+_allData.history.forEach(function(snap){rows.push([]);rows.push(['Date: '+snap.date]);rows.push(['Ticker','Rank','Shareholder','Ownership %']);
+Object.keys(snap.companies).sort().forEach(function(ticker){var shs=snap.companies[ticker];if(shs)shs.forEach(function(s){rows.push([ticker,s.rank,'"'+s.name.replace(/"/g,'""')+'"',s.pct])})})})}
+var csv=rows.map(function(r){return r.join(sep)}).join('\n');
+var BOM='\uFEFF';
+var blob=new Blob([BOM+csv],{type:'text/csv;charset=utf-8;'});
+var url=URL.createObjectURL(blob);
+var a=document.createElement('a');a.href=url;a.download='xice_shareholders_'+_allData.date+'.csv';a.click();URL.revokeObjectURL(url)}
 function renderGrid(cs){const g=document.getElementById('company-grid');if(!cs.length){g.innerHTML='<div class="empty-state"><p>No matches.</p></div>';return}
 _cardData={};
 g.innerHTML=cs.map((c,i)=>{const id='card-'+i;_cardData[id]={shareholders:c.shareholders,ticker:c.ticker,name:c.name};const hasMore=c.shareholders.length>10;return'<div class="company-card"><div class="company-card-header" data-card="'+id+'"><span class="ticker">'+c.ticker+'</span><span class="name" title="'+c.name.replace(/"/g,'&quot;')+'">'+c.name+'</span></div><div class="company-card-body"><div id="'+id+'-rows">'+( c.shareholders.length?c.shareholders.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join(''):'<div class="no-data">No data available</div>')+'</div>'+(hasMore?'<div class="toggle-row" data-toggle="'+id+'" data-expanded="0" style="text-align:center;color:var(--accent);font-size:12px;cursor:pointer;user-select:none;padding:8px 0">&#9660; Show all '+c.shareholders.length+'</div>':'')+'</div></div>'}).join('')}
