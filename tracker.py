@@ -55,7 +55,7 @@ except ImportError:
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 SNAPSHOTS_DIR = DATA_DIR / "snapshots"
-DASHBOARD_DIR = BASE_DIR
+DASHBOARD_DIR = BASE_DIR / "dashboard"
 CONFIG_PATH = BASE_DIR / "config.yaml"
 LOG_PATH = BASE_DIR / "tracker.log"
 
@@ -330,6 +330,22 @@ def parse_shareholders_from_html(html: str, ticker: str) -> list[dict]:
             return {"name": name, "shares": shares, "pct": pct}
         return None
 
+    def _cell_text(cell) -> str:
+        """Extract visible text from a table cell, ignoring responsive-hidden children.
+        Many Icelandic sites (e.g. Reitir) embed mobile-only duplicates inside
+        the name cell using 'sm:hidden' / 'md:hidden' / 'lg:hidden' Tailwind classes
+        or inline 'display:none'. Stripping these prevents concatenation artifacts
+        like 'Gildi - lífeyrissjóðurFjöldi hluta130.609.960Hlutfall18.739%'."""
+        from copy import copy
+        cell_copy = copy(cell)
+        # Remove elements hidden via Tailwind responsive classes
+        for hidden in cell_copy.find_all(class_=re.compile(r"(^|\s)(sm:|md:|lg:|xl:|-)hidden(\s|$)")):
+            hidden.decompose()
+        # Remove elements hidden via inline style
+        for hidden in cell_copy.find_all(style=re.compile(r"display\s*:\s*none")):
+            hidden.decompose()
+        return cell_copy.get_text(strip=True)
+
     def _parse_table(table) -> list[dict]:
         """Parse a single <table> element into shareholder entries."""
         rows = table.find_all("tr")
@@ -340,7 +356,7 @@ def parse_shareholders_from_html(html: str, ticker: str) -> list[dict]:
         for row in rows:
             cells = row.find_all(["td", "th"])
             if len(cells) >= 2:
-                all_row_texts.append([c.get_text(strip=True) for c in cells])
+                all_row_texts.append([_cell_text(c) for c in cells])
 
         if _is_distribution_table(all_row_texts):
             return []
@@ -412,6 +428,7 @@ def parse_shareholders_from_html(html: str, ticker: str) -> list[dict]:
         if len(set(tags)) > 2:
             continue
 
+        # --- Approach A: Each child has both name + percentage ---
         candidates = []
         for child in children:
             text_parts = [t.strip() for t in child.stripped_strings if len(t.strip()) > 1]
@@ -424,6 +441,32 @@ def parse_shareholders_from_html(html: str, ticker: str) -> list[dict]:
 
         if len(candidates) >= 3 and len(candidates) > len(div_results):
             div_results = candidates
+
+        # --- Approach B: Alternating rows (name in one, data in the next) ---
+        # Sites like NOVA render each shareholder across two sibling divs:
+        #   <div>Birta lífeyrissjóður</div>
+        #   <div>426.719.059  12%</div>
+        # Try pairing consecutive children and merging their text parts.
+        if len(candidates) < 3:
+            paired_candidates = []
+            child_texts = []
+            for child in children:
+                parts = [t.strip() for t in child.stripped_strings if len(t.strip()) > 1]
+                child_texts.append(parts)
+
+            i = 0
+            while i < len(child_texts) - 1:
+                merged = child_texts[i] + child_texts[i + 1]
+                extracted = _extract_row(merged)
+                if extracted:
+                    extracted["rank"] = len(paired_candidates) + 1
+                    paired_candidates.append(extracted)
+                    i += 2  # Skip the pair
+                else:
+                    i += 1
+
+            if len(paired_candidates) >= 3 and len(paired_candidates) > len(div_results):
+                div_results = paired_candidates
 
     if div_results:
         return div_results[:20]
