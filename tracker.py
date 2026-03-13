@@ -55,7 +55,7 @@ except ImportError:
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 SNAPSHOTS_DIR = DATA_DIR / "snapshots"
-DASHBOARD_DIR = BASE_DIR / "dashboard"
+DASHBOARD_DIR = BASE_DIR
 CONFIG_PATH = BASE_DIR / "config.yaml"
 LOG_PATH = BASE_DIR / "tracker.log"
 
