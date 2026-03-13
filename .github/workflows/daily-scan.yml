@@ -1,0 +1,43 @@
+name: Daily XICE Scan
+
+on:
+  schedule:
+    # Runs at 18:00 UTC every day (18:00 Icelandic time)
+    - cron: '0 18 * * *'
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tracker scan
+        run: python tracker.py
+        env:
+          # If you use email notifications, add these as GitHub Secrets:
+          # SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          # SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          # SMTP_USER: ${{ secrets.SMTP_USER }}
+          # SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          CI: true
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Daily scan $(date -u +%Y-%m-%d)"
+          git push
