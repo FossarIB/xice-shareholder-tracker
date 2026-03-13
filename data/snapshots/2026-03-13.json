@@ -1656,122 +1656,122 @@
     ],
     "NOVA": [
       {
-        "name": "426.719.059",
-        "shares": 0,
+        "name": "Birta lífeyrissjóður",
+        "shares": 426719059,
         "pct": 12.0,
         "rank": 1
       },
       {
-        "name": "312.744.159",
-        "shares": 0,
+        "name": "Lífeyrissj. starfsm. rík. A-deild",
+        "shares": 312744159,
         "pct": 8.8,
         "rank": 2
       },
       {
-        "name": "298.698.236",
-        "shares": 0,
+        "name": "Stapi lífeyrissjóður",
+        "shares": 298698236,
         "pct": 8.4,
         "rank": 3
       },
       {
-        "name": "211.659.497",
-        "shares": 0,
+        "name": "Lífsverk lífeyrissjóður",
+        "shares": 211659497,
         "pct": 5.9,
         "rank": 4
       },
       {
-        "name": "206.492.403",
-        "shares": 0,
+        "name": "Festa - lífeyrissjóður",
+        "shares": 206492403,
         "pct": 5.8,
         "rank": 5
       },
       {
-        "name": "181.076.759",
-        "shares": 0,
+        "name": "Lífeyrissjóður verzlunarmanna",
+        "shares": 181076759,
         "pct": 5.1,
         "rank": 6
       },
       {
-        "name": "173.315.498",
-        "shares": 0,
+        "name": "Landsbréf - Úrvalsbréf hs.",
+        "shares": 173315498,
         "pct": 4.9,
         "rank": 7
       },
       {
-        "name": "157.930.000",
-        "shares": 0,
+        "name": "Gildi - lífeyrissjóður",
+        "shares": 157930000,
         "pct": 4.4,
         "rank": 8
       },
       {
-        "name": "101.068.772",
-        "shares": 0,
+        "name": "Sjóvá-Almennar tryggingar hf.",
+        "shares": 101068772,
         "pct": 2.8,
         "rank": 9
       },
       {
-        "name": "98.400.000",
-        "shares": 0,
+        "name": "Nova klúbburinn hf.",
+        "shares": 98400000,
         "pct": 2.8,
         "rank": 10
       },
       {
-        "name": "80.465.302",
-        "shares": 0,
+        "name": "M&M Partners ehf.",
+        "shares": 80465302,
         "pct": 2.3,
         "rank": 11
       },
       {
-        "name": "77.657.317",
-        "shares": 0,
+        "name": "Landsbréf - Öndvegisbréf hs.",
+        "shares": 77657317,
         "pct": 2.2,
         "rank": 12
       },
       {
-        "name": "66.832.433",
-        "shares": 0,
+        "name": "Íslandsbanki hf.",
+        "shares": 66832433,
         "pct": 1.9,
         "rank": 13
       },
       {
-        "name": "61.450.761",
-        "shares": 0,
+        "name": "Landsbréf - Hekla hs.",
+        "shares": 61450761,
         "pct": 1.7,
         "rank": 14
       },
       {
-        "name": "52.250.000",
-        "shares": 0,
+        "name": "Lífeyrissj.starfsm.rík. B-deild",
+        "shares": 52250000,
         "pct": 1.5,
         "rank": 15
       },
       {
-        "name": "55.382.281",
-        "shares": 0,
+        "name": "IS EQUUS Hlutabréf",
+        "shares": 55382281,
         "pct": 1.5,
         "rank": 16
       },
       {
-        "name": "50.698.230",
-        "shares": 0,
+        "name": "IS Hlutabréfasjóðurinn",
+        "shares": 50698230,
         "pct": 1.4,
         "rank": 17
       },
       {
-        "name": "49.576.891",
-        "shares": 0,
+        "name": "Stefnir - Innlend hlutabréf hs.",
+        "shares": 49576891,
         "pct": 1.4,
         "rank": 18
       },
       {
-        "name": "41.462.209",
-        "shares": 0,
+        "name": "Kvika - Innlend hlutabréf",
+        "shares": 41462209,
         "pct": 1.2,
         "rank": 19
       },
       {
-        "name": "41.333.333",
-        "shares": 0,
+        "name": "Vörður tryggingar hf.",
+        "shares": 41333333,
         "pct": 1.1,
         "rank": 20
       }
@@ -1779,121 +1779,121 @@
     "OCS": [],
     "REITIR": [
       {
-        "name": "Gildi - lífeyrissjóðurFjöldi hluta130.609.960Hlutfall18.739%",
+        "name": "Gildi - lífeyrissjóður",
         "shares": 130609960,
         "pct": 18.74,
         "rank": 1
       },
       {
-        "name": "Lífeyrissjóður verzlunarmannaFjöldi hluta76.676.189Hlutfall11.001%",
+        "name": "Lífeyrissjóður verzlunarmanna",
         "shares": 76676189,
         "pct": 11.0,
         "rank": 2
       },
       {
-        "name": "Lífeyrissj.starfsm.rík. A-deildFjöldi hluta58.197.184Hlutfall8.35%",
+        "name": "Lífeyrissj.starfsm.rík. A-deild",
         "shares": 58197184,
         "pct": 8.35,
         "rank": 3
       },
       {
-        "name": "Íslandsbanki hf.Fjöldi hluta35.969.000Hlutfall5.161%",
+        "name": "Íslandsbanki hf.",
         "shares": 35969000,
         "pct": 5.16,
         "rank": 4
       },
       {
-        "name": "Birta lífeyrissjóðurFjöldi hluta31.883.820Hlutfall4.574%",
+        "name": "Birta lífeyrissjóður",
         "shares": 31883820,
         "pct": 4.57,
         "rank": 5
       },
       {
-        "name": "Festa - lífeyrissjóðurFjöldi hluta31.469.523Hlutfall4.515%",
+        "name": "Festa - lífeyrissjóður",
         "shares": 31469523,
         "pct": 4.52,
         "rank": 6
       },
       {
-        "name": "Kjölur fjárfestingarfélag ehf.Fjöldi hluta29.380.000Hlutfall4.215%",
+        "name": "Kjölur fjárfestingarfélag ehf.",
         "shares": 29380000,
         "pct": 4.22,
         "rank": 7
       },
       {
-        "name": "Almenni-Lífsverk lífeyrissjóðurFjöldi hluta28.616.527Hlutfall4.106%",
+        "name": "Almenni-Lífsverk lífeyrissjóður",
         "shares": 28616527,
         "pct": 4.11,
         "rank": 8
       },
       {
-        "name": "Brimgarðar ehf.Fjöldi hluta26.356.892Hlutfall3.781%",
+        "name": "Brimgarðar ehf.",
         "shares": 26356892,
         "pct": 3.78,
         "rank": 9
       },
       {
-        "name": "Frjálsi lífeyrissjóðurinnFjöldi hluta21.106.508Hlutfall3.028%",
+        "name": "Frjálsi lífeyrissjóðurinn",
         "shares": 21106508,
         "pct": 3.03,
         "rank": 10
       },
       {
-        "name": "Söfnunarsjóður lífeyrisréttindaFjöldi hluta19.300.331Hlutfall2.769%",
+        "name": "Söfnunarsjóður lífeyrisréttinda",
         "shares": 19300331,
         "pct": 2.77,
         "rank": 11
       },
       {
-        "name": "Arion banki hf.Fjöldi hluta17.688.914Hlutfall2.538%",
+        "name": "Arion banki hf.",
         "shares": 17688914,
         "pct": 2.54,
         "rank": 12
       },
       {
-        "name": "Stapi lífeyrissjóðurFjöldi hluta17.064.468Hlutfall2.448%",
+        "name": "Stapi lífeyrissjóður",
         "shares": 17064468,
         "pct": 2.45,
         "rank": 13
       },
       {
-        "name": "Reitir fasteignafélag hf.Fjöldi hluta12.739.389Hlutfall1.828%",
+        "name": "Reitir fasteignafélag hf.",
         "shares": 12739389,
         "pct": 1.83,
         "rank": 14
       },
       {
-        "name": "Lífeyrissj.starfsm.rík. B-deildFjöldi hluta10.499.772Hlutfall1.506%",
+        "name": "Lífeyrissj.starfsm.rík. B-deild",
         "shares": 10499772,
         "pct": 1.51,
         "rank": 15
       },
       {
-        "name": "Vanguard Total International SFjöldi hluta9.521.583Hlutfall1.366%",
+        "name": "Vanguard Total International S",
         "shares": 9521583,
         "pct": 1.37,
         "rank": 16
       },
       {
-        "name": "Arcus Invest ehf.Fjöldi hluta8.683.007Hlutfall1.246%",
+        "name": "Arcus Invest ehf.",
         "shares": 8683007,
         "pct": 1.25,
         "rank": 17
       },
       {
-        "name": "Vanguard Emerging Markets StockFjöldi hluta7.971.473Hlutfall1.144%",
+        "name": "Vanguard Emerging Markets Stock",
         "shares": 7971473,
         "pct": 1.14,
         "rank": 18
       },
       {
-        "name": "GJ Invest ehf.Fjöldi hluta7.127.168Hlutfall1.023%",
+        "name": "GJ Invest ehf.",
         "shares": 7127168,
         "pct": 1.02,
         "rank": 19
       },
       {
-        "name": "Sjóvá-Almennar tryggingar hf.Fjöldi hluta6.881.168Hlutfall0.987%",
+        "name": "Sjóvá-Almennar tryggingar hf.",
         "shares": 6881168,
         "pct": 0.99,
         "rank": 20
@@ -2632,5 +2632,5 @@
       }
     ]
   },
-  "timestamp": "2026-03-13T14:46:38.113017+00:00"
+  "timestamp": "2026-03-13T15:10:04.637330+00:00"
 }
