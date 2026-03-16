@@ -86,7 +86,7 @@ def load_config() -> dict:
 # needs_js: True = site renders data via JavaScript, use Selenium
 # ---------------------------------------------------------------------------
 XICE_COMPANIES = [
-    {"ticker": "ALVO",   "name": "Alvotech hf.",                              "shareholder_url": "https://investors.alvotech.com/shareholders",                                      "needs_js": True},
+    {"ticker": "ALVO",   "name": "Alvotech hf.",                              "shareholder_url": "https://investors.alvotech.com/shareholders",                                      "needs_js": True,  "scraper": "morningstar", "morningstar_id": "xnas/alvo"},
     {"ticker": "AMRQ",   "name": "Amaroq Minerals Ltd.",                      "shareholder_url": "https://www.amaroqminerals.com/investors/shareholders/",                            "needs_js": False},
     {"ticker": "ARION",  "name": "Arion banki hf.",                           "shareholder_url": "https://www.arionbanki.is/bankinn/fjarfestar/hlutabref/hluthafalisti/",              "needs_js": True,  "max_shareholders": 50},
     {"ticker": "BERA",   "name": u"Bera (Ölgerðin Egill Skallagrímsson hf.)", "shareholder_url": "https://www.olgerdin.is/fjarfestar/hluthafaupplysingar/",                          "needs_js": True},
@@ -101,11 +101,11 @@ XICE_COMPANIES = [
     {"ticker": "ICESEA", "name": "Iceland Seafood International hf.",          "shareholder_url": "https://icelandseafood.com/investors/shareholders/",                                 "needs_js": True,  "scraper": "livemarket"},
     {"ticker": "ISB",    "name": u"Íslandsbanki hf.",                         "shareholder_url": "https://www.islandsbanki.is/is/grein/hluthafar",                                     "needs_js": True,  "max_shareholders": 50},
     {"ticker": "ISF",    "name": u"Ísfélag hf.",                              "shareholder_url": "https://isfelag.is/fjarfestar/",                                                     "needs_js": True,  "scraper": "livemarket"},
-    {"ticker": "JBTM",   "name": "JBT Marel Corporation",                     "shareholder_url": None,                                                                                 "needs_js": False},
+    {"ticker": "JBTM",   "name": "JBT Marel Corporation",                     "shareholder_url": "https://www.morningstar.com/stocks/xnys/jbtm/ownership",                            "needs_js": True,  "scraper": "morningstar", "morningstar_id": "xnys/jbtm"},
     {"ticker": "KALD",   "name": u"Kaldalón hf.",                             "shareholder_url": "https://kaldalon.is/fjarfestar/",                                                    "needs_js": True,  "scraper": "parallel_columns"},
     {"ticker": "KVIKA",  "name": "Kvika banki hf.",                           "shareholder_url": "https://kvika.is/fjarfestaupplysingar/?category=shareholderCatalog",                  "needs_js": False, "max_shareholders": 50},
     {"ticker": "NOVA",   "name": "Nova hf.",                                  "shareholder_url": "https://www.nova.is/baksvids/hluthafar",                                             "needs_js": False},
-    {"ticker": "OCS",    "name": "Oculis Holding AG",                         "shareholder_url": None,                                                                                 "needs_js": False},
+    {"ticker": "OCS",    "name": "Oculis Holding AG",                         "shareholder_url": "https://www.morningstar.com/stocks/xnas/ocs/ownership",                              "needs_js": True,  "scraper": "morningstar", "morningstar_id": "xnas/ocs"},
     {"ticker": "REITIR", "name": u"Reitir fasteignafélag hf.",                "shareholder_url": "https://www.reitir.is/fjarfestar/hluthafaupplysingar",                                "needs_js": True},
     {"ticker": "SIMINN", "name": u"Síminn hf.",                               "shareholder_url": "https://www.siminn.is/fjarfestar/hluthafar-og-hlutabref",                             "needs_js": True},
     {"ticker": "SJOVA",  "name": u"Sjóvá-Almennar tryggingar hf.",            "shareholder_url": "https://www.sjova.is/sjova/upplysingagjof/fjarfestar/hluthafalisti",                  "needs_js": True},
@@ -640,6 +640,148 @@ def scrape_parallel_columns(html: str, ticker: str) -> list[dict]:
     return shareholders[:20]
 
 
+def scrape_morningstar(ticker: str, morningstar_id: str) -> list[dict]:
+    """Scrape ownership data from Morningstar for US-listed companies.
+    Loads the ownership page, parses the Funds table from page_source,
+    then clicks the Institutions tab and parses again.
+    morningstar_id is like 'xnas/ocs' or 'xnys/jbtm'.
+
+    Uses page_source + BeautifulSoup rather than execute_script because
+    Morningstar's <sal-components> render data in the light DOM that
+    page_source captures, but AWS WAF may interfere with repeated loads."""
+    driver = get_driver()
+    if not driver:
+        return []
+
+    base_url = f"https://www.morningstar.com/stocks/{morningstar_id}/ownership"
+    all_holders = {}  # name -> {shares, pct}
+
+    def _parse_table_from_html(html: str) -> list[dict]:
+        """Parse Morningstar ownership table from HTML source."""
+        soup = BeautifulSoup(html, "html.parser")
+        table = soup.find("table")
+        if not table:
+            return []
+
+        # Find column indices from header row
+        first_tr = table.find("tr")
+        if not first_tr:
+            return []
+        header_ths = first_tr.find_all("th")
+        pct_col = -1
+        shares_col = -1
+        for i, th in enumerate(header_ths):
+            h = " ".join(th.get_text(strip=True).lower().split())
+            if "% total" in h and "shares" in h and pct_col == -1:
+                pct_col = i
+            if "current shares" in h and shares_col == -1:
+                shares_col = i
+
+        # Header th[0] is 'Name' (becomes row th), so td indices offset by -1
+        if pct_col > 0:
+            pct_col -= 1
+        if shares_col > 0:
+            shares_col -= 1
+        if pct_col < 0:
+            return []
+
+        results = []
+        for tr in table.find_all("tr")[1:]:
+            th = tr.find("th")
+            tds = tr.find_all("td")
+            if not th or len(tds) < pct_col + 1:
+                continue
+            name = th.get_text(strip=True)
+            if not name or name == "Name" or name.startswith("Total"):
+                continue
+            pct_text = tds[pct_col].get_text(strip=True) if len(tds) > pct_col else ""
+            shares_text = tds[shares_col].get_text(strip=True) if shares_col >= 0 and len(tds) > shares_col else "0"
+            if pct_text and pct_text != "—":
+                results.append({"name": name, "pct": pct_text, "shares": shares_text})
+        return results
+
+    try:
+        # Skip reload if driver is already on this URL (e.g., debug mode)
+        current_url = ""
+        try:
+            current_url = driver.current_url or ""
+        except Exception:
+            pass
+
+        if morningstar_id not in current_url:
+            driver.get(base_url)
+            time.sleep(12)
+            # Scroll to trigger lazy loading
+            try:
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(2)
+                driver.execute_script("window.scrollTo(0, 0);")
+                time.sleep(2)
+            except Exception:
+                pass
+        else:
+            log.info(f"  -> Driver already on Morningstar page for {ticker}, reusing session")
+            time.sleep(3)
+
+        # ---- Pass 1: Funds tab (active by default) ----
+        html = driver.page_source
+        entries = _parse_table_from_html(html)
+        log.info(f"  -> Morningstar 'Funds' returned {len(entries)} entries for {ticker}")
+        for e in entries:
+            name = e["name"]
+            pct = parse_percentage(e["pct"])
+            shares = parse_share_count(e["shares"].replace(",", ""))
+            if pct and pct > 0:
+                if name not in all_holders or pct > all_holders[name]["pct"]:
+                    all_holders[name] = {"pct": pct, "shares": shares}
+
+        # ---- Pass 2: Click Institutions tab via JS ----
+        js_click_institutions = """
+        var btns = document.querySelectorAll('button[role="tab"]');
+        for (var b of btns) {
+            if (b.textContent.trim() === 'Institutions') {
+                b.click();
+                return true;
+            }
+        }
+        return false;
+        """
+        clicked = driver.execute_script(js_click_institutions)
+        if clicked:
+            log.info(f"  -> Clicked 'Institutions' tab for {ticker}")
+            time.sleep(6)
+            html = driver.page_source
+            entries = _parse_table_from_html(html)
+            log.info(f"  -> Morningstar 'Institutions' returned {len(entries)} entries for {ticker}")
+            for e in entries:
+                name = e["name"]
+                pct = parse_percentage(e["pct"])
+                shares = parse_share_count(e["shares"].replace(",", ""))
+                if pct and pct > 0:
+                    if name not in all_holders or pct > all_holders[name]["pct"]:
+                        all_holders[name] = {"pct": pct, "shares": shares}
+        else:
+            log.warning(f"  -> Could not find 'Institutions' tab for {ticker}")
+
+    except Exception as ex:
+        log.warning(f"  -> Morningstar scrape failed for {ticker}: {ex}")
+
+    if not all_holders:
+        return []
+
+    sorted_holders = sorted(all_holders.items(), key=lambda x: x[1]["pct"], reverse=True)
+    shareholders = []
+    for i, (name, data) in enumerate(sorted_holders):
+        shareholders.append({
+            "name": name,
+            "shares": data["shares"],
+            "pct": data["pct"],
+            "rank": i + 1,
+        })
+
+    return shareholders[:20]
+
+
 # ---------------------------------------------------------------------------
 # Scraping Orchestration
 # ---------------------------------------------------------------------------
@@ -668,6 +810,26 @@ def scrape_company(company: dict) -> list[dict]:
         return capped
 
     # ---- Specialized scrapers (run first if configured) ----
+
+    if scraper == "morningstar":
+        ms_id = company.get("morningstar_id")
+        if not ms_id:
+            log.warning(f"  -> No morningstar_id configured for {ticker}")
+            return []
+        log.info(f"  -> Using Morningstar scraper for {ticker} ({ms_id})...")
+        # Restart driver to get a fresh session — Morningstar's AWS WAF
+        # blocks repeated requests from the same browser session
+        close_driver()
+        shareholders = scrape_morningstar(ticker, ms_id)
+        if shareholders:
+            log.info(f"  -> Found {len(shareholders)} shareholders for {ticker} (Morningstar)")
+            return _cap(shareholders)
+        # Fallback: try the company's own shareholder page if configured
+        if url:
+            log.info(f"  -> Morningstar returned no data for {ticker}, trying company page...")
+        else:
+            log.warning(f"  -> Morningstar returned no data for {ticker}")
+            return []
 
     if scraper == "keldan_iframe":
         # Go directly to the Keldan iframe — the company page itself doesn't have the data
@@ -1050,6 +1212,7 @@ DASHBOARD_HTML = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 .export-btn{background:var(--surface);border:1px solid var(--border);color:var(--accent);font-size:13px;padding:9px 18px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:500;transition:all .15s;display:inline-flex;align-items:center;gap:6px}.export-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
 .controls{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap;align-items:center}
 .no-data{color:var(--text-muted);font-style:italic;font-size:13px;padding:12px 0}
+.wip-badge{display:inline-block;font-size:10px;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--amber);background:var(--amber-bg);border:1px solid rgba(245,158,11,.2);padding:2px 8px;border-radius:4px;margin-left:8px;vertical-align:middle}
 .search-input{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 16px;color:var(--text);font-size:14px;width:300px;outline:none}
 .search-input:focus{border-color:var(--accent)}.search-input::placeholder{color:var(--text-muted)}
 .section-title{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:16px;font-weight:600}
@@ -1153,8 +1316,9 @@ var blob=new Blob([BOM+csv],{type:'text/csv;charset=utf-8;'});
 var url=URL.createObjectURL(blob);
 var a=document.createElement('a');a.href=url;a.download='xice_shareholders_'+_allData.date+'.csv';a.click();URL.revokeObjectURL(url)}
 function renderGrid(cs){const g=document.getElementById('company-grid');if(!cs.length){g.innerHTML='<div class="empty-state"><p>No matches.</p></div>';return}
+var wipTickers={'ALVO':1,'JBTM':1,'OCS':1,'KALD':1,'BERA':1};
 _cardData={};
-g.innerHTML=cs.map((c,i)=>{const id='card-'+i;_cardData[id]={shareholders:c.shareholders,ticker:c.ticker,name:c.name};const hasMore=c.shareholders.length>10;return'<div class="company-card"><div class="company-card-header" data-card="'+id+'"><span class="ticker">'+c.ticker+'</span><span class="name" title="'+c.name.replace(/"/g,'&quot;')+'">'+c.name+'</span></div><div class="company-card-body"><div id="'+id+'-rows">'+( c.shareholders.length?c.shareholders.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join(''):'<div class="no-data">No data available</div>')+'</div>'+(hasMore?'<div class="toggle-row" data-toggle="'+id+'" data-expanded="0" style="text-align:center;color:var(--accent);font-size:12px;cursor:pointer;user-select:none;padding:8px 0">&#9660; Show all '+c.shareholders.length+'</div>':'')+'</div></div>'}).join('')}
+g.innerHTML=cs.map((c,i)=>{const id='card-'+i;_cardData[id]={shareholders:c.shareholders,ticker:c.ticker,name:c.name};const hasMore=c.shareholders.length>10;const isWip=!c.shareholders.length&&wipTickers[c.ticker];const wipBadge=isWip?'<span class="wip-badge">\u00CD vinnslu</span>':'';const emptyMsg=isWip?'<div class="no-data">\u00CD vinnslu \u2014 gögn ekki tiltæk</div>':'<div class="no-data">No data available</div>';return'<div class="company-card"><div class="company-card-header" data-card="'+id+'"><span class="ticker">'+c.ticker+'</span><span class="name" title="'+c.name.replace(/"/g,'&quot;')+'">'+c.name+wipBadge+'</span></div><div class="company-card-body"><div id="'+id+'-rows">'+( c.shareholders.length?c.shareholders.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join(''):emptyMsg)+'</div>'+(hasMore?'<div class="toggle-row" data-toggle="'+id+'" data-expanded="0" style="text-align:center;color:var(--accent);font-size:12px;cursor:pointer;user-select:none;padding:8px 0">&#9660; Show all '+c.shareholders.length+'</div>':'')+'</div></div>'}).join('')}
 document.getElementById('company-grid').addEventListener('click',function(e){var shEl=e.target.closest('.sh-name[data-sh]');if(shEl){e.stopPropagation();openShareholderProfile(shEl.dataset.sh);return}var hdr=e.target.closest('.company-card-header');if(hdr&&hdr.dataset.card){var d=_cardData[hdr.dataset.card];if(d)openHistory(d.ticker,d.name);return}var tog=e.target.closest('.toggle-row');if(tog&&tog.dataset.toggle){toggleCard(tog,tog.dataset.toggle)}});
 function toggleCard(el,id){var d=_cardData[id];if(!d)return;var sh=d.shareholders;var rows=document.getElementById(id+'-rows');var expanded=el.getAttribute('data-expanded')==='1';if(expanded){rows.innerHTML=sh.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join('');el.innerHTML='&#9660; Show all '+sh.length;el.setAttribute('data-expanded','0')}else{rows.innerHTML=sh.map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join('');el.innerHTML='&#9650; Show less';el.setAttribute('data-expanded','1')}}
 function openHistory(ticker,name){if(!_allData||!_allData.history||_allData.history.length<1)return;
