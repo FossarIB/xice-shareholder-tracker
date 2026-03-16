@@ -704,14 +704,18 @@ def scrape_company(company: dict) -> list[dict]:
                 log.info(f"  -> Found {len(shareholders)} shareholders for {ticker} (parallel columns, HTTP)")
                 return _cap(shareholders)
             log.info(f"  -> HTTP returned no parallel columns data for {ticker}, trying Selenium...")
+        else:
+            log.info(f"  -> HTTP fetch failed for {ticker}, trying Selenium...")
         # Fall back to Selenium for JS-rendered Elementor repeaters
-        html = fetch_with_selenium(url)
+        html = fetch_with_selenium(url, wait_seconds=15)
         if html:
             shareholders = scrape_parallel_columns(html, ticker)
             if shareholders:
                 log.info(f"  -> Found {len(shareholders)} shareholders for {ticker} (parallel columns, Selenium)")
                 return _cap(shareholders)
-        log.warning(f"  -> Parallel columns parser returned no data for {ticker}")
+            log.warning(f"  -> Selenium loaded page but parallel columns parser found nothing for {ticker} ({len(html):,} chars)")
+        else:
+            log.warning(f"  -> Selenium also failed for {ticker}")
         return []
 
     # ---- Generic scraper (no special scraper configured) ----
