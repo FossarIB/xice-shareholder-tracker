@@ -1099,17 +1099,24 @@ h+='</div></div>';cs.innerHTML=h}else{cs.innerHTML='<div class="panel"><div clas
 renderTopMovers(d);
 renderGrid(d.companies);document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.toLowerCase();renderGrid(d.companies.filter(c=>c.ticker.toLowerCase().includes(q)||c.name.toLowerCase().includes(q)||c.shareholders.some(s=>s.name.toLowerCase().includes(q))))})}
 function renderTopMovers(d){const tm=document.getElementById('top-movers-section');if(!d.history||d.history.length<2){tm.innerHTML='';return}
-const latest=d.history[0],prev=d.history[d.history.length-1];
-const moves=[];const tickers=Object.keys(latest.companies);
-tickers.forEach(function(ticker){const cur=latest.companies[ticker]||[];const old=prev.companies[ticker]||[];
-const oldMap={};old.forEach(function(s){oldMap[s.name]=s.pct});
-const curMap={};cur.forEach(function(s){curMap[s.name]=s.pct});
-cur.forEach(function(s){if(oldMap[s.name]!==undefined){const delta=Math.round((s.pct-oldMap[s.name])*100)/100;if(delta!==0)moves.push({name:s.name,ticker:ticker,pct:s.pct,oldPct:oldMap[s.name],delta:delta,type:delta>0?'up':'down'})}else{moves.push({name:s.name,ticker:ticker,pct:s.pct,oldPct:0,delta:s.pct,type:'enter'})}});
+const latest=d.history[0];
+/* Build dropdown options from available history dates */
+var dateOpts='';for(var di=1;di<d.history.length;di++){var sel=di===d.history.length-1?' selected':'';dateOpts+='<option value="'+di+'"'+sel+'>'+d.history[di].date+'</option>'}
+function computeMovers(prevIdx){
+var prev=d.history[prevIdx];var moves=[];var tickers=Object.keys(latest.companies);
+tickers.forEach(function(ticker){var cur=latest.companies[ticker]||[];var old=prev.companies[ticker]||[];
+var oldMap={};old.forEach(function(s){oldMap[s.name]=s.pct});
+var curMap={};cur.forEach(function(s){curMap[s.name]=s.pct});
+cur.forEach(function(s){if(oldMap[s.name]!==undefined){var delta=Math.round((s.pct-oldMap[s.name])*100)/100;if(delta!==0)moves.push({name:s.name,ticker:ticker,pct:s.pct,oldPct:oldMap[s.name],delta:delta,type:delta>0?'up':'down'})}else{moves.push({name:s.name,ticker:ticker,pct:s.pct,oldPct:0,delta:s.pct,type:'enter'})}});
 old.forEach(function(s){if(curMap[s.name]===undefined){moves.push({name:s.name,ticker:ticker,pct:0,oldPct:s.pct,delta:-s.pct,type:'exit'})}})});
-if(moves.length===0){tm.innerHTML='';return}
 moves.sort(function(a,b){return Math.abs(b.delta)-Math.abs(a.delta)});
-const top=moves.slice(0,12);
-let h='<div class="panel" style="margin-top:24px"><div class="panel-header"><h2>Top Movers <span style="font-size:12px;color:var(--text-muted);font-weight:400;margin-left:8px">'+prev.date+' \u2192 '+latest.date+'</span></h2></div><div class="panel-body"><div class="top-movers-grid">';
+return moves}
+function renderMoversGrid(prevIdx){
+var prev=d.history[prevIdx];var moves=computeMovers(prevIdx);
+var grid=document.getElementById('top-movers-grid');var label=document.getElementById('top-movers-label');
+label.textContent=prev.date+' \u2192 '+latest.date;
+if(moves.length===0){grid.innerHTML='<div class="empty-state" style="padding:24px"><p>No changes in this period.</p></div>';return}
+var top=moves.slice(0,12);var h='';
 top.forEach(function(m,i){
 var arrow='',cls='';
 if(m.type==='enter'){arrow='\u25B2 NEW';cls='enter'}
@@ -1121,8 +1128,12 @@ if(m.type==='enter')detail=m.ticker+' \u2014 entered at '+m.pct+'%';
 else if(m.type==='exit')detail=m.ticker+' \u2014 exited from '+m.oldPct+'%';
 else detail=m.ticker+' \u2014 '+m.oldPct+'% \u2192 '+m.pct+'%';
 h+='<div class="mover-card" data-mover-sh="'+m.name.replace(/"/g,'&quot;')+'"><div class="mover-rank" style="color:var(--text-muted)">'+(i+1)+'</div><div class="mover-info"><div class="mover-name">'+m.name+'</div><div class="mover-detail">'+detail+'</div></div><div class="mover-delta '+cls+'">'+arrow+'</div></div>'});
-h+='</div></div></div>';
-tm.innerHTML=h;
+grid.innerHTML=h}
+/* Initial render with panel + dropdown */
+var initIdx=d.history.length-1;
+tm.innerHTML='<div class="panel" style="margin-top:24px"><div class="panel-header" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px"><h2>Top Movers <span id="top-movers-label" style="font-size:12px;color:var(--text-muted);font-weight:400;margin-left:8px"></span></h2><div style="display:flex;align-items:center;gap:8px"><label style="font-size:12px;color:var(--text-muted)">Compare from:</label><select id="top-movers-date" style="background:var(--bg-card);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:4px 8px;font-size:12px;font-family:inherit;cursor:pointer">'+dateOpts+'</select></div></div><div class="panel-body"><div class="top-movers-grid" id="top-movers-grid"></div></div></div>';
+renderMoversGrid(initIdx);
+document.getElementById('top-movers-date').addEventListener('change',function(){renderMoversGrid(parseInt(this.value))});
 tm.addEventListener('click',function(e){var card=e.target.closest('.mover-card[data-mover-sh]');if(card)openShareholderProfile(card.dataset.moverSh)})}
 function exportToExcel(){if(!_allData)return;
 var sep=',';
