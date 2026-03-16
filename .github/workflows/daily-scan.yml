@@ -2,8 +2,8 @@ name: Daily XICE Scan
 
 on:
   schedule:
-    # Runs at 18:00 UTC every day (18:00 Icelandic time)
-    - cron: '0 18 * * *'
+    # Runs at 18:00 UTC on weekdays (Mon-Fri, 18:00 Icelandic time)
+    - cron: '0 18 * * 1-5'
   workflow_dispatch: # Allow manual trigger from GitHub UI
 
 permissions:
