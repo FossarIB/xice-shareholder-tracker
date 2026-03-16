@@ -696,12 +696,20 @@ def scrape_company(company: dict) -> list[dict]:
         return []
 
     if scraper == "parallel_columns":
-        # Needs Selenium to render the Elementor repeaters
+        # Try plain HTTP first (KALD data is server-rendered, no JS needed)
+        html = fetch_page(url)
+        if html:
+            shareholders = scrape_parallel_columns(html, ticker)
+            if shareholders:
+                log.info(f"  -> Found {len(shareholders)} shareholders for {ticker} (parallel columns, HTTP)")
+                return _cap(shareholders)
+            log.info(f"  -> HTTP returned no parallel columns data for {ticker}, trying Selenium...")
+        # Fall back to Selenium for JS-rendered Elementor repeaters
         html = fetch_with_selenium(url)
         if html:
             shareholders = scrape_parallel_columns(html, ticker)
             if shareholders:
-                log.info(f"  -> Found {len(shareholders)} shareholders for {ticker} (parallel columns)")
+                log.info(f"  -> Found {len(shareholders)} shareholders for {ticker} (parallel columns, Selenium)")
                 return _cap(shareholders)
         log.warning(f"  -> Parallel columns parser returned no data for {ticker}")
         return []
