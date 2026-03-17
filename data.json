@@ -1,133 +1,134 @@
 {
   "date": "2026-03-17",
-  "generated_at": "2026-03-17T09:10:42.648156+00:00",
+  "generated_at": "2026-03-17T14:04:47.296155+00:00",
   "companies": [
     {
       "ticker": "ALVO",
       "name": "Alvotech hf.",
       "shareholders": [
         {
-          "name": "Vanguard Total Intl Stock Index Inv",
-          "shares": 1562460,
-          "pct": 0.5,
+          "name": "Aztiq Pharma Partners S.a.r.l.",
+          "shares": 0,
+          "pct": 31.2,
           "rank": 1
         },
         {
-          "name": "Vanguard Emerging Mkts Stock Idx Inv",
-          "shares": 1489165,
-          "pct": 0.48,
+          "name": "Alvogen Lux Holdings S.a.r.l.",
+          "shares": 0,
+          "pct": 29.1,
           "rank": 2
         },
         {
-          "name": "T. Rowe Price International Discovery",
-          "shares": 1140084,
-          "pct": 0.37,
+          "name": "Lífeyrissj.starfsm.rík. A-deild",
+          "shares": 0,
+          "pct": 1.4,
           "rank": 3
         },
         {
-          "name": "T. Rowe Price International Small-Cap Eq",
-          "shares": 1140084,
-          "pct": 0.37,
+          "name": "The Vanguard Group",
+          "shares": 0,
+          "pct": 1.3,
           "rank": 4
         },
         {
-          "name": "Stefnir Icelandic Growth",
-          "shares": 1103974,
-          "pct": 0.35,
+          "name": "Birta lífeyrissjóður",
+          "shares": 0,
+          "pct": 1.2,
           "rank": 5
         },
         {
-          "name": "Vanguard Instl Ttl Intl Stk Mkt Idx TrII",
-          "shares": 826076,
-          "pct": 0.27,
+          "name": "Stapi lífeyrissjóður",
+          "shares": 0,
+          "pct": 1.0,
           "rank": 6
         },
         {
-          "name": "iShares Biotechnology ETF",
-          "shares": 820277,
-          "pct": 0.26,
+          "name": "Frjálsi lífeyrissjóðurinn",
+          "shares": 0,
+          "pct": 0.9,
           "rank": 7
         },
         {
-          "name": "Eaton Vance Glbl Macro Abs Ret Advtg I",
-          "shares": 593154,
-          "pct": 0.19,
+          "name": "Bracebridge Capital",
+          "shares": 0,
+          "pct": 0.8,
           "rank": 8
         },
         {
-          "name": "L&G Frontier Markets Eq Z USD Acc",
-          "shares": 490897,
-          "pct": 0.16,
+          "name": "Festa - lífeyrissjóður",
+          "shares": 0,
+          "pct": 0.6,
           "rank": 9
         },
         {
-          "name": "T. Rowe Price Intl Small-Cap Eq Tr-C",
-          "shares": 257799,
-          "pct": 0.08,
+          "name": "Almenni lífeyrissjóðurinn",
+          "shares": 0,
+          "pct": 0.6,
           "rank": 10
         },
         {
-          "name": "Vanguard FTSE All-Wld ex-US ETF",
-          "shares": 257257,
-          "pct": 0.08,
+          "name": "Hvalur hf.",
+          "shares": 0,
+          "pct": 0.5,
           "rank": 11
         },
         {
-          "name": "Eaton Vance Strategic Income Class C",
-          "shares": 239556,
-          "pct": 0.08,
+          "name": "Lífeyrissjóður Vestmannaeyja",
+          "shares": 0,
+          "pct": 0.5,
           "rank": 12
         },
         {
-          "name": "iShares Nasdaq US Biotech ETF USD Acc",
-          "shares": 229620,
-          "pct": 0.07,
+          "name": "Celtic Holdings II Limited",
+          "shares": 0,
+          "pct": 0.5,
           "rank": 13
         },
         {
-          "name": "iShares Genomics Immnlgy & Hlthcr ETF",
-          "shares": 167194,
-          "pct": 0.05,
+          "name": "Fjärde AP-Fonden",
+          "shares": 0,
+          "pct": 0.5,
           "rank": 14
         },
         {
-          "name": "Fidelity Nasdaq Composite Index",
-          "shares": 164196,
-          "pct": 0.05,
+          "name": "T. Rowe Price International",
+          "shares": 0,
+          "pct": 0.4,
           "rank": 15
         },
         {
-          "name": "Morgan Stanley Global Macro Abs. Return",
-          "shares": 159503,
-          "pct": 0.05,
+          "name": "Sjóvá-Almennar tryggingar hf.",
+          "shares": 0,
+          "pct": 0.4,
           "rank": 16
         },
         {
-          "name": "Eaton Vance Glbl Macr Absolute Return I",
-          "shares": 159503,
-          "pct": 0.05,
+          "name": "Littlejohn & Co.",
+          "shares": 0,
+          "pct": 0.4,
           "rank": 17
         },
         {
-          "name": "Schwab Emerging Markets Equity ETF™",
-          "shares": 133299,
-          "pct": 0.04,
+          "name": "Kaldbakur ehf.",
+          "shares": 0,
+          "pct": 0.4,
           "rank": 18
         },
         {
-          "name": "Vanguard Instl Ttl Intl Stck Mkt Idx Tr",
-          "shares": 123035,
-          "pct": 0.04,
+          "name": "Íslandsbanki hf,safnskráning 2",
+          "shares": 0,
+          "pct": 0.4,
           "rank": 19
         },
         {
-          "name": "Fidelity Nasdaq Composite ETF",
-          "shares": 89801,
-          "pct": 0.03,
+          "name": "Íslenski lífeyrissj-Lífsbraut 1",
+          "shares": 0,
+          "pct": 0.3,
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": "morningstar"
     },
     {
       "ticker": "AMRQ",
@@ -176,7 +177,8 @@
           "rank": 7
         }
       ],
-      "count": 7
+      "count": 7,
+      "data_source": ""
     },
     {
       "ticker": "ARION",
@@ -279,13 +281,15 @@
           "rank": 16
         }
       ],
-      "count": 16
+      "count": 16,
+      "data_source": ""
     },
     {
       "ticker": "BERA",
       "name": "Bera (Ölgerðin Egill Skallagrímsson hf.)",
       "shareholders": [],
-      "count": 0
+      "count": 0,
+      "data_source": ""
     },
     {
       "ticker": "BRIM",
@@ -412,7 +416,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "EIK",
@@ -539,7 +544,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "EIM",
@@ -666,7 +672,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "FESTI",
@@ -793,7 +800,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "HAGA",
@@ -920,7 +928,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "HAMP",
@@ -1047,7 +1056,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "HEIMAR",
@@ -1174,7 +1184,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "ICEAIR",
@@ -1301,7 +1312,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "ICESEA",
@@ -1309,126 +1321,127 @@
       "shareholders": [
         {
           "name": "FISK-Seafood ehf.",
-          "shares": 0,
+          "shares": 454841302,
           "pct": 14.84,
           "rank": 1
         },
         {
           "name": "Brim hf.",
-          "shares": 0,
+          "shares": 350246206,
           "pct": 11.43,
           "rank": 2
         },
         {
           "name": "Jakob Valgeir ehf.",
-          "shares": 0,
+          "shares": 344961200,
           "pct": 11.26,
           "rank": 3
         },
         {
           "name": "Nesfiskur ehf.",
-          "shares": 0,
+          "shares": 322304386,
           "pct": 10.52,
           "rank": 4
         },
         {
           "name": "Birta lífeyrissjóður",
-          "shares": 0,
+          "shares": 200324420,
           "pct": 6.54,
           "rank": 5
         },
         {
           "name": "Almenni-Lífsverk lífeyrissjóður",
-          "shares": 0,
-          "pct": 5.23,
+          "shares": 160119261,
+          "pct": 5.22,
           "rank": 6
         },
         {
           "name": "Stapi lífeyrissjóður",
-          "shares": 0,
+          "shares": 159247091,
           "pct": 5.2,
           "rank": 7
         },
         {
           "name": "Lífeyrissj.starfsm.rík. A-deild",
-          "shares": 0,
+          "shares": 105510000,
           "pct": 3.44,
           "rank": 8
         },
         {
           "name": "Sjóvá-Almennar tryggingar hf.",
-          "shares": 0,
+          "shares": 92824263,
           "pct": 3.03,
           "rank": 9
         },
         {
           "name": "VÍS tryggingar hf.",
-          "shares": 0,
+          "shares": 90000000,
           "pct": 2.94,
           "rank": 10
         },
         {
           "name": "Kvika banki hf.",
-          "shares": 0,
+          "shares": 56593187,
           "pct": 1.85,
           "rank": 11
         },
         {
           "name": "Íslandsbanki hf.",
-          "shares": 0,
+          "shares": 56149049,
           "pct": 1.83,
           "rank": 12
         },
         {
           "name": "Ecock Holdings Ltd.",
-          "shares": 0,
+          "shares": 41236724,
           "pct": 1.35,
           "rank": 13
         },
         {
           "name": "Sjávarsýn ehf.",
-          "shares": 0,
+          "shares": 40000000,
           "pct": 1.31,
           "rank": 14
         },
         {
           "name": "Arion banki hf.",
-          "shares": 0,
+          "shares": 32259431,
           "pct": 1.05,
           "rank": 15
         },
         {
           "name": "Lífeyrissjóður Vestmannaeyja",
-          "shares": 0,
+          "shares": 31518518,
           "pct": 1.03,
           "rank": 16
         },
         {
           "name": "ÍV Hlutabréf hs.",
-          "shares": 0,
+          "shares": 29212016,
           "pct": 0.95,
           "rank": 17
         },
         {
           "name": "Akta HL1",
-          "shares": 0,
+          "shares": 28243422,
           "pct": 0.92,
           "rank": 18
         },
         {
           "name": "GPG Seafood ehf.",
-          "shares": 0,
+          "shares": 25825754,
           "pct": 0.84,
           "rank": 19
         },
         {
           "name": "Lífeyrissj.starfsm.rík. B-deild",
-          "shares": 0,
+          "shares": 25490000,
           "pct": 0.83,
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "ISB",
@@ -1436,8 +1449,8 @@
       "shareholders": [
         {
           "name": "Lífeyrissjóður starfsmanna ríkisins",
-          "shares": 156530425,
-          "pct": 8.32,
+          "shares": 156130425,
+          "pct": 8.3,
           "rank": 1
         },
         {
@@ -1484,8 +1497,8 @@
         },
         {
           "name": "Kvika banki hf.",
-          "shares": 38825079,
-          "pct": 2.06,
+          "shares": 39164364,
+          "pct": 2.08,
           "rank": 9
         },
         {
@@ -1507,7 +1520,8 @@
           "rank": 12
         }
       ],
-      "count": 12
+      "count": 12,
+      "data_source": ""
     },
     {
       "ticker": "ISF",
@@ -1634,140 +1648,22 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "JBTM",
       "name": "JBT Marel Corporation",
-      "shareholders": [
-        {
-          "name": "BlackRock Inc",
-          "shares": 7544898,
-          "pct": 14.51,
-          "rank": 1
-        },
-        {
-          "name": "Vanguard Group Inc",
-          "shares": 5482280,
-          "pct": 10.55,
-          "rank": 2
-        },
-        {
-          "name": "UBS: Global Equity",
-          "shares": 5123797,
-          "pct": 9.86,
-          "rank": 3
-        },
-        {
-          "name": "iShares Core S&P Small-Cap ETF",
-          "shares": 3148136,
-          "pct": 6.06,
-          "rank": 4
-        },
-        {
-          "name": "State Street Corp",
-          "shares": 1941857,
-          "pct": 3.74,
-          "rank": 5
-        },
-        {
-          "name": "FMR Inc",
-          "shares": 1941415,
-          "pct": 3.73,
-          "rank": 6
-        },
-        {
-          "name": "UBS Asset Mgmt Americas Inc",
-          "shares": 1796381,
-          "pct": 3.46,
-          "rank": 7
-        },
-        {
-          "name": "Vanguard Total Stock Mkt Idx Inv",
-          "shares": 1647340,
-          "pct": 3.17,
-          "rank": 8
-        },
-        {
-          "name": "iShares Russell 2000 ETF",
-          "shares": 1269576,
-          "pct": 2.44,
-          "rank": 9
-        },
-        {
-          "name": "Geode Capital Management, LLC",
-          "shares": 1246584,
-          "pct": 2.4,
-          "rank": 10
-        },
-        {
-          "name": "T. Rowe Price Associates, Inc.",
-          "shares": 1225039,
-          "pct": 2.36,
-          "rank": 11
-        },
-        {
-          "name": "Vanguard Small Cap Index",
-          "shares": 1180296,
-          "pct": 2.27,
-          "rank": 12
-        },
-        {
-          "name": "Kayne Anderson Rudnick Investment Management LLC",
-          "shares": 1119266,
-          "pct": 2.15,
-          "rank": 13
-        },
-        {
-          "name": "Gildi - lifeyrissjodur",
-          "shares": 1109379,
-          "pct": 2.13,
-          "rank": 14
-        },
-        {
-          "name": "AllianceBernstein L.P.",
-          "shares": 965509,
-          "pct": 1.86,
-          "rank": 15
-        },
-        {
-          "name": "T. Rowe Price Investment Management,Inc.",
-          "shares": 858409,
-          "pct": 1.65,
-          "rank": 16
-        },
-        {
-          "name": "JPMorgan Chase & Co",
-          "shares": 845006,
-          "pct": 1.63,
-          "rank": 17
-        },
-        {
-          "name": "Charles Schwab Investment Management Inc",
-          "shares": 726302,
-          "pct": 1.4,
-          "rank": 18
-        },
-        {
-          "name": "Baron Small Cap Strategy",
-          "shares": 700000,
-          "pct": 1.35,
-          "rank": 19
-        },
-        {
-          "name": "Baron Small Cap Retail",
-          "shares": 700000,
-          "pct": 1.35,
-          "rank": 20
-        }
-      ],
-      "count": 20
+      "shareholders": [],
+      "count": 0,
+      "data_source": "morningstar"
     },
     {
       "ticker": "KALD",
       "name": "Kaldalón hf.",
       "shareholders": [],
-      "count": 0
+      "count": 0,
+      "data_source": ""
     },
     {
       "ticker": "KVIKA",
@@ -1864,7 +1760,8 @@
           "rank": 15
         }
       ],
-      "count": 15
+      "count": 15,
+      "data_source": ""
     },
     {
       "ticker": "NOVA",
@@ -1991,134 +1888,15 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "OCS",
       "name": "Oculis Holding AG",
-      "shareholders": [
-        {
-          "name": "EQT Fund Management S.à r.l.",
-          "shares": 5900294,
-          "pct": 10.18,
-          "rank": 1
-        },
-        {
-          "name": "Gildi - lifeyrissjodur",
-          "shares": 2447985,
-          "pct": 4.22,
-          "rank": 2
-        },
-        {
-          "name": "Pivotal bioVenture Partners Investment Advisor LLC",
-          "shares": 2300774,
-          "pct": 3.97,
-          "rank": 3
-        },
-        {
-          "name": "Aberdeen Group PLC",
-          "shares": 1746946,
-          "pct": 3.01,
-          "rank": 4
-        },
-        {
-          "name": "Wellington Management Company LLP",
-          "shares": 1356179,
-          "pct": 2.34,
-          "rank": 5
-        },
-        {
-          "name": "HBM Healthcare Investments AG Ord",
-          "shares": 993827,
-          "pct": 1.71,
-          "rank": 6
-        },
-        {
-          "name": "SR ONE CAPITAL MANAGEMENT, LP",
-          "shares": 641022,
-          "pct": 1.11,
-          "rank": 7
-        },
-        {
-          "name": "abrdn Healthcare Investors",
-          "shares": 579536,
-          "pct": 1.0,
-          "rank": 8
-        },
-        {
-          "name": "abrdn Healthcare Opportunities",
-          "shares": 569796,
-          "pct": 0.98,
-          "rank": 9
-        },
-        {
-          "name": "Saturn V Capital Management LLC",
-          "shares": 516761,
-          "pct": 0.89,
-          "rank": 10
-        },
-        {
-          "name": "Nan Fung Group Holdings Ltd",
-          "shares": 514702,
-          "pct": 0.89,
-          "rank": 11
-        },
-        {
-          "name": "Stefnir Icelandic Growth",
-          "shares": 354563,
-          "pct": 0.61,
-          "rank": 12
-        },
-        {
-          "name": "abrdn World Healthcare",
-          "shares": 343874,
-          "pct": 0.59,
-          "rank": 13
-        },
-        {
-          "name": "Alyeska Investment Group, L.P.",
-          "shares": 331332,
-          "pct": 0.57,
-          "rank": 14
-        },
-        {
-          "name": "abrdn Life Sciences Investors",
-          "shares": 253740,
-          "pct": 0.44,
-          "rank": 15
-        },
-        {
-          "name": "Woodline Partners LP",
-          "shares": 201200,
-          "pct": 0.35,
-          "rank": 16
-        },
-        {
-          "name": "Wellington Global Hlthcr Eq USD G Ac",
-          "shares": 189650,
-          "pct": 0.33,
-          "rank": 17
-        },
-        {
-          "name": "SYQUANT CAPITAL SAS",
-          "shares": 192722,
-          "pct": 0.33,
-          "rank": 18
-        },
-        {
-          "name": "Folketrygdfondet",
-          "shares": 182800,
-          "pct": 0.32,
-          "rank": 19
-        },
-        {
-          "name": "Hartford Healthcare Y",
-          "shares": 172558,
-          "pct": 0.3,
-          "rank": 20
-        }
-      ],
-      "count": 20
+      "shareholders": [],
+      "count": 0,
+      "data_source": "morningstar"
     },
     {
       "ticker": "REITIR",
@@ -2245,7 +2023,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "SIMINN",
@@ -2372,7 +2151,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "SJOVA",
@@ -2499,7 +2279,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "SKAGI",
@@ -2626,7 +2407,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "SKEL",
@@ -2753,7 +2535,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "SVN",
@@ -2880,7 +2663,8 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     },
     {
       "ticker": "SYN",
@@ -3007,133 +2791,345 @@
           "rank": 20
         }
       ],
-      "count": 20
+      "count": 20,
+      "data_source": ""
     }
   ],
-  "changes_today": [],
+  "changes_today": [
+    {
+      "ticker": "ALVO",
+      "company": "Alvotech hf.",
+      "entered": [
+        {
+          "name": "Almenni lífeyrissjóðurinn",
+          "pct": 0.6,
+          "rank": 10
+        },
+        {
+          "name": "Alvogen Lux Holdings S.a.r.l.",
+          "pct": 29.1,
+          "rank": 2
+        },
+        {
+          "name": "Aztiq Pharma Partners S.a.r.l.",
+          "pct": 31.2,
+          "rank": 1
+        },
+        {
+          "name": "Birta lífeyrissjóður",
+          "pct": 1.2,
+          "rank": 5
+        },
+        {
+          "name": "Bracebridge Capital",
+          "pct": 0.8,
+          "rank": 8
+        },
+        {
+          "name": "Celtic Holdings II Limited",
+          "pct": 0.5,
+          "rank": 13
+        },
+        {
+          "name": "Festa - lífeyrissjóður",
+          "pct": 0.6,
+          "rank": 9
+        },
+        {
+          "name": "Fjärde AP-Fonden",
+          "pct": 0.5,
+          "rank": 14
+        },
+        {
+          "name": "Frjálsi lífeyrissjóðurinn",
+          "pct": 0.9,
+          "rank": 7
+        },
+        {
+          "name": "Hvalur hf.",
+          "pct": 0.5,
+          "rank": 11
+        },
+        {
+          "name": "Kaldbakur ehf.",
+          "pct": 0.4,
+          "rank": 18
+        },
+        {
+          "name": "Littlejohn & Co.",
+          "pct": 0.4,
+          "rank": 17
+        },
+        {
+          "name": "Lífeyrissj.starfsm.rík. A-deild",
+          "pct": 1.4,
+          "rank": 3
+        },
+        {
+          "name": "Lífeyrissjóður Vestmannaeyja",
+          "pct": 0.5,
+          "rank": 12
+        },
+        {
+          "name": "Sjóvá-Almennar tryggingar hf.",
+          "pct": 0.4,
+          "rank": 16
+        },
+        {
+          "name": "Stapi lífeyrissjóður",
+          "pct": 1.0,
+          "rank": 6
+        },
+        {
+          "name": "T. Rowe Price International",
+          "pct": 0.4,
+          "rank": 15
+        },
+        {
+          "name": "The Vanguard Group",
+          "pct": 1.3,
+          "rank": 4
+        },
+        {
+          "name": "Íslandsbanki hf,safnskráning 2",
+          "pct": 0.4,
+          "rank": 19
+        },
+        {
+          "name": "Íslenski lífeyrissj-Lífsbraut 1",
+          "pct": 0.3,
+          "rank": 20
+        }
+      ],
+      "exited": [
+        {
+          "name": "Eaton Vance Glbl Macr Absolute Return I",
+          "pct": 0.05,
+          "rank": 17
+        },
+        {
+          "name": "Eaton Vance Glbl Macro Abs Ret Advtg I",
+          "pct": 0.19,
+          "rank": 8
+        },
+        {
+          "name": "Eaton Vance Strategic Income Class C",
+          "pct": 0.08,
+          "rank": 12
+        },
+        {
+          "name": "Fidelity Nasdaq Composite ETF",
+          "pct": 0.03,
+          "rank": 20
+        },
+        {
+          "name": "Fidelity Nasdaq Composite Index",
+          "pct": 0.05,
+          "rank": 15
+        },
+        {
+          "name": "L&G Frontier Markets Eq Z USD Acc",
+          "pct": 0.16,
+          "rank": 9
+        },
+        {
+          "name": "Morgan Stanley Global Macro Abs. Return",
+          "pct": 0.05,
+          "rank": 16
+        },
+        {
+          "name": "Schwab Emerging Markets Equity ETF™",
+          "pct": 0.04,
+          "rank": 18
+        },
+        {
+          "name": "Stefnir Icelandic Growth",
+          "pct": 0.35,
+          "rank": 5
+        },
+        {
+          "name": "T. Rowe Price International Discovery",
+          "pct": 0.37,
+          "rank": 3
+        },
+        {
+          "name": "T. Rowe Price International Small-Cap Eq",
+          "pct": 0.37,
+          "rank": 4
+        },
+        {
+          "name": "T. Rowe Price Intl Small-Cap Eq Tr-C",
+          "pct": 0.08,
+          "rank": 10
+        },
+        {
+          "name": "Vanguard Emerging Mkts Stock Idx Inv",
+          "pct": 0.48,
+          "rank": 2
+        },
+        {
+          "name": "Vanguard FTSE All-Wld ex-US ETF",
+          "pct": 0.08,
+          "rank": 11
+        },
+        {
+          "name": "Vanguard Instl Ttl Intl Stck Mkt Idx Tr",
+          "pct": 0.04,
+          "rank": 19
+        },
+        {
+          "name": "Vanguard Instl Ttl Intl Stk Mkt Idx TrII",
+          "pct": 0.27,
+          "rank": 6
+        },
+        {
+          "name": "Vanguard Total Intl Stock Index Inv",
+          "pct": 0.5,
+          "rank": 1
+        },
+        {
+          "name": "iShares Biotechnology ETF",
+          "pct": 0.26,
+          "rank": 7
+        },
+        {
+          "name": "iShares Genomics Immnlgy & Hlthcr ETF",
+          "pct": 0.05,
+          "rank": 14
+        },
+        {
+          "name": "iShares Nasdaq US Biotech ETF USD Acc",
+          "pct": 0.07,
+          "rank": 13
+        }
+      ],
+      "changed": [],
+      "has_changes": true
+    }
+  ],
   "history": [
     {
       "date": "2026-03-17",
       "companies": {
         "ALVO": [
           {
-            "name": "Vanguard Total Intl Stock Index Inv",
-            "shares": 1562460,
-            "pct": 0.5,
+            "name": "Aztiq Pharma Partners S.a.r.l.",
+            "shares": 0,
+            "pct": 31.2,
             "rank": 1
           },
           {
-            "name": "Vanguard Emerging Mkts Stock Idx Inv",
-            "shares": 1489165,
-            "pct": 0.48,
+            "name": "Alvogen Lux Holdings S.a.r.l.",
+            "shares": 0,
+            "pct": 29.1,
             "rank": 2
           },
           {
-            "name": "T. Rowe Price International Discovery",
-            "shares": 1140084,
-            "pct": 0.37,
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 0,
+            "pct": 1.4,
             "rank": 3
           },
           {
-            "name": "T. Rowe Price International Small-Cap Eq",
-            "shares": 1140084,
-            "pct": 0.37,
+            "name": "The Vanguard Group",
+            "shares": 0,
+            "pct": 1.3,
             "rank": 4
           },
           {
-            "name": "Stefnir Icelandic Growth",
-            "shares": 1103974,
-            "pct": 0.35,
+            "name": "Birta lífeyrissjóður",
+            "shares": 0,
+            "pct": 1.2,
             "rank": 5
           },
           {
-            "name": "Vanguard Instl Ttl Intl Stk Mkt Idx TrII",
-            "shares": 826076,
-            "pct": 0.27,
+            "name": "Stapi lífeyrissjóður",
+            "shares": 0,
+            "pct": 1.0,
             "rank": 6
           },
           {
-            "name": "iShares Biotechnology ETF",
-            "shares": 820277,
-            "pct": 0.26,
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 0,
+            "pct": 0.9,
             "rank": 7
           },
           {
-            "name": "Eaton Vance Glbl Macro Abs Ret Advtg I",
-            "shares": 593154,
-            "pct": 0.19,
+            "name": "Bracebridge Capital",
+            "shares": 0,
+            "pct": 0.8,
             "rank": 8
           },
           {
-            "name": "L&G Frontier Markets Eq Z USD Acc",
-            "shares": 490897,
-            "pct": 0.16,
+            "name": "Festa - lífeyrissjóður",
+            "shares": 0,
+            "pct": 0.6,
             "rank": 9
           },
           {
-            "name": "T. Rowe Price Intl Small-Cap Eq Tr-C",
-            "shares": 257799,
-            "pct": 0.08,
+            "name": "Almenni lífeyrissjóðurinn",
+            "shares": 0,
+            "pct": 0.6,
             "rank": 10
           },
           {
-            "name": "Vanguard FTSE All-Wld ex-US ETF",
-            "shares": 257257,
-            "pct": 0.08,
+            "name": "Hvalur hf.",
+            "shares": 0,
+            "pct": 0.5,
             "rank": 11
           },
           {
-            "name": "Eaton Vance Strategic Income Class C",
-            "shares": 239556,
-            "pct": 0.08,
+            "name": "Lífeyrissjóður Vestmannaeyja",
+            "shares": 0,
+            "pct": 0.5,
             "rank": 12
           },
           {
-            "name": "iShares Nasdaq US Biotech ETF USD Acc",
-            "shares": 229620,
-            "pct": 0.07,
+            "name": "Celtic Holdings II Limited",
+            "shares": 0,
+            "pct": 0.5,
             "rank": 13
           },
           {
-            "name": "iShares Genomics Immnlgy & Hlthcr ETF",
-            "shares": 167194,
-            "pct": 0.05,
+            "name": "Fjärde AP-Fonden",
+            "shares": 0,
+            "pct": 0.5,
             "rank": 14
           },
           {
-            "name": "Fidelity Nasdaq Composite Index",
-            "shares": 164196,
-            "pct": 0.05,
+            "name": "T. Rowe Price International",
+            "shares": 0,
+            "pct": 0.4,
             "rank": 15
           },
           {
-            "name": "Morgan Stanley Global Macro Abs. Return",
-            "shares": 159503,
-            "pct": 0.05,
+            "name": "Sjóvá-Almennar tryggingar hf.",
+            "shares": 0,
+            "pct": 0.4,
             "rank": 16
           },
           {
-            "name": "Eaton Vance Glbl Macr Absolute Return I",
-            "shares": 159503,
-            "pct": 0.05,
+            "name": "Littlejohn & Co.",
+            "shares": 0,
+            "pct": 0.4,
             "rank": 17
           },
           {
-            "name": "Schwab Emerging Markets Equity ETF™",
-            "shares": 133299,
-            "pct": 0.04,
+            "name": "Kaldbakur ehf.",
+            "shares": 0,
+            "pct": 0.4,
             "rank": 18
           },
           {
-            "name": "Vanguard Instl Ttl Intl Stck Mkt Idx Tr",
-            "shares": 123035,
-            "pct": 0.04,
+            "name": "Íslandsbanki hf,safnskráning 2",
+            "shares": 0,
+            "pct": 0.4,
             "rank": 19
           },
           {
-            "name": "Fidelity Nasdaq Composite ETF",
-            "shares": 89801,
-            "pct": 0.03,
+            "name": "Íslenski lífeyrissj-Lífsbraut 1",
+            "shares": 0,
+            "pct": 0.3,
             "rank": 20
           }
         ],
@@ -4259,121 +4255,121 @@
         "ICESEA": [
           {
             "name": "FISK-Seafood ehf.",
-            "shares": 0,
+            "shares": 454841302,
             "pct": 14.84,
             "rank": 1
           },
           {
             "name": "Brim hf.",
-            "shares": 0,
+            "shares": 350246206,
             "pct": 11.43,
             "rank": 2
           },
           {
             "name": "Jakob Valgeir ehf.",
-            "shares": 0,
+            "shares": 344961200,
             "pct": 11.26,
             "rank": 3
           },
           {
             "name": "Nesfiskur ehf.",
-            "shares": 0,
+            "shares": 322304386,
             "pct": 10.52,
             "rank": 4
           },
           {
             "name": "Birta lífeyrissjóður",
-            "shares": 0,
+            "shares": 200324420,
             "pct": 6.54,
             "rank": 5
           },
           {
             "name": "Almenni-Lífsverk lífeyrissjóður",
-            "shares": 0,
-            "pct": 5.23,
+            "shares": 160119261,
+            "pct": 5.22,
             "rank": 6
           },
           {
             "name": "Stapi lífeyrissjóður",
-            "shares": 0,
+            "shares": 159247091,
             "pct": 5.2,
             "rank": 7
           },
           {
             "name": "Lífeyrissj.starfsm.rík. A-deild",
-            "shares": 0,
+            "shares": 105510000,
             "pct": 3.44,
             "rank": 8
           },
           {
             "name": "Sjóvá-Almennar tryggingar hf.",
-            "shares": 0,
+            "shares": 92824263,
             "pct": 3.03,
             "rank": 9
           },
           {
             "name": "VÍS tryggingar hf.",
-            "shares": 0,
+            "shares": 90000000,
             "pct": 2.94,
             "rank": 10
           },
           {
             "name": "Kvika banki hf.",
-            "shares": 0,
+            "shares": 56593187,
             "pct": 1.85,
             "rank": 11
           },
           {
             "name": "Íslandsbanki hf.",
-            "shares": 0,
+            "shares": 56149049,
             "pct": 1.83,
             "rank": 12
           },
           {
             "name": "Ecock Holdings Ltd.",
-            "shares": 0,
+            "shares": 41236724,
             "pct": 1.35,
             "rank": 13
           },
           {
             "name": "Sjávarsýn ehf.",
-            "shares": 0,
+            "shares": 40000000,
             "pct": 1.31,
             "rank": 14
           },
           {
             "name": "Arion banki hf.",
-            "shares": 0,
+            "shares": 32259431,
             "pct": 1.05,
             "rank": 15
           },
           {
             "name": "Lífeyrissjóður Vestmannaeyja",
-            "shares": 0,
+            "shares": 31518518,
             "pct": 1.03,
             "rank": 16
           },
           {
             "name": "ÍV Hlutabréf hs.",
-            "shares": 0,
+            "shares": 29212016,
             "pct": 0.95,
             "rank": 17
           },
           {
             "name": "Akta HL1",
-            "shares": 0,
+            "shares": 28243422,
             "pct": 0.92,
             "rank": 18
           },
           {
             "name": "GPG Seafood ehf.",
-            "shares": 0,
+            "shares": 25825754,
             "pct": 0.84,
             "rank": 19
           },
           {
             "name": "Lífeyrissj.starfsm.rík. B-deild",
-            "shares": 0,
+            "shares": 25490000,
             "pct": 0.83,
             "rank": 20
           }
@@ -4381,8 +4377,8 @@
         "ISB": [
           {
             "name": "Lífeyrissjóður starfsmanna ríkisins",
-            "shares": 156530425,
-            "pct": 8.32,
+            "shares": 156130425,
+            "pct": 8.3,
             "rank": 1
           },
           {
@@ -4429,8 +4425,8 @@
           },
           {
             "name": "Kvika banki hf.",
-            "shares": 38825079,
-            "pct": 2.06,
+            "shares": 39164364,
+            "pct": 2.08,
             "rank": 9
           },
           {
@@ -4574,128 +4570,7 @@
             "rank": 20
           }
         ],
-        "JBTM": [
-          {
-            "name": "BlackRock Inc",
-            "shares": 7544898,
-            "pct": 14.51,
-            "rank": 1
-          },
-          {
-            "name": "Vanguard Group Inc",
-            "shares": 5482280,
-            "pct": 10.55,
-            "rank": 2
-          },
-          {
-            "name": "UBS: Global Equity",
-            "shares": 5123797,
-            "pct": 9.86,
-            "rank": 3
-          },
-          {
-            "name": "iShares Core S&P Small-Cap ETF",
-            "shares": 3148136,
-            "pct": 6.06,
-            "rank": 4
-          },
-          {
-            "name": "State Street Corp",
-            "shares": 1941857,
-            "pct": 3.74,
-            "rank": 5
-          },
-          {
-            "name": "FMR Inc",
-            "shares": 1941415,
-            "pct": 3.73,
-            "rank": 6
-          },
-          {
-            "name": "UBS Asset Mgmt Americas Inc",
-            "shares": 1796381,
-            "pct": 3.46,
-            "rank": 7
-          },
-          {
-            "name": "Vanguard Total Stock Mkt Idx Inv",
-            "shares": 1647340,
-            "pct": 3.17,
-            "rank": 8
-          },
-          {
-            "name": "iShares Russell 2000 ETF",
-            "shares": 1269576,
-            "pct": 2.44,
-            "rank": 9
-          },
-          {
-            "name": "Geode Capital Management, LLC",
-            "shares": 1246584,
-            "pct": 2.4,
-            "rank": 10
-          },
-          {
-            "name": "T. Rowe Price Associates, Inc.",
-            "shares": 1225039,
-            "pct": 2.36,
-            "rank": 11
-          },
-          {
-            "name": "Vanguard Small Cap Index",
-            "shares": 1180296,
-            "pct": 2.27,
-            "rank": 12
-          },
-          {
-            "name": "Kayne Anderson Rudnick Investment Management LLC",
-            "shares": 1119266,
-            "pct": 2.15,
-            "rank": 13
-          },
-          {
-            "name": "Gildi - lifeyrissjodur",
-            "shares": 1109379,
-            "pct": 2.13,
-            "rank": 14
-          },
-          {
-            "name": "AllianceBernstein L.P.",
-            "shares": 965509,
-            "pct": 1.86,
-            "rank": 15
-          },
-          {
-            "name": "T. Rowe Price Investment Management,Inc.",
-            "shares": 858409,
-            "pct": 1.65,
-            "rank": 16
-          },
-          {
-            "name": "JPMorgan Chase & Co",
-            "shares": 845006,
-            "pct": 1.63,
-            "rank": 17
-          },
-          {
-            "name": "Charles Schwab Investment Management Inc",
-            "shares": 726302,
-            "pct": 1.4,
-            "rank": 18
-          },
-          {
-            "name": "Baron Small Cap Strategy",
-            "shares": 700000,
-            "pct": 1.35,
-            "rank": 19
-          },
-          {
-            "name": "Baron Small Cap Retail",
-            "shares": 700000,
-            "pct": 1.35,
-            "rank": 20
-          }
-        ],
+        "JBTM": [],
         "KALD": [],
         "KVIKA": [
           {
@@ -4911,128 +4786,7 @@
             "rank": 20
           }
         ],
-        "OCS": [
-          {
-            "name": "EQT Fund Management S.à r.l.",
-            "shares": 5900294,
-            "pct": 10.18,
-            "rank": 1
-          },
-          {
-            "name": "Gildi - lifeyrissjodur",
-            "shares": 2447985,
-            "pct": 4.22,
-            "rank": 2
-          },
-          {
-            "name": "Pivotal bioVenture Partners Investment Advisor LLC",
-            "shares": 2300774,
-            "pct": 3.97,
-            "rank": 3
-          },
-          {
-            "name": "Aberdeen Group PLC",
-            "shares": 1746946,
-            "pct": 3.01,
-            "rank": 4
-          },
-          {
-            "name": "Wellington Management Company LLP",
-            "shares": 1356179,
-            "pct": 2.34,
-            "rank": 5
-          },
-          {
-            "name": "HBM Healthcare Investments AG Ord",
-            "shares": 993827,
-            "pct": 1.71,
-            "rank": 6
-          },
-          {
-            "name": "SR ONE CAPITAL MANAGEMENT, LP",
-            "shares": 641022,
-            "pct": 1.11,
-            "rank": 7
-          },
-          {
-            "name": "abrdn Healthcare Investors",
-            "shares": 579536,
-            "pct": 1.0,
-            "rank": 8
-          },
-          {
-            "name": "abrdn Healthcare Opportunities",
-            "shares": 569796,
-            "pct": 0.98,
-            "rank": 9
-          },
-          {
-            "name": "Saturn V Capital Management LLC",
-            "shares": 516761,
-            "pct": 0.89,
-            "rank": 10
-          },
-          {
-            "name": "Nan Fung Group Holdings Ltd",
-            "shares": 514702,
-            "pct": 0.89,
-            "rank": 11
-          },
-          {
-            "name": "Stefnir Icelandic Growth",
-            "shares": 354563,
-            "pct": 0.61,
-            "rank": 12
-          },
-          {
-            "name": "abrdn World Healthcare",
-            "shares": 343874,
-            "pct": 0.59,
-            "rank": 13
-          },
-          {
-            "name": "Alyeska Investment Group, L.P.",
-            "shares": 331332,
-            "pct": 0.57,
-            "rank": 14
-          },
-          {
-            "name": "abrdn Life Sciences Investors",
-            "shares": 253740,
-            "pct": 0.44,
-            "rank": 15
-          },
-          {
-            "name": "Woodline Partners LP",
-            "shares": 201200,
-            "pct": 0.35,
-            "rank": 16
-          },
-          {
-            "name": "Wellington Global Hlthcr Eq USD G Ac",
-            "shares": 189650,
-            "pct": 0.33,
-            "rank": 17
-          },
-          {
-            "name": "SYQUANT CAPITAL SAS",
-            "shares": 192722,
-            "pct": 0.33,
-            "rank": 18
-          },
-          {
-            "name": "Folketrygdfondet",
-            "shares": 182800,
-            "pct": 0.32,
-            "rank": 19
-          },
-          {
-            "name": "Hartford Healthcare Y",
-            "shares": 172558,
-            "pct": 0.3,
-            "rank": 20
-          }
-        ],
+        "OCS": [],
         "REITIR": [
           {
             "name": "Gildi - lífeyrissjóður",

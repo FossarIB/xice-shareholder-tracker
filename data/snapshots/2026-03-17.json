@@ -1245,121 +1245,121 @@
     "ICESEA": [
       {
         "name": "FISK-Seafood ehf.",
-        "shares": 0,
+        "shares": 454841302,
         "pct": 14.84,
         "rank": 1
       },
       {
         "name": "Brim hf.",
-        "shares": 0,
+        "shares": 350246206,
         "pct": 11.43,
         "rank": 2
       },
       {
         "name": "Jakob Valgeir ehf.",
-        "shares": 0,
+        "shares": 344961200,
         "pct": 11.26,
         "rank": 3
       },
       {
         "name": "Nesfiskur ehf.",
-        "shares": 0,
+        "shares": 322304386,
         "pct": 10.52,
         "rank": 4
       },
       {
         "name": "Birta lífeyrissjóður",
-        "shares": 0,
+        "shares": 200324420,
         "pct": 6.54,
         "rank": 5
       },
       {
         "name": "Almenni-Lífsverk lífeyrissjóður",
-        "shares": 0,
-        "pct": 5.23,
+        "shares": 160119261,
+        "pct": 5.22,
         "rank": 6
       },
       {
         "name": "Stapi lífeyrissjóður",
-        "shares": 0,
+        "shares": 159247091,
         "pct": 5.2,
         "rank": 7
       },
       {
         "name": "Lífeyrissj.starfsm.rík. A-deild",
-        "shares": 0,
+        "shares": 105510000,
         "pct": 3.44,
         "rank": 8
       },
       {
         "name": "Sjóvá-Almennar tryggingar hf.",
-        "shares": 0,
+        "shares": 92824263,
         "pct": 3.03,
         "rank": 9
       },
       {
         "name": "VÍS tryggingar hf.",
-        "shares": 0,
+        "shares": 90000000,
         "pct": 2.94,
         "rank": 10
       },
       {
         "name": "Kvika banki hf.",
-        "shares": 0,
+        "shares": 56593187,
         "pct": 1.85,
         "rank": 11
       },
       {
         "name": "Íslandsbanki hf.",
-        "shares": 0,
+        "shares": 56149049,
         "pct": 1.83,
         "rank": 12
       },
       {
         "name": "Ecock Holdings Ltd.",
-        "shares": 0,
+        "shares": 41236724,
         "pct": 1.35,
         "rank": 13
       },
       {
         "name": "Sjávarsýn ehf.",
-        "shares": 0,
+        "shares": 40000000,
         "pct": 1.31,
         "rank": 14
       },
       {
         "name": "Arion banki hf.",
-        "shares": 0,
+        "shares": 32259431,
         "pct": 1.05,
         "rank": 15
       },
       {
         "name": "Lífeyrissjóður Vestmannaeyja",
-        "shares": 0,
+        "shares": 31518518,
         "pct": 1.03,
         "rank": 16
       },
       {
         "name": "ÍV Hlutabréf hs.",
-        "shares": 0,
+        "shares": 29212016,
         "pct": 0.95,
         "rank": 17
       },
       {
         "name": "Akta HL1",
-        "shares": 0,
+        "shares": 28243422,
         "pct": 0.92,
         "rank": 18
       },
       {
         "name": "GPG Seafood ehf.",
-        "shares": 0,
+        "shares": 25825754,
         "pct": 0.84,
         "rank": 19
       },
       {
         "name": "Lífeyrissj.starfsm.rík. B-deild",
-        "shares": 0,
+        "shares": 25490000,
         "pct": 0.83,
         "rank": 20
       }
@@ -2632,5 +2632,5 @@
       }
     ]
   },
-  "timestamp": "2026-03-17T13:50:50.263444+00:00"
+  "timestamp": "2026-03-17T14:04:47.285817+00:00"
 }
