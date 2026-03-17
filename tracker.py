@@ -86,7 +86,8 @@ def load_config() -> dict:
 # needs_js: True = site renders data via JavaScript, use Selenium
 # ---------------------------------------------------------------------------
 XICE_COMPANIES = [
-    {"ticker": "ALVO",   "name": "Alvotech hf.",                              "shareholder_url": "https://investors.alvotech.com/shareholders",                                      "needs_js": True,  "data_source": "morningstar"},
+    {"ticker": "ALVO",   "name": "Alvotech hf.",                              "shareholder_url": "https://investors.alvotech.com/shareholders",                                      "needs_js": True},
+    {"ticker": "ALVO US","name": "Alvotech hf. (US)",                          "shareholder_url": None,                                                                                 "needs_js": False, "data_source": "morningstar"},
     {"ticker": "AMRQ",   "name": "Amaroq Minerals Ltd.",                      "shareholder_url": "https://www.amaroqminerals.com/investors/shareholders/",                            "needs_js": False},
     {"ticker": "ARION",  "name": "Arion banki hf.",                           "shareholder_url": "https://www.arionbanki.is/bankinn/fjarfestar/hlutabref/hluthafalisti/",              "needs_js": True,  "max_shareholders": 50},
     {"ticker": "BERA",   "name": u"Bera (Ölgerðin Egill Skallagrímsson hf.)", "shareholder_url": "https://www.olgerdin.is/fjarfestar/hluthafaupplysingar/",                          "needs_js": True},
