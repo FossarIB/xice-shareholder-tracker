@@ -1,6 +1,6 @@
 {
-  "date": "2026-03-16",
-  "generated_at": "2026-03-16T18:59:55.649881+00:00",
+  "date": "2026-03-17",
+  "generated_at": "2026-03-17T09:10:42.648156+00:00",
   "companies": [
     {
       "ticker": "ALVO",
@@ -1309,121 +1309,121 @@
       "shareholders": [
         {
           "name": "FISK-Seafood ehf.",
-          "shares": 454841302,
+          "shares": 0,
           "pct": 14.84,
           "rank": 1
         },
         {
           "name": "Brim hf.",
-          "shares": 350246206,
+          "shares": 0,
           "pct": 11.43,
           "rank": 2
         },
         {
           "name": "Jakob Valgeir ehf.",
-          "shares": 344961200,
+          "shares": 0,
           "pct": 11.26,
           "rank": 3
         },
         {
           "name": "Nesfiskur ehf.",
-          "shares": 322304386,
+          "shares": 0,
           "pct": 10.52,
           "rank": 4
         },
         {
           "name": "Birta lífeyrissjóður",
-          "shares": 200324420,
+          "shares": 0,
           "pct": 6.54,
           "rank": 5
         },
         {
           "name": "Almenni-Lífsverk lífeyrissjóður",
-          "shares": 160119261,
-          "pct": 5.22,
+          "shares": 0,
+          "pct": 5.23,
           "rank": 6
         },
         {
           "name": "Stapi lífeyrissjóður",
-          "shares": 159247091,
+          "shares": 0,
           "pct": 5.2,
           "rank": 7
         },
         {
           "name": "Lífeyrissj.starfsm.rík. A-deild",
-          "shares": 105510000,
+          "shares": 0,
           "pct": 3.44,
           "rank": 8
         },
         {
           "name": "Sjóvá-Almennar tryggingar hf.",
-          "shares": 92824263,
+          "shares": 0,
           "pct": 3.03,
           "rank": 9
         },
         {
           "name": "VÍS tryggingar hf.",
-          "shares": 90000000,
+          "shares": 0,
           "pct": 2.94,
           "rank": 10
         },
         {
           "name": "Kvika banki hf.",
-          "shares": 56163187,
-          "pct": 1.83,
+          "shares": 0,
+          "pct": 1.85,
           "rank": 11
         },
         {
           "name": "Íslandsbanki hf.",
-          "shares": 56149049,
+          "shares": 0,
           "pct": 1.83,
           "rank": 12
         },
         {
           "name": "Ecock Holdings Ltd.",
-          "shares": 41236724,
+          "shares": 0,
           "pct": 1.35,
           "rank": 13
         },
         {
           "name": "Sjávarsýn ehf.",
-          "shares": 40000000,
+          "shares": 0,
           "pct": 1.31,
           "rank": 14
         },
         {
           "name": "Arion banki hf.",
-          "shares": 32259431,
+          "shares": 0,
           "pct": 1.05,
           "rank": 15
         },
         {
           "name": "Lífeyrissjóður Vestmannaeyja",
-          "shares": 31518518,
+          "shares": 0,
           "pct": 1.03,
           "rank": 16
         },
         {
           "name": "ÍV Hlutabréf hs.",
-          "shares": 29212016,
+          "shares": 0,
           "pct": 0.95,
           "rank": 17
         },
         {
           "name": "Akta HL1",
-          "shares": 28243422,
+          "shares": 0,
           "pct": 0.92,
           "rank": 18
         },
         {
           "name": "GPG Seafood ehf.",
-          "shares": 25825754,
+          "shares": 0,
           "pct": 0.84,
           "rank": 19
         },
         {
           "name": "Lífeyrissj.starfsm.rík. B-deild",
-          "shares": 25490000,
+          "shares": 0,
           "pct": 0.83,
           "rank": 20
         }
@@ -1442,8 +1442,8 @@
         },
         {
           "name": "Íslandsbanki hf.",
-          "shares": 146556756,
-          "pct": 7.79,
+          "shares": 149156756,
+          "pct": 7.93,
           "rank": 2
         },
         {
@@ -1684,8 +1684,8 @@
         },
         {
           "name": "Vanguard Total Stock Mkt Idx Inv",
-          "shares": 1644502,
-          "pct": 3.16,
+          "shares": 1647340,
+          "pct": 3.17,
           "rank": 8
         },
         {
@@ -1708,8 +1708,8 @@
         },
         {
           "name": "Vanguard Small Cap Index",
-          "shares": 1177237,
-          "pct": 2.26,
+          "shares": 1180296,
+          "pct": 2.27,
           "rank": 12
         },
         {
@@ -1799,8 +1799,8 @@
         },
         {
           "name": "Kvika banki hf.",
-          "shares": 299567380,
-          "pct": 6.47,
+          "shares": 301567380,
+          "pct": 6.51,
           "rank": 5
         },
         {
@@ -1817,7 +1817,7 @@
         },
         {
           "name": "Frjálsi lífeyrissjóðurinn",
-          "shares": 123922448,
+          "shares": 124274894,
           "pct": 2.68,
           "rank": 8
         },
@@ -1829,8 +1829,8 @@
         },
         {
           "name": "Arion banki hf.",
-          "shares": 105185045,
-          "pct": 2.27,
+          "shares": 104720809,
+          "pct": 2.26,
           "rank": 10
         },
         {
@@ -1847,8 +1847,8 @@
         },
         {
           "name": "Landsbankinn hf.",
-          "shares": 62117256,
-          "pct": 1.34,
+          "shares": 62901131,
+          "pct": 1.36,
           "rank": 13
         },
         {
@@ -2318,33 +2318,33 @@
           "rank": 11
         },
         {
-          "name": "Sjóvá-Almennar tryggingar hf.",
-          "shares": 42996189,
-          "pct": 1.74,
+          "name": "Íslandsbanki hf.",
+          "shares": 43836728,
+          "pct": 1.77,
           "rank": 12
         },
         {
-          "name": "Íslandsbanki hf.",
-          "shares": 42867922,
-          "pct": 1.73,
+          "name": "Sjóvá-Almennar tryggingar hf.",
+          "shares": 42996189,
+          "pct": 1.74,
           "rank": 13
+        },
+        {
+          "name": "TM tryggingar hf.",
+          "shares": 42981845,
+          "pct": 1.74,
+          "rank": 14
         },
         {
           "name": "Brú R deild",
           "shares": 42607033,
           "pct": 1.72,
-          "rank": 14
-        },
-        {
-          "name": "TM tryggingar hf.",
-          "shares": 40981845,
-          "pct": 1.66,
           "rank": 15
         },
         {
           "name": "Kvika - Innlend hlutabréf",
-          "shares": 36566920,
-          "pct": 1.48,
+          "shares": 34566920,
+          "pct": 1.4,
           "rank": 16
         },
         {
@@ -2621,7 +2621,7 @@
         },
         {
           "name": "IS Hlutabréfasjóðurinn",
-          "shares": 19059689,
+          "shares": 18832189,
           "pct": 1.0,
           "rank": 20
         }
@@ -2658,7 +2658,7 @@
         },
         {
           "name": "Íslandsbanki hf.",
-          "shares": 42437050,
+          "shares": 42425074,
           "pct": 2.26,
           "rank": 5
         },
@@ -2693,15 +2693,15 @@
           "rank": 10
         },
         {
-          "name": "TM tryggingar hf.",
-          "shares": 15500000,
-          "pct": 0.83,
-          "rank": 11
-        },
-        {
           "name": "Vörður tryggingar hf.",
           "shares": 14749405,
           "pct": 0.78,
+          "rank": 11
+        },
+        {
+          "name": "TM tryggingar hf.",
+          "shares": 14500000,
+          "pct": 0.77,
           "rank": 12
         },
         {
@@ -2723,21 +2723,21 @@
           "rank": 15
         },
         {
+          "name": "Kvika - IHF hs.",
+          "shares": 12421898,
+          "pct": 0.66,
+          "rank": 16
+        },
+        {
           "name": "John Daniel Mccarthy",
           "shares": 12307356,
           "pct": 0.66,
-          "rank": 16
+          "rank": 17
         },
         {
           "name": "Trausttak ehf.",
           "shares": 11279213,
           "pct": 0.6,
-          "rank": 17
-        },
-        {
-          "name": "Kvika - IHF hs.",
-          "shares": 10921898,
-          "pct": 0.58,
           "rank": 18
         },
         {
@@ -3010,219 +3010,2885 @@
       "count": 20
     }
   ],
-  "changes_today": [
-    {
-      "ticker": "ALVO",
-      "company": "Alvotech hf.",
-      "entered": [
-        {
-          "name": "Eaton Vance Glbl Macr Absolute Return I",
-          "pct": 0.05,
-          "rank": 17
-        },
-        {
-          "name": "Eaton Vance Glbl Macro Abs Ret Advtg I",
-          "pct": 0.19,
-          "rank": 8
-        },
-        {
-          "name": "Eaton Vance Strategic Income Class C",
-          "pct": 0.08,
-          "rank": 12
-        },
-        {
-          "name": "Fidelity Nasdaq Composite ETF",
-          "pct": 0.03,
-          "rank": 20
-        },
-        {
-          "name": "Fidelity Nasdaq Composite Index",
-          "pct": 0.05,
-          "rank": 15
-        },
-        {
-          "name": "L&G Frontier Markets Eq Z USD Acc",
-          "pct": 0.16,
-          "rank": 9
-        },
-        {
-          "name": "Morgan Stanley Global Macro Abs. Return",
-          "pct": 0.05,
-          "rank": 16
-        },
-        {
-          "name": "Schwab Emerging Markets Equity ETF™",
-          "pct": 0.04,
-          "rank": 18
-        },
-        {
-          "name": "Stefnir Icelandic Growth",
-          "pct": 0.35,
-          "rank": 5
-        },
-        {
-          "name": "T. Rowe Price International Discovery",
-          "pct": 0.37,
-          "rank": 3
-        },
-        {
-          "name": "T. Rowe Price International Small-Cap Eq",
-          "pct": 0.37,
-          "rank": 4
-        },
-        {
-          "name": "T. Rowe Price Intl Small-Cap Eq Tr-C",
-          "pct": 0.08,
-          "rank": 10
-        },
-        {
-          "name": "Vanguard Emerging Mkts Stock Idx Inv",
-          "pct": 0.48,
-          "rank": 2
-        },
-        {
-          "name": "Vanguard FTSE All-Wld ex-US ETF",
-          "pct": 0.08,
-          "rank": 11
-        },
-        {
-          "name": "Vanguard Instl Ttl Intl Stck Mkt Idx Tr",
-          "pct": 0.04,
-          "rank": 19
-        },
-        {
-          "name": "Vanguard Instl Ttl Intl Stk Mkt Idx TrII",
-          "pct": 0.27,
-          "rank": 6
-        },
-        {
-          "name": "Vanguard Total Intl Stock Index Inv",
-          "pct": 0.5,
-          "rank": 1
-        },
-        {
-          "name": "iShares Biotechnology ETF",
-          "pct": 0.26,
-          "rank": 7
-        },
-        {
-          "name": "iShares Genomics Immnlgy & Hlthcr ETF",
-          "pct": 0.05,
-          "rank": 14
-        },
-        {
-          "name": "iShares Nasdaq US Biotech ETF USD Acc",
-          "pct": 0.07,
-          "rank": 13
-        }
-      ],
-      "exited": [
-        {
-          "name": "Almenni lífeyrissjóðurinn",
-          "pct": 0.6,
-          "rank": 10
-        },
-        {
-          "name": "Alvogen Lux Holdings S.a.r.l.",
-          "pct": 29.1,
-          "rank": 2
-        },
-        {
-          "name": "Aztiq Pharma Partners S.a.r.l.",
-          "pct": 31.2,
-          "rank": 1
-        },
-        {
-          "name": "Birta lífeyrissjóður",
-          "pct": 1.2,
-          "rank": 5
-        },
-        {
-          "name": "Bracebridge Capital",
-          "pct": 0.8,
-          "rank": 8
-        },
-        {
-          "name": "Celtic Holdings II Limited",
-          "pct": 0.5,
-          "rank": 13
-        },
-        {
-          "name": "Festa - lífeyrissjóður",
-          "pct": 0.6,
-          "rank": 9
-        },
-        {
-          "name": "Fjärde AP-Fonden",
-          "pct": 0.5,
-          "rank": 14
-        },
-        {
-          "name": "Frjálsi lífeyrissjóðurinn",
-          "pct": 0.9,
-          "rank": 7
-        },
-        {
-          "name": "Hvalur hf.",
-          "pct": 0.5,
-          "rank": 11
-        },
-        {
-          "name": "Kaldbakur ehf.",
-          "pct": 0.4,
-          "rank": 18
-        },
-        {
-          "name": "Littlejohn & Co.",
-          "pct": 0.4,
-          "rank": 17
-        },
-        {
-          "name": "Lífeyrissj.starfsm.rík. A-deild",
-          "pct": 1.4,
-          "rank": 3
-        },
-        {
-          "name": "Lífeyrissjóður Vestmannaeyja",
-          "pct": 0.5,
-          "rank": 12
-        },
-        {
-          "name": "Sjóvá-Almennar tryggingar hf.",
-          "pct": 0.4,
-          "rank": 16
-        },
-        {
-          "name": "Stapi lífeyrissjóður",
-          "pct": 1.0,
-          "rank": 6
-        },
-        {
-          "name": "T. Rowe Price International",
-          "pct": 0.4,
-          "rank": 15
-        },
-        {
-          "name": "The Vanguard Group",
-          "pct": 1.3,
-          "rank": 4
-        },
-        {
-          "name": "Íslandsbanki hf,safnskráning 2",
-          "pct": 0.4,
-          "rank": 19
-        },
-        {
-          "name": "Íslenski lífeyrissj-Lífsbraut 1",
-          "pct": 0.3,
-          "rank": 20
-        }
-      ],
-      "changed": [],
-      "has_changes": true
-    }
-  ],
+  "changes_today": [],
   "history": [
+    {
+      "date": "2026-03-17",
+      "companies": {
+        "ALVO": [
+          {
+            "name": "Vanguard Total Intl Stock Index Inv",
+            "shares": 1562460,
+            "pct": 0.5,
+            "rank": 1
+          },
+          {
+            "name": "Vanguard Emerging Mkts Stock Idx Inv",
+            "shares": 1489165,
+            "pct": 0.48,
+            "rank": 2
+          },
+          {
+            "name": "T. Rowe Price International Discovery",
+            "shares": 1140084,
+            "pct": 0.37,
+            "rank": 3
+          },
+          {
+            "name": "T. Rowe Price International Small-Cap Eq",
+            "shares": 1140084,
+            "pct": 0.37,
+            "rank": 4
+          },
+          {
+            "name": "Stefnir Icelandic Growth",
+            "shares": 1103974,
+            "pct": 0.35,
+            "rank": 5
+          },
+          {
+            "name": "Vanguard Instl Ttl Intl Stk Mkt Idx TrII",
+            "shares": 826076,
+            "pct": 0.27,
+            "rank": 6
+          },
+          {
+            "name": "iShares Biotechnology ETF",
+            "shares": 820277,
+            "pct": 0.26,
+            "rank": 7
+          },
+          {
+            "name": "Eaton Vance Glbl Macro Abs Ret Advtg I",
+            "shares": 593154,
+            "pct": 0.19,
+            "rank": 8
+          },
+          {
+            "name": "L&G Frontier Markets Eq Z USD Acc",
+            "shares": 490897,
+            "pct": 0.16,
+            "rank": 9
+          },
+          {
+            "name": "T. Rowe Price Intl Small-Cap Eq Tr-C",
+            "shares": 257799,
+            "pct": 0.08,
+            "rank": 10
+          },
+          {
+            "name": "Vanguard FTSE All-Wld ex-US ETF",
+            "shares": 257257,
+            "pct": 0.08,
+            "rank": 11
+          },
+          {
+            "name": "Eaton Vance Strategic Income Class C",
+            "shares": 239556,
+            "pct": 0.08,
+            "rank": 12
+          },
+          {
+            "name": "iShares Nasdaq US Biotech ETF USD Acc",
+            "shares": 229620,
+            "pct": 0.07,
+            "rank": 13
+          },
+          {
+            "name": "iShares Genomics Immnlgy & Hlthcr ETF",
+            "shares": 167194,
+            "pct": 0.05,
+            "rank": 14
+          },
+          {
+            "name": "Fidelity Nasdaq Composite Index",
+            "shares": 164196,
+            "pct": 0.05,
+            "rank": 15
+          },
+          {
+            "name": "Morgan Stanley Global Macro Abs. Return",
+            "shares": 159503,
+            "pct": 0.05,
+            "rank": 16
+          },
+          {
+            "name": "Eaton Vance Glbl Macr Absolute Return I",
+            "shares": 159503,
+            "pct": 0.05,
+            "rank": 17
+          },
+          {
+            "name": "Schwab Emerging Markets Equity ETF™",
+            "shares": 133299,
+            "pct": 0.04,
+            "rank": 18
+          },
+          {
+            "name": "Vanguard Instl Ttl Intl Stck Mkt Idx Tr",
+            "shares": 123035,
+            "pct": 0.04,
+            "rank": 19
+          },
+          {
+            "name": "Fidelity Nasdaq Composite ETF",
+            "shares": 89801,
+            "pct": 0.03,
+            "rank": 20
+          }
+        ],
+        "AMRQ": [
+          {
+            "name": "Industriens Pensionsforsikring A/S",
+            "shares": 21567935,
+            "pct": 4.63,
+            "rank": 1
+          },
+          {
+            "name": "Danmarks Eksport – og Investeringsfond",
+            "shares": 19298016,
+            "pct": 4.15,
+            "rank": 2
+          },
+          {
+            "name": "Lífeyrissjóður starfsmanna ríkisins, div. A.",
+            "shares": 18812546,
+            "pct": 4.04,
+            "rank": 3
+          },
+          {
+            "name": "Gildi-lífeyrissjóður",
+            "shares": 17485000,
+            "pct": 3.76,
+            "rank": 4
+          },
+          {
+            "name": "Eldur Olafsson(1)",
+            "shares": 16579383,
+            "pct": 3.56,
+            "rank": 5
+          },
+          {
+            "name": "Livermore(2)",
+            "shares": 14738462,
+            "pct": 3.17,
+            "rank": 6
+          },
+          {
+            "name": "First Pecos, LLC",
+            "shares": 14624533,
+            "pct": 3.14,
+            "rank": 7
+          }
+        ],
+        "ARION": [
+          {
+            "name": "Gildi Pension Fund",
+            "shares": 135065033,
+            "pct": 9.51,
+            "rank": 1
+          },
+          {
+            "name": "Live Pension Fund",
+            "shares": 133195490,
+            "pct": 9.38,
+            "rank": 2
+          },
+          {
+            "name": "LSR Pension Fund",
+            "shares": 128747402,
+            "pct": 9.07,
+            "rank": 3
+          },
+          {
+            "name": "Stoðir hf.",
+            "shares": 72000000,
+            "pct": 5.07,
+            "rank": 4
+          },
+          {
+            "name": "Brú Pension Fund",
+            "shares": 71704804,
+            "pct": 5.05,
+            "rank": 5
+          },
+          {
+            "name": "Vanguard",
+            "shares": 57896473,
+            "pct": 4.08,
+            "rank": 6
+          },
+          {
+            "name": "Frjálsi Pension Fund",
+            "shares": 55684104,
+            "pct": 3.92,
+            "rank": 7
+          },
+          {
+            "name": "Almenni-Lífsverk Pension Fund",
+            "shares": 49914881,
+            "pct": 3.52,
+            "rank": 8
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 49867884,
+            "pct": 3.51,
+            "rank": 9
+          },
+          {
+            "name": "Birta Pension Fund",
+            "shares": 41927444,
+            "pct": 2.95,
+            "rank": 10
+          },
+          {
+            "name": "Stapi Pension Fund",
+            "shares": 38879849,
+            "pct": 2.74,
+            "rank": 11
+          },
+          {
+            "name": "Festa Pension Fund",
+            "shares": 37101422,
+            "pct": 2.61,
+            "rank": 12
+          },
+          {
+            "name": "Hvalur hf.",
+            "shares": 36771350,
+            "pct": 2.59,
+            "rank": 13
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 23186255,
+            "pct": 1.63,
+            "rank": 14
+          },
+          {
+            "name": "Stefnir Funds",
+            "shares": 21773291,
+            "pct": 1.53,
+            "rank": 15
+          },
+          {
+            "name": "Landsbréf hf.",
+            "shares": 15134699,
+            "pct": 1.07,
+            "rank": 16
+          }
+        ],
+        "BERA": [],
+        "BRIM": [
+          {
+            "name": "Útgerðarfélag Reykjavíkur",
+            "shares": 859870977,
+            "pct": 43.96,
+            "rank": 1
+          },
+          {
+            "name": "Lífeyrissjóður starfsmanna ríkisins A-deild",
+            "shares": 262387000,
+            "pct": 13.41,
+            "rank": 2
+          },
+          {
+            "name": "Lífeyrssjóður verzlunarmanna",
+            "shares": 196780503,
+            "pct": 10.06,
+            "rank": 3
+          },
+          {
+            "name": "Brú Lífeyrissjóður starfs sveit",
+            "shares": 80993298,
+            "pct": 4.14,
+            "rank": 4
+          },
+          {
+            "name": "KG Fiskverkun ehf.",
+            "shares": 78024576,
+            "pct": 3.99,
+            "rank": 5
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 63140565,
+            "pct": 3.23,
+            "rank": 6
+          },
+          {
+            "name": "Lífeyrissjóður starfsmanna ríkisins B-deild",
+            "shares": 47889000,
+            "pct": 2.45,
+            "rank": 7
+          },
+          {
+            "name": "Stekkjarsalir ehf.",
+            "shares": 36500000,
+            "pct": 1.87,
+            "rank": 8
+          },
+          {
+            "name": "Söfnunarsjóður lífeyrisréttinda",
+            "shares": 31071090,
+            "pct": 1.59,
+            "rank": 9
+          },
+          {
+            "name": "Brim hf.",
+            "shares": 30532917,
+            "pct": 1.56,
+            "rank": 10
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 23994880,
+            "pct": 1.23,
+            "rank": 11
+          },
+          {
+            "name": "Brú R deild",
+            "shares": 17962335,
+            "pct": 0.92,
+            "rank": 12
+          },
+          {
+            "name": "Stefnir - Innlend hlutabréf hs.",
+            "shares": 13636171,
+            "pct": 0.7,
+            "rank": 13
+          },
+          {
+            "name": "Eignarhaldsfélagið VGJ ehf.",
+            "shares": 10823435,
+            "pct": 0.55,
+            "rank": 14
+          },
+          {
+            "name": "Sjóvá-Almennar tryggingar hf",
+            "shares": 10277015,
+            "pct": 0.53,
+            "rank": 15
+          },
+          {
+            "name": "Landsbréf - Úrvalsbréf hs.",
+            "shares": 9370737,
+            "pct": 0.48,
+            "rank": 16
+          },
+          {
+            "name": "Sigrún María Ingimundardóttir",
+            "shares": 9100000,
+            "pct": 0.47,
+            "rank": 17
+          },
+          {
+            "name": "Ólöf Ingimundardóttir",
+            "shares": 8990000,
+            "pct": 0.46,
+            "rank": 18
+          },
+          {
+            "name": "Hafdís Ingimundardóttir",
+            "shares": 8100000,
+            "pct": 0.41,
+            "rank": 19
+          },
+          {
+            "name": "Ingimundur Ingimundarson",
+            "shares": 7610500,
+            "pct": 0.39,
+            "rank": 20
+          }
+        ],
+        "EIK": [
+          {
+            "name": "Brimgarðar ehf.",
+            "shares": 736146280,
+            "pct": 21.64,
+            "rank": 1
+          },
+          {
+            "name": "Langisjór ehf.",
+            "shares": 448247190,
+            "pct": 13.18,
+            "rank": 2
+          },
+          {
+            "name": "Brú Lífeyrissjóður starfs sveit",
+            "shares": 353488699,
+            "pct": 10.39,
+            "rank": 3
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 327065774,
+            "pct": 9.61,
+            "rank": 4
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 283687152,
+            "pct": 8.34,
+            "rank": 5
+          },
+          {
+            "name": "Festa - lífeyrissjóður",
+            "shares": 214955942,
+            "pct": 6.32,
+            "rank": 6
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 183110315,
+            "pct": 5.38,
+            "rank": 7
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 138305447,
+            "pct": 4.06,
+            "rank": 8
+          },
+          {
+            "name": "Brú R deild",
+            "shares": 72769484,
+            "pct": 2.14,
+            "rank": 9
+          },
+          {
+            "name": "Lífeyrissjóður Vestmannaeyja",
+            "shares": 61198998,
+            "pct": 1.8,
+            "rank": 10
+          },
+          {
+            "name": "Stefnir - Innlend hlutabréf hs.",
+            "shares": 60224999,
+            "pct": 1.77,
+            "rank": 11
+          },
+          {
+            "name": "TM tryggingar hf.",
+            "shares": 26052500,
+            "pct": 0.77,
+            "rank": 12
+          },
+          {
+            "name": "Arcus Invest ehf.",
+            "shares": 24227447,
+            "pct": 0.71,
+            "rank": 13
+          },
+          {
+            "name": "Stefnir - ÍS 5 hs.",
+            "shares": 22606004,
+            "pct": 0.66,
+            "rank": 14
+          },
+          {
+            "name": "F.Bergsson Eignarhaldsféla ehf.",
+            "shares": 20115214,
+            "pct": 0.59,
+            "rank": 15
+          },
+          {
+            "name": "Íslenski lífeyrissj-Lífsbraut 1",
+            "shares": 19719690,
+            "pct": 0.58,
+            "rank": 16
+          },
+          {
+            "name": "Síldarbein ehf.",
+            "shares": 17446234,
+            "pct": 0.51,
+            "rank": 17
+          },
+          {
+            "name": "Kuwait Investment Authority",
+            "shares": 16268840,
+            "pct": 0.48,
+            "rank": 18
+          },
+          {
+            "name": "Íslenski lífeyrissj-samtrygging",
+            "shares": 14829067,
+            "pct": 0.44,
+            "rank": 19
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 12878245,
+            "pct": 0.38,
+            "rank": 20
+          }
+        ],
+        "EIM": [
+          {
+            "name": "Seley ehf.",
+            "shares": 0,
+            "pct": 33.55,
+            "rank": 1
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 0,
+            "pct": 13.84,
+            "rank": 2
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 0,
+            "pct": 12.6,
+            "rank": 3
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 0,
+            "pct": 6.43,
+            "rank": 4
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 0,
+            "pct": 4.09,
+            "rank": 5
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 0,
+            "pct": 3.7,
+            "rank": 6
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 0,
+            "pct": 3.38,
+            "rank": 7
+          },
+          {
+            "name": "Festa - lífeyrissjóður",
+            "shares": 0,
+            "pct": 2.54,
+            "rank": 8
+          },
+          {
+            "name": "Eimskipafélag Íslands hf.",
+            "shares": 0,
+            "pct": 2.4,
+            "rank": 9
+          },
+          {
+            "name": "Sjóvá-Almennar tryggingar hf.",
+            "shares": 0,
+            "pct": 1.72,
+            "rank": 10
+          },
+          {
+            "name": "Söfnunarsjóður lífeyrisréttinda",
+            "shares": 0,
+            "pct": 1.33,
+            "rank": 11
+          },
+          {
+            "name": "Landsbréf - Úrvalsbréf hs.",
+            "shares": 0,
+            "pct": 1.03,
+            "rank": 12
+          },
+          {
+            "name": "Vanguard Total International S",
+            "shares": 0,
+            "pct": 0.91,
+            "rank": 13
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 0,
+            "pct": 0.87,
+            "rank": 14
+          },
+          {
+            "name": "Vanguard Emerging Markets Stock",
+            "shares": 0,
+            "pct": 0.84,
+            "rank": 15
+          },
+          {
+            "name": "Stefnir - Innlend hlutabréf hs.",
+            "shares": 0,
+            "pct": 0.66,
+            "rank": 16
+          },
+          {
+            "name": "Íslenski lífeyrissj-Lífsbraut 1",
+            "shares": 0,
+            "pct": 0.54,
+            "rank": 17
+          },
+          {
+            "name": "Global Macro Absolute Return Ad",
+            "shares": 0,
+            "pct": 0.49,
+            "rank": 18
+          },
+          {
+            "name": "Landsbréf - Öndvegisbréf hs.",
+            "shares": 0,
+            "pct": 0.48,
+            "rank": 19
+          },
+          {
+            "name": "Vanguard Fiduciary Trust Compa",
+            "shares": 0,
+            "pct": 0.46,
+            "rank": 20
+          }
+        ],
+        "FESTI": [
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 47875784,
+            "pct": 15.32,
+            "rank": 1
+          },
+          {
+            "name": "LSR - Lífeyrissjóður starfsmanna ríkisins",
+            "shares": 37549523,
+            "pct": 12.01,
+            "rank": 2
+          },
+          {
+            "name": "Brú lífeyrissjóður",
+            "shares": 32363641,
+            "pct": 10.35,
+            "rank": 3
+          },
+          {
+            "name": "Gildi lífeyrissjóður",
+            "shares": 30440038,
+            "pct": 9.74,
+            "rank": 4
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 21499599,
+            "pct": 6.88,
+            "rank": 5
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 14435576,
+            "pct": 4.62,
+            "rank": 6
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 12244588,
+            "pct": 3.92,
+            "rank": 7
+          },
+          {
+            "name": "Vanguard",
+            "shares": 12098337,
+            "pct": 3.87,
+            "rank": 8
+          },
+          {
+            "name": "Frjálsi lífeyrissjóður",
+            "shares": 10806170,
+            "pct": 3.46,
+            "rank": 9
+          },
+          {
+            "name": "Söfnunarsjóður Lífeyrisréttinda",
+            "shares": 8649064,
+            "pct": 2.77,
+            "rank": 10
+          },
+          {
+            "name": "Festa lífeyrissjóður",
+            "shares": 6597391,
+            "pct": 2.11,
+            "rank": 11
+          },
+          {
+            "name": "Landsbréf hf.",
+            "shares": 5888029,
+            "pct": 1.88,
+            "rank": 12
+          },
+          {
+            "name": "Stefnir hf",
+            "shares": 5340647,
+            "pct": 1.71,
+            "rank": 13
+          },
+          {
+            "name": "Festi hf.",
+            "shares": 5200000,
+            "pct": 1.66,
+            "rank": 14
+          },
+          {
+            "name": "Folketrygdfondet",
+            "shares": 3483698,
+            "pct": 1.11,
+            "rank": 15
+          },
+          {
+            "name": "Kvika Asset Management",
+            "shares": 3409096,
+            "pct": 1.09,
+            "rank": 16
+          },
+          {
+            "name": "Hibb Holding Ehf.",
+            "shares": 3262216,
+            "pct": 1.04,
+            "rank": 17
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 3095969,
+            "pct": 0.99,
+            "rank": 18
+          },
+          {
+            "name": "Þarabakki Ehf",
+            "shares": 2371027,
+            "pct": 0.76,
+            "rank": 19
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 2336602,
+            "pct": 0.75,
+            "rank": 20
+          }
+        ],
+        "HAGA": [
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 179893219,
+            "pct": 16.26,
+            "rank": 1
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 135312404,
+            "pct": 12.23,
+            "rank": 2
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 124022598,
+            "pct": 11.21,
+            "rank": 3
+          },
+          {
+            "name": "Brú Lífeyrissjóður starfs sveit",
+            "shares": 92625404,
+            "pct": 8.37,
+            "rank": 4
+          },
+          {
+            "name": "Kaldbakur ehf.",
+            "shares": 90000000,
+            "pct": 8.13,
+            "rank": 5
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 71092636,
+            "pct": 6.42,
+            "rank": 6
+          },
+          {
+            "name": "Festa - lífeyrissjóður",
+            "shares": 46149169,
+            "pct": 4.17,
+            "rank": 7
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 33088211,
+            "pct": 2.99,
+            "rank": 8
+          },
+          {
+            "name": "Söfnunarsjóður lífeyrisréttinda",
+            "shares": 26301990,
+            "pct": 2.38,
+            "rank": 9
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 26267240,
+            "pct": 2.37,
+            "rank": 10
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 20144633,
+            "pct": 1.82,
+            "rank": 11
+          },
+          {
+            "name": "Hagar hf.",
+            "shares": 17839014,
+            "pct": 1.61,
+            "rank": 12
+          },
+          {
+            "name": "Brú R deild",
+            "shares": 16473187,
+            "pct": 1.49,
+            "rank": 13
+          },
+          {
+            "name": "Vanguard Total International S",
+            "shares": 14021015,
+            "pct": 1.27,
+            "rank": 14
+          },
+          {
+            "name": "Vanguard Emerging Markets Stock",
+            "shares": 13244702,
+            "pct": 1.2,
+            "rank": 15
+          },
+          {
+            "name": "Folketrygdfondet",
+            "shares": 11020984,
+            "pct": 1.0,
+            "rank": 16
+          },
+          {
+            "name": "Sp/F NM Holding",
+            "shares": 9177019,
+            "pct": 0.83,
+            "rank": 17
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 8369917,
+            "pct": 0.76,
+            "rank": 18
+          },
+          {
+            "name": "Stefnir - Innlend hlutabréf hs.",
+            "shares": 7512790,
+            "pct": 0.68,
+            "rank": 19
+          },
+          {
+            "name": "Vanguard Fiduciary Trust Compa",
+            "shares": 7094114,
+            "pct": 0.64,
+            "rank": 20
+          }
+        ],
+        "HAMP": [
+          {
+            "name": "Hvalur hf.",
+            "shares": 232896370,
+            "pct": 36.62,
+            "rank": 1
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 41082848,
+            "pct": 6.46,
+            "rank": 2
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 39685154,
+            "pct": 6.24,
+            "rank": 3
+          },
+          {
+            "name": "Almenni - Lífsverk lífeyrissjóður",
+            "shares": 33418271,
+            "pct": 5.25,
+            "rank": 4
+          },
+          {
+            "name": "Festa - lífeyrissjóður",
+            "shares": 23473089,
+            "pct": 3.69,
+            "rank": 5
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 20296000,
+            "pct": 3.19,
+            "rank": 6
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 19169047,
+            "pct": 3.01,
+            "rank": 7
+          },
+          {
+            "name": "Ingibjörg Björnsdóttir",
+            "shares": 17284017,
+            "pct": 2.72,
+            "rank": 8
+          },
+          {
+            "name": "Hlér ehf",
+            "shares": 16507597,
+            "pct": 2.6,
+            "rank": 9
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 12029106,
+            "pct": 1.89,
+            "rank": 10
+          },
+          {
+            "name": "Vilhjálmur Vilhjálmsson",
+            "shares": 8387374,
+            "pct": 1.32,
+            "rank": 11
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 8072773,
+            "pct": 1.27,
+            "rank": 12
+          },
+          {
+            "name": "Súsanna Sigurðardóttir",
+            "shares": 7850000,
+            "pct": 1.23,
+            "rank": 13
+          },
+          {
+            "name": "Lífeyrissjóður Vestmannaeyja",
+            "shares": 7535641,
+            "pct": 1.18,
+            "rank": 14
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 7117510,
+            "pct": 1.12,
+            "rank": 15
+          },
+          {
+            "name": "Gunnar Hafsteinsson",
+            "shares": 6530581,
+            "pct": 1.03,
+            "rank": 16
+          },
+          {
+            "name": "Langhólmi ehf.",
+            "shares": 3998016,
+            "pct": 0.63,
+            "rank": 17
+          },
+          {
+            "name": "TM tryggingar hf.",
+            "shares": 3350000,
+            "pct": 0.53,
+            "rank": 18
+          },
+          {
+            "name": "Stefnir - Innlend hlutabréf hs.",
+            "shares": 3269023,
+            "pct": 0.51,
+            "rank": 19
+          },
+          {
+            "name": "Sigurður Vilhjálmsson",
+            "shares": 3233036,
+            "pct": 0.51,
+            "rank": 20
+          }
+        ],
+        "HEIMAR": [
+          {
+            "name": "Omega fasteignir ehf.",
+            "shares": 252273929,
+            "pct": 12.48,
+            "rank": 1
+          },
+          {
+            "name": "Lífeyrissjóður starfsmanna ríkisins",
+            "shares": 191287919,
+            "pct": 9.49,
+            "rank": 2
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 163778141,
+            "pct": 8.1,
+            "rank": 3
+          },
+          {
+            "name": "Brú lífeyrissjóður",
+            "shares": 143132949,
+            "pct": 7.08,
+            "rank": 4
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 138539933,
+            "pct": 6.85,
+            "rank": 5
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 128395988,
+            "pct": 6.35,
+            "rank": 6
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 75064062,
+            "pct": 3.71,
+            "rank": 7
+          },
+          {
+            "name": "Túnsteinn ehf.",
+            "shares": 70000000,
+            "pct": 3.46,
+            "rank": 8
+          },
+          {
+            "name": "Sigla ehf.",
+            "shares": 67000000,
+            "pct": 3.31,
+            "rank": 9
+          },
+          {
+            "name": "Heimar hf.",
+            "shares": 64643000,
+            "pct": 3.2,
+            "rank": 10
+          },
+          {
+            "name": "Almenni - Lífsverk lífeyrissjóður",
+            "shares": 64498644,
+            "pct": 3.19,
+            "rank": 11
+          },
+          {
+            "name": "The Vanguard Group, Inc.",
+            "shares": 61374060,
+            "pct": 3.04,
+            "rank": 12
+          },
+          {
+            "name": "Brimgarðar ehf.",
+            "shares": 57924483,
+            "pct": 2.86,
+            "rank": 13
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 51397021,
+            "pct": 2.54,
+            "rank": 14
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 48728253,
+            "pct": 2.41,
+            "rank": 15
+          },
+          {
+            "name": "Söfnunarsjóður lífeyrisréttinda",
+            "shares": 39493269,
+            "pct": 1.95,
+            "rank": 16
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 35436766,
+            "pct": 1.75,
+            "rank": 17
+          },
+          {
+            "name": "Stefnir hf.",
+            "shares": 28976448,
+            "pct": 1.43,
+            "rank": 18
+          },
+          {
+            "name": "Kristinn ehf.",
+            "shares": 28000000,
+            "pct": 1.38,
+            "rank": 19
+          },
+          {
+            "name": "FM eignir 1 ehf.",
+            "shares": 25771241,
+            "pct": 1.27,
+            "rank": 20
+          }
+        ],
+        "ICEAIR": [
+          {
+            "name": "Blue Issuer Designated Activit",
+            "shares": 0,
+            "pct": 17.2,
+            "rank": 1
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 0,
+            "pct": 4.73,
+            "rank": 2
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 0,
+            "pct": 4.0,
+            "rank": 3
+          },
+          {
+            "name": "Brú Lífeyrissjóður starfs sveit",
+            "shares": 0,
+            "pct": 3.6,
+            "rank": 4
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 0,
+            "pct": 3.53,
+            "rank": 5
+          },
+          {
+            "name": "Fossar markaðir Safnreikningur",
+            "shares": 0,
+            "pct": 3.13,
+            "rank": 6
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 0,
+            "pct": 2.09,
+            "rank": 7
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 0,
+            "pct": 1.74,
+            "rank": 8
+          },
+          {
+            "name": "Sólvöllur ehf.",
+            "shares": 0,
+            "pct": 1.61,
+            "rank": 9
+          },
+          {
+            "name": "Stefnir - Innlend hlutabréf hs.",
+            "shares": 0,
+            "pct": 1.52,
+            "rank": 10
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 0,
+            "pct": 1.25,
+            "rank": 11
+          },
+          {
+            "name": "Einstaklingur 5",
+            "shares": 0,
+            "pct": 1.02,
+            "rank": 12
+          },
+          {
+            "name": "Arcus Invest ehf.",
+            "shares": 0,
+            "pct": 1.02,
+            "rank": 13
+          },
+          {
+            "name": "Landsbréf - Úrvalsbréf hs.",
+            "shares": 0,
+            "pct": 0.88,
+            "rank": 14
+          },
+          {
+            "name": "Lífeyrissjóður Vestmannaeyja",
+            "shares": 0,
+            "pct": 0.87,
+            "rank": 15
+          },
+          {
+            "name": "Söfnunarsjóður lífeyrisréttinda",
+            "shares": 0,
+            "pct": 0.82,
+            "rank": 16
+          },
+          {
+            "name": "Nautica ehf",
+            "shares": 0,
+            "pct": 0.75,
+            "rank": 17
+          },
+          {
+            "name": "Stefnir - ÍS 5 hs.",
+            "shares": 0,
+            "pct": 0.71,
+            "rank": 18
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 0,
+            "pct": 0.7,
+            "rank": 19
+          },
+          {
+            "name": "Vanguard Total International S",
+            "shares": 0,
+            "pct": 0.7,
+            "rank": 20
+          }
+        ],
+        "ICESEA": [
+          {
+            "name": "FISK-Seafood ehf.",
+            "shares": 0,
+            "pct": 14.84,
+            "rank": 1
+          },
+          {
+            "name": "Brim hf.",
+            "shares": 0,
+            "pct": 11.43,
+            "rank": 2
+          },
+          {
+            "name": "Jakob Valgeir ehf.",
+            "shares": 0,
+            "pct": 11.26,
+            "rank": 3
+          },
+          {
+            "name": "Nesfiskur ehf.",
+            "shares": 0,
+            "pct": 10.52,
+            "rank": 4
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 0,
+            "pct": 6.54,
+            "rank": 5
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 0,
+            "pct": 5.23,
+            "rank": 6
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 0,
+            "pct": 5.2,
+            "rank": 7
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 0,
+            "pct": 3.44,
+            "rank": 8
+          },
+          {
+            "name": "Sjóvá-Almennar tryggingar hf.",
+            "shares": 0,
+            "pct": 3.03,
+            "rank": 9
+          },
+          {
+            "name": "VÍS tryggingar hf.",
+            "shares": 0,
+            "pct": 2.94,
+            "rank": 10
+          },
+          {
+            "name": "Kvika banki hf.",
+            "shares": 0,
+            "pct": 1.85,
+            "rank": 11
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 0,
+            "pct": 1.83,
+            "rank": 12
+          },
+          {
+            "name": "Ecock Holdings Ltd.",
+            "shares": 0,
+            "pct": 1.35,
+            "rank": 13
+          },
+          {
+            "name": "Sjávarsýn ehf.",
+            "shares": 0,
+            "pct": 1.31,
+            "rank": 14
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 0,
+            "pct": 1.05,
+            "rank": 15
+          },
+          {
+            "name": "Lífeyrissjóður Vestmannaeyja",
+            "shares": 0,
+            "pct": 1.03,
+            "rank": 16
+          },
+          {
+            "name": "ÍV Hlutabréf hs.",
+            "shares": 0,
+            "pct": 0.95,
+            "rank": 17
+          },
+          {
+            "name": "Akta HL1",
+            "shares": 0,
+            "pct": 0.92,
+            "rank": 18
+          },
+          {
+            "name": "GPG Seafood ehf.",
+            "shares": 0,
+            "pct": 0.84,
+            "rank": 19
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 0,
+            "pct": 0.83,
+            "rank": 20
+          }
+        ],
+        "ISB": [
+          {
+            "name": "Lífeyrissjóður starfsmanna ríkisins",
+            "shares": 156530425,
+            "pct": 8.32,
+            "rank": 1
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 149156756,
+            "pct": 7.93,
+            "rank": 2
+          },
+          {
+            "name": "Gildi lífeyrissjóður",
+            "shares": 141920244,
+            "pct": 7.55,
+            "rank": 3
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 115363258,
+            "pct": 6.13,
+            "rank": 4
+          },
+          {
+            "name": "Brú lífeyrissjóður",
+            "shares": 83034746,
+            "pct": 4.42,
+            "rank": 5
+          },
+          {
+            "name": "Vanguard",
+            "shares": 82449862,
+            "pct": 4.38,
+            "rank": 6
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 58649926,
+            "pct": 3.12,
+            "rank": 7
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 48621827,
+            "pct": 2.59,
+            "rank": 8
+          },
+          {
+            "name": "Kvika banki hf.",
+            "shares": 38825079,
+            "pct": 2.06,
+            "rank": 9
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 35879474,
+            "pct": 1.91,
+            "rank": 10
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 30512971,
+            "pct": 1.62,
+            "rank": 11
+          },
+          {
+            "name": "Festa lífeyrissjóður",
+            "shares": 20357940,
+            "pct": 1.08,
+            "rank": 12
+          }
+        ],
+        "ISF": [
+          {
+            "name": "ÍV fjárfestingafélag ehf.",
+            "shares": 402201538,
+            "pct": 49.13,
+            "rank": 1
+          },
+          {
+            "name": "Marteinn Haraldsson ehf.",
+            "shares": 93494071,
+            "pct": 11.42,
+            "rank": 2
+          },
+          {
+            "name": "Gunnar Sigvaldason",
+            "shares": 51427700,
+            "pct": 6.28,
+            "rank": 3
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 33641473,
+            "pct": 4.11,
+            "rank": 4
+          },
+          {
+            "name": "Svavar Berg Magnússon",
+            "shares": 26177653,
+            "pct": 3.2,
+            "rank": 5
+          },
+          {
+            "name": "Anna ehf.",
+            "shares": 18471622,
+            "pct": 2.26,
+            "rank": 6
+          },
+          {
+            "name": "Brú Lífeyrissjóður starfs sveit",
+            "shares": 16694913,
+            "pct": 2.04,
+            "rank": 7
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 16336459,
+            "pct": 2.0,
+            "rank": 8
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 13423294,
+            "pct": 1.64,
+            "rank": 9
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 11306561,
+            "pct": 1.38,
+            "rank": 10
+          },
+          {
+            "name": "Fimman ehf.",
+            "shares": 11192088,
+            "pct": 1.37,
+            "rank": 11
+          },
+          {
+            "name": "Jón Ingvar Þorvaldsson",
+            "shares": 7553828,
+            "pct": 0.92,
+            "rank": 12
+          },
+          {
+            "name": "Friðgeir Sigurðsson",
+            "shares": 7006080,
+            "pct": 0.86,
+            "rank": 13
+          },
+          {
+            "name": "Guðmundur Sigurðsson",
+            "shares": 7005376,
+            "pct": 0.86,
+            "rank": 14
+          },
+          {
+            "name": "Valgerður Sigurðardóttir",
+            "shares": 7005376,
+            "pct": 0.86,
+            "rank": 15
+          },
+          {
+            "name": "Karlsberg ehf",
+            "shares": 6575074,
+            "pct": 0.8,
+            "rank": 16
+          },
+          {
+            "name": "Sjóvá-Almennar tryggingar hf.",
+            "shares": 5069019,
+            "pct": 0.62,
+            "rank": 17
+          },
+          {
+            "name": "Hali ehf.",
+            "shares": 4964978,
+            "pct": 0.61,
+            "rank": 18
+          },
+          {
+            "name": "Júlía Petra Andersen",
+            "shares": 3235839,
+            "pct": 0.4,
+            "rank": 19
+          },
+          {
+            "name": "Brú R deild",
+            "shares": 2758473,
+            "pct": 0.34,
+            "rank": 20
+          }
+        ],
+        "JBTM": [
+          {
+            "name": "BlackRock Inc",
+            "shares": 7544898,
+            "pct": 14.51,
+            "rank": 1
+          },
+          {
+            "name": "Vanguard Group Inc",
+            "shares": 5482280,
+            "pct": 10.55,
+            "rank": 2
+          },
+          {
+            "name": "UBS: Global Equity",
+            "shares": 5123797,
+            "pct": 9.86,
+            "rank": 3
+          },
+          {
+            "name": "iShares Core S&P Small-Cap ETF",
+            "shares": 3148136,
+            "pct": 6.06,
+            "rank": 4
+          },
+          {
+            "name": "State Street Corp",
+            "shares": 1941857,
+            "pct": 3.74,
+            "rank": 5
+          },
+          {
+            "name": "FMR Inc",
+            "shares": 1941415,
+            "pct": 3.73,
+            "rank": 6
+          },
+          {
+            "name": "UBS Asset Mgmt Americas Inc",
+            "shares": 1796381,
+            "pct": 3.46,
+            "rank": 7
+          },
+          {
+            "name": "Vanguard Total Stock Mkt Idx Inv",
+            "shares": 1647340,
+            "pct": 3.17,
+            "rank": 8
+          },
+          {
+            "name": "iShares Russell 2000 ETF",
+            "shares": 1269576,
+            "pct": 2.44,
+            "rank": 9
+          },
+          {
+            "name": "Geode Capital Management, LLC",
+            "shares": 1246584,
+            "pct": 2.4,
+            "rank": 10
+          },
+          {
+            "name": "T. Rowe Price Associates, Inc.",
+            "shares": 1225039,
+            "pct": 2.36,
+            "rank": 11
+          },
+          {
+            "name": "Vanguard Small Cap Index",
+            "shares": 1180296,
+            "pct": 2.27,
+            "rank": 12
+          },
+          {
+            "name": "Kayne Anderson Rudnick Investment Management LLC",
+            "shares": 1119266,
+            "pct": 2.15,
+            "rank": 13
+          },
+          {
+            "name": "Gildi - lifeyrissjodur",
+            "shares": 1109379,
+            "pct": 2.13,
+            "rank": 14
+          },
+          {
+            "name": "AllianceBernstein L.P.",
+            "shares": 965509,
+            "pct": 1.86,
+            "rank": 15
+          },
+          {
+            "name": "T. Rowe Price Investment Management,Inc.",
+            "shares": 858409,
+            "pct": 1.65,
+            "rank": 16
+          },
+          {
+            "name": "JPMorgan Chase & Co",
+            "shares": 845006,
+            "pct": 1.63,
+            "rank": 17
+          },
+          {
+            "name": "Charles Schwab Investment Management Inc",
+            "shares": 726302,
+            "pct": 1.4,
+            "rank": 18
+          },
+          {
+            "name": "Baron Small Cap Strategy",
+            "shares": 700000,
+            "pct": 1.35,
+            "rank": 19
+          },
+          {
+            "name": "Baron Small Cap Retail",
+            "shares": 700000,
+            "pct": 1.35,
+            "rank": 20
+          }
+        ],
+        "KALD": [],
+        "KVIKA": [
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 413083679,
+            "pct": 8.92,
+            "rank": 1
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 363879756,
+            "pct": 7.86,
+            "rank": 2
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 360287313,
+            "pct": 7.78,
+            "rank": 3
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 332072141,
+            "pct": 7.17,
+            "rank": 4
+          },
+          {
+            "name": "Kvika banki hf.",
+            "shares": 301567380,
+            "pct": 6.51,
+            "rank": 5
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 237896173,
+            "pct": 5.14,
+            "rank": 6
+          },
+          {
+            "name": "Stoðir hf.",
+            "shares": 235000000,
+            "pct": 5.07,
+            "rank": 7
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 124274894,
+            "pct": 2.68,
+            "rank": 8
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 110909112,
+            "pct": 2.39,
+            "rank": 9
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 104720809,
+            "pct": 2.26,
+            "rank": 10
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 66964445,
+            "pct": 1.45,
+            "rank": 11
+          },
+          {
+            "name": "Vanguard Total International S",
+            "shares": 64199255,
+            "pct": 1.39,
+            "rank": 12
+          },
+          {
+            "name": "Landsbankinn hf.",
+            "shares": 62901131,
+            "pct": 1.36,
+            "rank": 13
+          },
+          {
+            "name": "Vanguard Emerging Markets Stock",
+            "shares": 56864717,
+            "pct": 1.23,
+            "rank": 14
+          },
+          {
+            "name": "Landsbréf - Úrvalsbréf hs.",
+            "shares": 49513692,
+            "pct": 1.07,
+            "rank": 15
+          }
+        ],
+        "NOVA": [
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 426719059,
+            "pct": 12.0,
+            "rank": 1
+          },
+          {
+            "name": "Lífeyrissj. starfsm. rík. A-deild",
+            "shares": 312744159,
+            "pct": 8.8,
+            "rank": 2
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 298698236,
+            "pct": 8.4,
+            "rank": 3
+          },
+          {
+            "name": "Lífsverk lífeyrissjóður",
+            "shares": 211659497,
+            "pct": 5.9,
+            "rank": 4
+          },
+          {
+            "name": "Festa - lífeyrissjóður",
+            "shares": 206492403,
+            "pct": 5.8,
+            "rank": 5
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 181076759,
+            "pct": 5.1,
+            "rank": 6
+          },
+          {
+            "name": "Landsbréf - Úrvalsbréf hs.",
+            "shares": 173315498,
+            "pct": 4.9,
+            "rank": 7
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 157930000,
+            "pct": 4.4,
+            "rank": 8
+          },
+          {
+            "name": "Sjóvá-Almennar tryggingar hf.",
+            "shares": 101068772,
+            "pct": 2.8,
+            "rank": 9
+          },
+          {
+            "name": "Nova klúbburinn hf.",
+            "shares": 98400000,
+            "pct": 2.8,
+            "rank": 10
+          },
+          {
+            "name": "M&M Partners ehf.",
+            "shares": 80465302,
+            "pct": 2.3,
+            "rank": 11
+          },
+          {
+            "name": "Landsbréf - Öndvegisbréf hs.",
+            "shares": 77657317,
+            "pct": 2.2,
+            "rank": 12
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 66832433,
+            "pct": 1.9,
+            "rank": 13
+          },
+          {
+            "name": "Landsbréf - Hekla hs.",
+            "shares": 61450761,
+            "pct": 1.7,
+            "rank": 14
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 52250000,
+            "pct": 1.5,
+            "rank": 15
+          },
+          {
+            "name": "IS EQUUS Hlutabréf",
+            "shares": 55382281,
+            "pct": 1.5,
+            "rank": 16
+          },
+          {
+            "name": "IS Hlutabréfasjóðurinn",
+            "shares": 50698230,
+            "pct": 1.4,
+            "rank": 17
+          },
+          {
+            "name": "Stefnir - Innlend hlutabréf hs.",
+            "shares": 49576891,
+            "pct": 1.4,
+            "rank": 18
+          },
+          {
+            "name": "Kvika - Innlend hlutabréf",
+            "shares": 41462209,
+            "pct": 1.2,
+            "rank": 19
+          },
+          {
+            "name": "Vörður tryggingar hf.",
+            "shares": 41333333,
+            "pct": 1.1,
+            "rank": 20
+          }
+        ],
+        "OCS": [
+          {
+            "name": "EQT Fund Management S.à r.l.",
+            "shares": 5900294,
+            "pct": 10.18,
+            "rank": 1
+          },
+          {
+            "name": "Gildi - lifeyrissjodur",
+            "shares": 2447985,
+            "pct": 4.22,
+            "rank": 2
+          },
+          {
+            "name": "Pivotal bioVenture Partners Investment Advisor LLC",
+            "shares": 2300774,
+            "pct": 3.97,
+            "rank": 3
+          },
+          {
+            "name": "Aberdeen Group PLC",
+            "shares": 1746946,
+            "pct": 3.01,
+            "rank": 4
+          },
+          {
+            "name": "Wellington Management Company LLP",
+            "shares": 1356179,
+            "pct": 2.34,
+            "rank": 5
+          },
+          {
+            "name": "HBM Healthcare Investments AG Ord",
+            "shares": 993827,
+            "pct": 1.71,
+            "rank": 6
+          },
+          {
+            "name": "SR ONE CAPITAL MANAGEMENT, LP",
+            "shares": 641022,
+            "pct": 1.11,
+            "rank": 7
+          },
+          {
+            "name": "abrdn Healthcare Investors",
+            "shares": 579536,
+            "pct": 1.0,
+            "rank": 8
+          },
+          {
+            "name": "abrdn Healthcare Opportunities",
+            "shares": 569796,
+            "pct": 0.98,
+            "rank": 9
+          },
+          {
+            "name": "Saturn V Capital Management LLC",
+            "shares": 516761,
+            "pct": 0.89,
+            "rank": 10
+          },
+          {
+            "name": "Nan Fung Group Holdings Ltd",
+            "shares": 514702,
+            "pct": 0.89,
+            "rank": 11
+          },
+          {
+            "name": "Stefnir Icelandic Growth",
+            "shares": 354563,
+            "pct": 0.61,
+            "rank": 12
+          },
+          {
+            "name": "abrdn World Healthcare",
+            "shares": 343874,
+            "pct": 0.59,
+            "rank": 13
+          },
+          {
+            "name": "Alyeska Investment Group, L.P.",
+            "shares": 331332,
+            "pct": 0.57,
+            "rank": 14
+          },
+          {
+            "name": "abrdn Life Sciences Investors",
+            "shares": 253740,
+            "pct": 0.44,
+            "rank": 15
+          },
+          {
+            "name": "Woodline Partners LP",
+            "shares": 201200,
+            "pct": 0.35,
+            "rank": 16
+          },
+          {
+            "name": "Wellington Global Hlthcr Eq USD G Ac",
+            "shares": 189650,
+            "pct": 0.33,
+            "rank": 17
+          },
+          {
+            "name": "SYQUANT CAPITAL SAS",
+            "shares": 192722,
+            "pct": 0.33,
+            "rank": 18
+          },
+          {
+            "name": "Folketrygdfondet",
+            "shares": 182800,
+            "pct": 0.32,
+            "rank": 19
+          },
+          {
+            "name": "Hartford Healthcare Y",
+            "shares": 172558,
+            "pct": 0.3,
+            "rank": 20
+          }
+        ],
+        "REITIR": [
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 130609960,
+            "pct": 18.74,
+            "rank": 1
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 76676189,
+            "pct": 11.0,
+            "rank": 2
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 58197184,
+            "pct": 8.35,
+            "rank": 3
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 35969000,
+            "pct": 5.16,
+            "rank": 4
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 31883820,
+            "pct": 4.57,
+            "rank": 5
+          },
+          {
+            "name": "Festa - lífeyrissjóður",
+            "shares": 31469523,
+            "pct": 4.52,
+            "rank": 6
+          },
+          {
+            "name": "Kjölur fjárfestingarfélag ehf.",
+            "shares": 29380000,
+            "pct": 4.22,
+            "rank": 7
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 28616527,
+            "pct": 4.11,
+            "rank": 8
+          },
+          {
+            "name": "Brimgarðar ehf.",
+            "shares": 26356892,
+            "pct": 3.78,
+            "rank": 9
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 21106508,
+            "pct": 3.03,
+            "rank": 10
+          },
+          {
+            "name": "Söfnunarsjóður lífeyrisréttinda",
+            "shares": 19300331,
+            "pct": 2.77,
+            "rank": 11
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 17688914,
+            "pct": 2.54,
+            "rank": 12
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 17064468,
+            "pct": 2.45,
+            "rank": 13
+          },
+          {
+            "name": "Reitir fasteignafélag hf.",
+            "shares": 12739389,
+            "pct": 1.83,
+            "rank": 14
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 10499772,
+            "pct": 1.51,
+            "rank": 15
+          },
+          {
+            "name": "Vanguard Total International S",
+            "shares": 9521583,
+            "pct": 1.37,
+            "rank": 16
+          },
+          {
+            "name": "Arcus Invest ehf.",
+            "shares": 8683007,
+            "pct": 1.25,
+            "rank": 17
+          },
+          {
+            "name": "Vanguard Emerging Markets Stock",
+            "shares": 7971473,
+            "pct": 1.14,
+            "rank": 18
+          },
+          {
+            "name": "GJ Invest ehf.",
+            "shares": 7127168,
+            "pct": 1.02,
+            "rank": 19
+          },
+          {
+            "name": "Sjóvá-Almennar tryggingar hf.",
+            "shares": 6881168,
+            "pct": 0.99,
+            "rank": 20
+          }
+        ],
+        "SIMINN": [
+          {
+            "name": "Stoðir hf.",
+            "shares": 461194170,
+            "pct": 18.63,
+            "rank": 1
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 258748439,
+            "pct": 10.45,
+            "rank": 2
+          },
+          {
+            "name": "Brú Lífeyrissjóður starfs sveit",
+            "shares": 250877095,
+            "pct": 10.14,
+            "rank": 3
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 198922187,
+            "pct": 8.04,
+            "rank": 4
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 176368725,
+            "pct": 7.13,
+            "rank": 5
+          },
+          {
+            "name": "Síminn hf.",
+            "shares": 148868692,
+            "pct": 6.02,
+            "rank": 6
+          },
+          {
+            "name": "Söfnunarsjóður lífeyrisréttinda",
+            "shares": 89258626,
+            "pct": 3.61,
+            "rank": 7
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 75418813,
+            "pct": 3.05,
+            "rank": 8
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 74093221,
+            "pct": 2.99,
+            "rank": 9
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 50949152,
+            "pct": 2.06,
+            "rank": 10
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 49575901,
+            "pct": 2.0,
+            "rank": 11
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 43836728,
+            "pct": 1.77,
+            "rank": 12
+          },
+          {
+            "name": "Sjóvá-Almennar tryggingar hf.",
+            "shares": 42996189,
+            "pct": 1.74,
+            "rank": 13
+          },
+          {
+            "name": "TM tryggingar hf.",
+            "shares": 42981845,
+            "pct": 1.74,
+            "rank": 14
+          },
+          {
+            "name": "Brú R deild",
+            "shares": 42607033,
+            "pct": 1.72,
+            "rank": 15
+          },
+          {
+            "name": "Kvika - Innlend hlutabréf",
+            "shares": 34566920,
+            "pct": 1.4,
+            "rank": 16
+          },
+          {
+            "name": "Vanguard Total International S",
+            "shares": 31694806,
+            "pct": 1.28,
+            "rank": 17
+          },
+          {
+            "name": "Vanguard Emerging Markets Stock",
+            "shares": 26824050,
+            "pct": 1.08,
+            "rank": 18
+          },
+          {
+            "name": "Landsbréf - Hekla hs.",
+            "shares": 17893178,
+            "pct": 0.72,
+            "rank": 19
+          },
+          {
+            "name": "Global Macro Absolute Return Ad",
+            "shares": 15606618,
+            "pct": 0.63,
+            "rank": 20
+          }
+        ],
+        "SJOVA": [
+          {
+            "name": "Hrólfssker ehf.",
+            "shares": 184370101,
+            "pct": 15.87,
+            "rank": 1
+          },
+          {
+            "name": "Snæból ehf.",
+            "shares": 113000000,
+            "pct": 9.73,
+            "rank": 2
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 106242241,
+            "pct": 9.15,
+            "rank": 3
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 90453140,
+            "pct": 7.79,
+            "rank": 4
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 86220000,
+            "pct": 7.42,
+            "rank": 5
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 82393535,
+            "pct": 7.09,
+            "rank": 6
+          },
+          {
+            "name": "Brú Lífeyrissjóður starfs sveit",
+            "shares": 76459485,
+            "pct": 6.58,
+            "rank": 7
+          },
+          {
+            "name": "EGG fjárfestingar ehf.",
+            "shares": 38472548,
+            "pct": 3.31,
+            "rank": 8
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 26230549,
+            "pct": 2.26,
+            "rank": 9
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 21941667,
+            "pct": 1.89,
+            "rank": 10
+          },
+          {
+            "name": "Stefnir - Innlend hlutabréf hs.",
+            "shares": 20351430,
+            "pct": 1.75,
+            "rank": 11
+          },
+          {
+            "name": "Brú R deild",
+            "shares": 16655598,
+            "pct": 1.43,
+            "rank": 12
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 16050000,
+            "pct": 1.38,
+            "rank": 13
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 12206566,
+            "pct": 1.05,
+            "rank": 14
+          },
+          {
+            "name": "Vanguard Total International S",
+            "shares": 11926048,
+            "pct": 1.03,
+            "rank": 15
+          },
+          {
+            "name": "HMP ehf.",
+            "shares": 11640712,
+            "pct": 1.0,
+            "rank": 16
+          },
+          {
+            "name": "Vanguard Emerging Markets Stock",
+            "shares": 11019803,
+            "pct": 0.95,
+            "rank": 17
+          },
+          {
+            "name": "Kvika - Innlend hlutabréf",
+            "shares": 10821893,
+            "pct": 0.93,
+            "rank": 18
+          },
+          {
+            "name": "Eftirlaunasjóður FÍA",
+            "shares": 10283093,
+            "pct": 0.89,
+            "rank": 19
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 8701353,
+            "pct": 0.75,
+            "rank": 20
+          }
+        ],
+        "SKAGI": [
+          {
+            "name": "Sjávarsýn ehf.",
+            "shares": 190990421,
+            "pct": 10.0,
+            "rank": 1
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 166200000,
+            "pct": 8.7,
+            "rank": 2
+          },
+          {
+            "name": "Skel fjárfestingafélag hf.",
+            "shares": 156956533,
+            "pct": 8.2,
+            "rank": 3
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 156587657,
+            "pct": 8.2,
+            "rank": 4
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 150218970,
+            "pct": 7.8,
+            "rank": 5
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 144878336,
+            "pct": 7.6,
+            "rank": 6
+          },
+          {
+            "name": "Klettar fjárfestingar ehf.",
+            "shares": 91851004,
+            "pct": 4.8,
+            "rank": 7
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 80913379,
+            "pct": 4.2,
+            "rank": 8
+          },
+          {
+            "name": "H3 ehf.",
+            "shares": 55985315,
+            "pct": 2.9,
+            "rank": 9
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 54927843,
+            "pct": 2.9,
+            "rank": 10
+          },
+          {
+            "name": "Stefnir - Innlend hlutabréf hs.",
+            "shares": 38269171,
+            "pct": 2.0,
+            "rank": 11
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 36498439,
+            "pct": 1.9,
+            "rank": 12
+          },
+          {
+            "name": "Kormákur Invest ehf.",
+            "shares": 35614044,
+            "pct": 1.9,
+            "rank": 13
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 30700000,
+            "pct": 1.6,
+            "rank": 14
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 27714738,
+            "pct": 1.4,
+            "rank": 15
+          },
+          {
+            "name": "Landsbankinn hf.",
+            "shares": 23856681,
+            "pct": 1.2,
+            "rank": 16
+          },
+          {
+            "name": "Stefnir - ÍS 5 hs.",
+            "shares": 22195874,
+            "pct": 1.2,
+            "rank": 17
+          },
+          {
+            "name": "Vanguard Total International S",
+            "shares": 19851770,
+            "pct": 1.0,
+            "rank": 18
+          },
+          {
+            "name": "Vindhamar ehf.",
+            "shares": 19800000,
+            "pct": 1.0,
+            "rank": 19
+          },
+          {
+            "name": "IS Hlutabréfasjóðurinn",
+            "shares": 18832189,
+            "pct": 1.0,
+            "rank": 20
+          }
+        ],
+        "SKEL": [
+          {
+            "name": "Strengur hf.",
+            "shares": 969152089,
+            "pct": 51.59,
+            "rank": 1
+          },
+          {
+            "name": "Frjálsi lífeyrissjóðurinn",
+            "shares": 153070970,
+            "pct": 8.15,
+            "rank": 2
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 105698256,
+            "pct": 5.63,
+            "rank": 3
+          },
+          {
+            "name": "NO.9 Investments Limited",
+            "shares": 58293084,
+            "pct": 3.1,
+            "rank": 4
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 42425074,
+            "pct": 2.26,
+            "rank": 5
+          },
+          {
+            "name": "VÍS tryggingar hf.",
+            "shares": 40000000,
+            "pct": 2.13,
+            "rank": 6
+          },
+          {
+            "name": "Lífeyrissjóður Vestmannaeyja",
+            "shares": 36531140,
+            "pct": 1.94,
+            "rank": 7
+          },
+          {
+            "name": "Hofgarðar ehf.",
+            "shares": 23683333,
+            "pct": 1.26,
+            "rank": 8
+          },
+          {
+            "name": "Kvika - Innlend hlutabréf",
+            "shares": 23448578,
+            "pct": 1.25,
+            "rank": 9
+          },
+          {
+            "name": "Eftirlaunasjóður FÍA",
+            "shares": 19982086,
+            "pct": 1.06,
+            "rank": 10
+          },
+          {
+            "name": "Vörður tryggingar hf.",
+            "shares": 14749405,
+            "pct": 0.78,
+            "rank": 11
+          },
+          {
+            "name": "TM tryggingar hf.",
+            "shares": 14500000,
+            "pct": 0.77,
+            "rank": 12
+          },
+          {
+            "name": "Birkir Baldvinsson ehf.",
+            "shares": 13998623,
+            "pct": 0.74,
+            "rank": 13
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 13258078,
+            "pct": 0.71,
+            "rank": 14
+          },
+          {
+            "name": "Stefan John Cassar",
+            "shares": 12453548,
+            "pct": 0.66,
+            "rank": 15
+          },
+          {
+            "name": "Kvika - IHF hs.",
+            "shares": 12421898,
+            "pct": 0.66,
+            "rank": 16
+          },
+          {
+            "name": "John Daniel Mccarthy",
+            "shares": 12307356,
+            "pct": 0.66,
+            "rank": 17
+          },
+          {
+            "name": "Trausttak ehf.",
+            "shares": 11279213,
+            "pct": 0.6,
+            "rank": 18
+          },
+          {
+            "name": "ÍV Hlutabréf hs.",
+            "shares": 10316394,
+            "pct": 0.55,
+            "rank": 19
+          },
+          {
+            "name": "IS Hlutabréfasjóðurinn",
+            "shares": 9457067,
+            "pct": 0.5,
+            "rank": 20
+          }
+        ],
+        "SVN": [
+          {
+            "name": "Samherji hf.",
+            "shares": 554851710,
+            "pct": 30.06,
+            "rank": 1
+          },
+          {
+            "name": "Kjálkanes ehf.",
+            "shares": 296480524,
+            "pct": 16.06,
+            "rank": 2
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 191113598,
+            "pct": 10.35,
+            "rank": 3
+          },
+          {
+            "name": "Samvinnufélag útgerðarm. Neskau",
+            "shares": 186476510,
+            "pct": 10.1,
+            "rank": 4
+          },
+          {
+            "name": "Eignarhaldsfélagið Snæfugl ehf.",
+            "shares": 61999868,
+            "pct": 3.36,
+            "rank": 5
+          },
+          {
+            "name": "Lífeyrissjóður verzlunarmanna",
+            "shares": 59773973,
+            "pct": 3.24,
+            "rank": 6
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 57358228,
+            "pct": 3.11,
+            "rank": 7
+          },
+          {
+            "name": "Brú Lífeyrissjóður starfs sveit",
+            "shares": 54915862,
+            "pct": 2.97,
+            "rank": 8
+          },
+          {
+            "name": "Stapi lífeyrissjóður",
+            "shares": 48387563,
+            "pct": 2.62,
+            "rank": 9
+          },
+          {
+            "name": "Almenni-Lífsverk lífeyrissjóður",
+            "shares": 34299268,
+            "pct": 1.86,
+            "rank": 10
+          },
+          {
+            "name": "Festa - lífeyrissjóður",
+            "shares": 24731147,
+            "pct": 1.34,
+            "rank": 11
+          },
+          {
+            "name": "Marmál ehf.",
+            "shares": 18310227,
+            "pct": 0.99,
+            "rank": 12
+          },
+          {
+            "name": "Brady ehf.",
+            "shares": 18000000,
+            "pct": 0.97,
+            "rank": 13
+          },
+          {
+            "name": "Hraunlón ehf.",
+            "shares": 17291530,
+            "pct": 0.94,
+            "rank": 14
+          },
+          {
+            "name": "Snæból ehf.",
+            "shares": 17000000,
+            "pct": 0.92,
+            "rank": 15
+          },
+          {
+            "name": "Olíusamlag útvegsmanna Nesk svf",
+            "shares": 14293030,
+            "pct": 0.77,
+            "rank": 16
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 10951566,
+            "pct": 0.59,
+            "rank": 17
+          },
+          {
+            "name": "Ljóshaf ehf.",
+            "shares": 10478454,
+            "pct": 0.57,
+            "rank": 18
+          },
+          {
+            "name": "Dorg ehf.",
+            "shares": 10000000,
+            "pct": 0.54,
+            "rank": 19
+          },
+          {
+            "name": "Brú R deild",
+            "shares": 9810257,
+            "pct": 0.53,
+            "rank": 20
+          }
+        ],
+        "SYN": [
+          {
+            "name": "Gavia Invest ehf.",
+            "shares": 45147128,
+            "pct": 18.23,
+            "rank": 1
+          },
+          {
+            "name": "Gildi - lífeyrissjóður",
+            "shares": 40589224,
+            "pct": 16.39,
+            "rank": 2
+          },
+          {
+            "name": "Skel fjárfestingafélag hf.",
+            "shares": 25000000,
+            "pct": 10.09,
+            "rank": 3
+          },
+          {
+            "name": "Reir ehf.",
+            "shares": 20650000,
+            "pct": 8.34,
+            "rank": 4
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. A-deild",
+            "shares": 13678286,
+            "pct": 5.52,
+            "rank": 5
+          },
+          {
+            "name": "InfoCapital ehf.",
+            "shares": 12000000,
+            "pct": 4.85,
+            "rank": 6
+          },
+          {
+            "name": "Arion banki hf.",
+            "shares": 11559035,
+            "pct": 4.67,
+            "rank": 7
+          },
+          {
+            "name": "Arcus Invest ehf.",
+            "shares": 11026599,
+            "pct": 4.45,
+            "rank": 8
+          },
+          {
+            "name": "Tækifæri ehf.",
+            "shares": 10863103,
+            "pct": 4.39,
+            "rank": 9
+          },
+          {
+            "name": "Birta lífeyrissjóður",
+            "shares": 8519283,
+            "pct": 3.44,
+            "rank": 10
+          },
+          {
+            "name": "Landsbankinn hf.",
+            "shares": 6451576,
+            "pct": 2.61,
+            "rank": 11
+          },
+          {
+            "name": "Gufupressan ehf.",
+            "shares": 4464900,
+            "pct": 1.8,
+            "rank": 12
+          },
+          {
+            "name": "Íslex ehf.",
+            "shares": 4000000,
+            "pct": 1.62,
+            "rank": 13
+          },
+          {
+            "name": "Íslandsbanki hf, safnskráning 2",
+            "shares": 3500000,
+            "pct": 1.41,
+            "rank": 14
+          },
+          {
+            "name": "Lífeyrissj.starfsm.rík. B-deild",
+            "shares": 2973919,
+            "pct": 1.2,
+            "rank": 15
+          },
+          {
+            "name": "ÍV Íslensk hlutabréf - Aðallist",
+            "shares": 2183703,
+            "pct": 0.88,
+            "rank": 16
+          },
+          {
+            "name": "Módel 79 ehf.",
+            "shares": 2000000,
+            "pct": 0.81,
+            "rank": 17
+          },
+          {
+            "name": "Íslandsbanki hf.",
+            "shares": 1534197,
+            "pct": 0.62,
+            "rank": 18
+          },
+          {
+            "name": "A2411 ehf.",
+            "shares": 1500000,
+            "pct": 0.61,
+            "rank": 19
+          },
+          {
+            "name": "Acadian Frontier Markets Equity",
+            "shares": 1434159,
+            "pct": 0.58,
+            "rank": 20
+          }
+        ]
+      }
+    },
     {
       "date": "2026-03-16",
       "companies": {
