@@ -1090,18 +1090,22 @@ for(const c of ch.changed){const dr=c.delta>0?'up':'down',a=c.delta>0?'\u25B2':'
 h+='</div></div>';cs.innerHTML=h}else{cs.innerHTML='<div class="panel"><div class="panel-header"><h2>Today\'s Changes</h2></div><div class="panel-body"><div class="empty-state" style="padding:24px"><p>No changes detected, or first scan.</p></div></div></div>'}
 renderTopMovers(d);
 renderGrid(d.companies);document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.toLowerCase();renderGrid(d.companies.filter(c=>c.ticker.toLowerCase().includes(q)||c.name.toLowerCase().includes(q)||c.shareholders.some(s=>s.name.toLowerCase().includes(q))))})}
-function renderTopMovers(d){const tm=document.getElementById('top-movers-section');if(!d.history||d.history.length<2){tm.innerHTML='';return}
-const latest=d.history[0],prev=d.history[d.history.length-1];
-const moves=[];const tickers=Object.keys(latest.companies);
-tickers.forEach(function(ticker){const cur=latest.companies[ticker]||[];const old=prev.companies[ticker]||[];
-const oldMap={};old.forEach(function(s){oldMap[s.name]=s.pct});
-const curMap={};cur.forEach(function(s){curMap[s.name]=s.pct});
-cur.forEach(function(s){if(oldMap[s.name]!==undefined){const delta=Math.round((s.pct-oldMap[s.name])*100)/100;if(delta!==0)moves.push({name:s.name,ticker:ticker,pct:s.pct,oldPct:oldMap[s.name],delta:delta,type:delta>0?'up':'down'})}else{moves.push({name:s.name,ticker:ticker,pct:s.pct,oldPct:0,delta:s.pct,type:'enter'})}});
+function _prevBusinessDay(dates,latestDate){/* Find the most recent date before latestDate that is a weekday (Mon-Fri) */
+var candidates=dates.filter(function(d){return d<latestDate});
+for(var i=0;i<candidates.length;i++){var dt=new Date(candidates[i]+'T12:00:00Z');var dow=dt.getUTCDay();if(dow>=1&&dow<=5)return candidates[i]}
+return candidates.length?candidates[0]:null}
+function _computeMovers(latest,prev){
+var moves=[];var tickers=Object.keys(latest.companies);
+tickers.forEach(function(ticker){var cur=latest.companies[ticker]||[];var old=prev.companies[ticker]||[];
+var oldMap={};old.forEach(function(s){oldMap[s.name]=s.pct});
+var curMap={};cur.forEach(function(s){curMap[s.name]=s.pct});
+cur.forEach(function(s){if(oldMap[s.name]!==undefined){var delta=Math.round((s.pct-oldMap[s.name])*100)/100;if(delta!==0)moves.push({name:s.name,ticker:ticker,pct:s.pct,oldPct:oldMap[s.name],delta:delta,type:delta>0?'up':'down'})}else{moves.push({name:s.name,ticker:ticker,pct:s.pct,oldPct:0,delta:s.pct,type:'enter'})}});
 old.forEach(function(s){if(curMap[s.name]===undefined){moves.push({name:s.name,ticker:ticker,pct:0,oldPct:s.pct,delta:-s.pct,type:'exit'})}})});
-if(moves.length===0){tm.innerHTML='';return}
 moves.sort(function(a,b){return Math.abs(b.delta)-Math.abs(a.delta)});
-const top=moves.slice(0,12);
-let h='<div class="panel" style="margin-top:24px"><div class="panel-header"><h2>Top Movers <span style="font-size:12px;color:var(--text-muted);font-weight:400;margin-left:8px">'+prev.date+' \u2192 '+latest.date+'</span></h2></div><div class="panel-body"><div class="top-movers-grid">';
+return moves}
+function _renderMoverCards(moves,prevDate,latestDate,tm){
+var top=moves.slice(0,12);
+var h='<div class="top-movers-grid">';
 top.forEach(function(m,i){
 var arrow='',cls='';
 if(m.type==='enter'){arrow='\u25B2 NEW';cls='enter'}
@@ -1113,8 +1117,22 @@ if(m.type==='enter')detail=m.ticker+' \u2014 entered at '+m.pct+'%';
 else if(m.type==='exit')detail=m.ticker+' \u2014 exited from '+m.oldPct+'%';
 else detail=m.ticker+' \u2014 '+m.oldPct+'% \u2192 '+m.pct+'%';
 h+='<div class="mover-card" data-mover-sh="'+m.name.replace(/"/g,'&quot;')+'"><div class="mover-rank" style="color:var(--text-muted)">'+(i+1)+'</div><div class="mover-info"><div class="mover-name">'+m.name+'</div><div class="mover-detail">'+detail+'</div></div><div class="mover-delta '+cls+'">'+arrow+'</div></div>'});
-h+='</div></div></div>';
+h+='</div>';
+document.getElementById('top-movers-body').innerHTML=moves.length?h:'<div class="empty-state" style="padding:24px">No ownership changes between these dates.</div>';
+document.getElementById('top-movers-span').textContent=prevDate+' \u2192 '+latestDate}
+function renderTopMovers(d){const tm=document.getElementById('top-movers-section');if(!d.history||d.history.length<2){tm.innerHTML='';return}
+const latest=d.history[0];
+const allDates=d.history.map(function(h){return h.date}).sort(function(a,b){return b.localeCompare(a)});
+const otherDates=allDates.filter(function(dt){return dt<latest.date});
+if(!otherDates.length){tm.innerHTML='';return}
+const defaultPrev=_prevBusinessDay(allDates,latest.date)||otherDates[0];
+var opts=otherDates.map(function(dt){return'<option value="'+dt+'"'+(dt===defaultPrev?' selected':'')+'>'+dt+'</option>'}).join('');
+let h='<div class="panel" style="margin-top:24px"><div class="panel-header" style="display:flex;align-items:center;justify-content:space-between"><h2>Top Movers <span id="top-movers-span" style="font-size:12px;color:var(--text-muted);font-weight:400;margin-left:8px"></span></h2><div style="display:flex;align-items:center;gap:8px"><span style="font-size:12px;color:var(--text-muted)">Compare from:</span><select id="mover-date-select" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:JetBrains Mono,monospace;font-size:12px;padding:4px 8px;border-radius:6px;cursor:pointer">'+opts+'</select></div></div><div class="panel-body" id="top-movers-body"></div></div>';
 tm.innerHTML=h;
+var histMap={};d.history.forEach(function(snap){histMap[snap.date]=snap});
+function refresh(prevDate){var prev=histMap[prevDate];if(!prev)return;var moves=_computeMovers(latest,prev);_renderMoverCards(moves,prevDate,latest.date,tm)}
+refresh(defaultPrev);
+document.getElementById('mover-date-select').addEventListener('change',function(){refresh(this.value)});
 tm.addEventListener('click',function(e){var card=e.target.closest('.mover-card[data-mover-sh]');if(card)openShareholderProfile(card.dataset.moverSh)})}
 function exportToExcel(){if(!_allData)return;
 var sep=',';
