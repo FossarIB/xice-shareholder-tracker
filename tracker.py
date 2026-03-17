@@ -30,6 +30,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
+from html import escape as html_escape
 from typing import Optional
 
 import yaml
@@ -163,7 +164,7 @@ def close_driver():
         _driver = None
 
 
-def fetch_with_selenium(url: str, wait_seconds: int = 10) -> Optional[str]:
+def fetch_with_selenium(url: str, wait_seconds: int = 15) -> Optional[str]:
     """Fetch a page using headless Chrome, waiting for JS to render."""
     driver = get_driver()
     if not driver:
@@ -171,23 +172,31 @@ def fetch_with_selenium(url: str, wait_seconds: int = 10) -> Optional[str]:
 
     try:
         driver.get(url)
-        time.sleep(wait_seconds)
 
-        # Wait for shareholder-like content to appear
+        # Wait for shareholder-like content to appear (tables or percentage signs)
         try:
-            WebDriverWait(driver, 12).until(
+            WebDriverWait(driver, wait_seconds).until(
                 lambda d: d.find_elements(By.TAG_NAME, "table") or
                           "%" in d.page_source
             )
         except Exception:
             pass
 
-        # Scroll down to trigger lazy-loaded content
+        # Wait for network activity to settle (document.readyState === 'complete')
+        try:
+            WebDriverWait(driver, 5).until(
+                lambda d: d.execute_script("return document.readyState") == "complete"
+            )
+        except Exception:
+            pass
+
+        # Scroll down to trigger lazy-loaded content, then wait for any new elements
         try:
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            time.sleep(2)
+            WebDriverWait(driver, 3).until(
+                lambda d: d.execute_script("return document.readyState") == "complete"
+            )
             driver.execute_script("window.scrollTo(0, 0);")
-            time.sleep(1)
         except Exception:
             pass
 
@@ -509,7 +518,17 @@ def scrape_livemarketdata_widget(ticker: str, url: str, tab_name: str = None) ->
 
     try:
         driver.get(url)
-        time.sleep(12)
+
+        # Wait for the LiveMarket web component to appear in the DOM
+        try:
+            WebDriverWait(driver, 15).until(
+                lambda d: d.execute_script(
+                    "var w = document.querySelector('shareholders-large-v2');"
+                    "return w && w.shadowRoot && w.shadowRoot.innerHTML.length > 100;"
+                )
+            )
+        except Exception:
+            pass  # Component may not exist or may load differently
 
         # If a tab needs to be clicked first (e.g. ICEAIR "Shareholders list")
         if tab_name:
@@ -536,7 +555,16 @@ def scrape_livemarketdata_widget(ticker: str, url: str, tab_name: str = None) ->
             clicked = driver.execute_script(js_click_tab)
             if clicked:
                 log.info(f"  -> Clicked '{tab_name}' tab for {ticker}")
-                time.sleep(4)  # Wait for tab content to load
+                # Wait for tab content to update after click
+                try:
+                    WebDriverWait(driver, 8).until(
+                        lambda d: d.execute_script(
+                            "var w = document.querySelector('shareholders-large-v2');"
+                            "return w && w.shadowRoot && w.shadowRoot.querySelectorAll('table tr').length > 2;"
+                        )
+                    )
+                except Exception:
+                    pass
             else:
                 log.warning(f"  -> Could not find '{tab_name}' tab for {ticker}")
 
@@ -573,7 +601,15 @@ def scrape_keldan_iframe(ticker: str) -> list[dict]:
 
     try:
         driver.get(iframe_url)
-        time.sleep(6)
+
+        # Wait for table content to render
+        try:
+            WebDriverWait(driver, 10).until(
+                lambda d: d.find_elements(By.TAG_NAME, "table") and
+                          "%" in d.page_source
+            )
+        except Exception:
+            pass
 
         html = driver.page_source
         if html:
@@ -839,15 +875,15 @@ body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
     html += "</div>"
 
     for r in wc:
-        html += f'<div class="cs"><p class="ct">{r["company"]}<span class="tk">{r["ticker"]}</span></p><ul class="cl">'
+        html += f'<div class="cs"><p class="ct">{html_escape(r["company"])}<span class="tk">{html_escape(r["ticker"])}</span></p><ul class="cl">'
         for e in r["entered"]:
-            html += f'<li><span class="b be">ENTERED</span> <strong>{e["name"]}</strong> at {e["pct"]}% (rank #{e["rank"]})</li>'
+            html += f'<li><span class="b be">ENTERED</span> <strong>{html_escape(e["name"])}</strong> at {e["pct"]}% (rank #{e["rank"]})</li>'
         for e in r["exited"]:
-            html += f'<li><span class="b bx">EXITED</span> <strong>{e["name"]}</strong> was at {e["pct"]}% (rank #{e["rank"]})</li>'
+            html += f'<li><span class="b bx">EXITED</span> <strong>{html_escape(e["name"])}</strong> was at {e["pct"]}% (rank #{e["rank"]})</li>'
         for c in r["changed"]:
             d = "bu" if c["delta"] > 0 else "bd"
             a = "&#9650;" if c["delta"] > 0 else "&#9660;"
-            html += f'<li><span class="b {d}">{a} {abs(c["delta"])}pp</span> <strong>{c["name"]}</strong> {c["old_pct"]}% &rarr; {c["new_pct"]}%</li>'
+            html += f'<li><span class="b {d}">{a} {abs(c["delta"])}pp</span> <strong>{html_escape(c["name"])}</strong> {c["old_pct"]}% &rarr; {c["new_pct"]}%</li>'
         html += "</ul></div>"
 
     html += '</div><div class="ftr">XICE Shareholder Tracker &mdash; auto-generated. Registries may not reflect beneficial owners.</div></div></body></html>'
@@ -943,23 +979,53 @@ def run_scan():
 
     current_data = {}
     ok = 0
+    failed = []
     for company in XICE_COMPANIES:
+        ticker = company["ticker"]
         try:
             sh = scrape_company(company)
-            current_data[company["ticker"]] = sh
+            current_data[ticker] = sh
             if sh:
                 ok += 1
+            elif company.get("shareholder_url") and not company.get("data_source"):
+                # Company has a URL but returned no data — track as failure
+                failed.append(ticker)
         except Exception as e:
-            log.error(f"Error scraping {company['ticker']}: {e}")
-            current_data[company["ticker"]] = []
+            log.error(f"Error scraping {ticker}: {e}")
+            current_data[ticker] = []
+            failed.append(ticker)
         time.sleep(config.get("request_delay_seconds", 2))
 
     # Clean up Selenium browser
     close_driver()
 
+    # Log scrape failure summary
+    if failed:
+        log.warning(f"Failed to scrape {len(failed)} companies: {', '.join(failed)}")
+
+    # Staleness check: warn if a company that previously had data now returns nothing
+    prev = get_previous_snapshot()
+    stale = []
+    if prev:
+        pc = prev.get("companies", {})
+        for ticker in failed:
+            if pc.get(ticker) and len(pc[ticker]) > 0:
+                stale.append(ticker)
+        if stale:
+            log.warning(f"Staleness alert — {len(stale)} companies had data yesterday but returned nothing today: {', '.join(stale)}")
+
+    # Data sanity check: warn if shareholder count dropped dramatically
+    if prev:
+        pc = prev.get("companies", {})
+        for c in XICE_COMPANIES:
+            t = c["ticker"]
+            old_count = len(pc.get(t, []))
+            new_count = len(current_data.get(t, []))
+            if old_count >= 10 and new_count > 0 and new_count < old_count * 0.5:
+                log.warning(f"Sanity check — {t}: shareholder count dropped from {old_count} to {new_count} (possible scraper issue)")
+
     save_snapshot(current_data)
 
-    prev = get_previous_snapshot()
     all_changes = []
     if prev:
         pc = prev.get("companies", {})
@@ -988,7 +1054,7 @@ def run_scan():
             body = build_email_html(all_changes, date)
             send_email(f"XICE Daily Report (no changes) - {date}", body, config, attachment_path=dashboard_path)
 
-    log.info(f"=== Done. {ok}/{len(XICE_COMPANIES)} scraped, {sum(1 for c in all_changes if c['has_changes'])} with changes. ===")
+    log.info(f"=== Done. {ok}/{len(XICE_COMPANIES)} scraped, {len(failed)} failed, {sum(1 for c in all_changes if c['has_changes'])} with changes. ===")
 
 
 def run_scheduler(run_time="08:30"):
@@ -1079,15 +1145,16 @@ DASHBOARD_HTML = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <script>
 /*__EMBEDDED_DATA__*/
 var _allData=null;var _cardData={};
+function esc(s){if(!s)return'';var d=document.createElement('div');d.textContent=s;return d.innerHTML}
 async function loadData(){try{const d=typeof __EMBEDDED_DATA__!=='undefined'?__EMBEDDED_DATA__:await(await fetch('data.json')).json();_allData=d;render(d)}catch(e){document.getElementById('company-grid').innerHTML='<div class="empty-state"><p>No data yet. Run <code>python tracker.py</code></p></div>'}}
 function render(d){document.getElementById('last-updated').textContent='Last scan: '+d.date;
 const wd=d.companies.filter(c=>c.count>0).length,en=d.changes_today.reduce((s,c)=>s+c.entered.length,0),ex=d.changes_today.reduce((s,c)=>s+c.exited.length,0),sh=d.changes_today.reduce((s,c)=>s+c.changed.length,0),hlen=d.history?d.history.length:0;
 document.getElementById('stats-row').innerHTML=`<div class="stat-card"><div class="label">Companies Tracked</div><div class="value">${wd}<span style="font-size:16px;color:var(--text-muted)">/${d.companies.length}</span></div></div><div class="stat-card"><div class="label">New Entries</div><div class="value green">${en}</div></div><div class="stat-card"><div class="label">Exits</div><div class="value red">${ex}</div></div><div class="stat-card"><div class="label">Ownership Shifts</div><div class="value amber">${sh}</div></div><div class="stat-card"><div class="label">History</div><div class="value">${hlen}<span style="font-size:14px;color:var(--text-muted)"> days</span></div></div>`;
 const cs=document.getElementById('changes-section');
 if(d.changes_today.length>0){let h='<div class="panel"><div class="panel-header"><h2>Today\'s Changes</h2></div><div class="panel-body">';
-for(const ch of d.changes_today){for(const e of ch.entered)h+=`<div class="change-item"><span class="badge badge-enter">ENTER</span><div class="change-info"><div class="change-name">${e.name}</div><div class="change-detail">${e.pct}% - rank #${e.rank}</div></div><span class="change-company">${ch.ticker}</span></div>`;
-for(const e of ch.exited)h+=`<div class="change-item"><span class="badge badge-exit">EXIT</span><div class="change-info"><div class="change-name">${e.name}</div><div class="change-detail">Was ${e.pct}% - rank #${e.rank}</div></div><span class="change-company">${ch.ticker}</span></div>`;
-for(const c of ch.changed){const dr=c.delta>0?'up':'down',a=c.delta>0?'\u25B2':'\u25BC';h+=`<div class="change-item"><span class="badge badge-${dr}">${a} ${Math.abs(c.delta)}pp</span><div class="change-info"><div class="change-name">${c.name}</div><div class="change-detail">${c.old_pct}% \u2192 ${c.new_pct}%</div></div><span class="change-company">${ch.ticker}</span></div>`}}
+for(const ch of d.changes_today){for(const e of ch.entered)h+=`<div class="change-item"><span class="badge badge-enter">ENTER</span><div class="change-info"><div class="change-name">${esc(e.name)}</div><div class="change-detail">${e.pct}% - rank #${e.rank}</div></div><span class="change-company">${esc(ch.ticker)}</span></div>`;
+for(const e of ch.exited)h+=`<div class="change-item"><span class="badge badge-exit">EXIT</span><div class="change-info"><div class="change-name">${esc(e.name)}</div><div class="change-detail">Was ${e.pct}% - rank #${e.rank}</div></div><span class="change-company">${esc(ch.ticker)}</span></div>`;
+for(const c of ch.changed){const dr=c.delta>0?'up':'down',a=c.delta>0?'\u25B2':'\u25BC';h+=`<div class="change-item"><span class="badge badge-${dr}">${a} ${Math.abs(c.delta)}pp</span><div class="change-info"><div class="change-name">${esc(c.name)}</div><div class="change-detail">${c.old_pct}% \u2192 ${c.new_pct}%</div></div><span class="change-company">${esc(ch.ticker)}</span></div>`}}
 h+='</div></div>';cs.innerHTML=h}else{cs.innerHTML='<div class="panel"><div class="panel-header"><h2>Today\'s Changes</h2></div><div class="panel-body"><div class="empty-state" style="padding:24px"><p>No changes detected, or first scan.</p></div></div></div>'}
 renderTopMovers(d);
 renderGrid(d.companies);document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.toLowerCase();renderGrid(d.companies.filter(c=>c.ticker.toLowerCase().includes(q)||c.name.toLowerCase().includes(q)||c.shareholders.some(s=>s.name.toLowerCase().includes(q))))})}
@@ -1117,7 +1184,7 @@ var detail='';
 if(m.type==='enter')detail=m.ticker+' \u2014 entered at '+m.pct+'%';
 else if(m.type==='exit')detail=m.ticker+' \u2014 exited from '+m.oldPct+'%';
 else detail=m.ticker+' \u2014 '+m.oldPct+'% \u2192 '+m.pct+'%';
-h+='<div class="mover-card" data-mover-sh="'+m.name.replace(/"/g,'&quot;')+'"><div class="mover-rank" style="color:var(--text-muted)">'+(i+1)+'</div><div class="mover-info"><div class="mover-name">'+m.name+'</div><div class="mover-detail">'+detail+'</div></div><div class="mover-delta '+cls+'">'+arrow+'</div></div>'});
+h+='<div class="mover-card" data-mover-sh="'+esc(m.name)+'"><div class="mover-rank" style="color:var(--text-muted)">'+(i+1)+'</div><div class="mover-info"><div class="mover-name">'+esc(m.name)+'</div><div class="mover-detail">'+esc(detail)+'</div></div><div class="mover-delta '+cls+'">'+esc(arrow)+'</div></div>'});
 h+='</div>';
 document.getElementById('top-movers-body').innerHTML=moves.length?h:'<div class="empty-state" style="padding:24px">No ownership changes between these dates.</div>';
 document.getElementById('top-movers-span').textContent=prevDate+' \u2192 '+latestDate}
@@ -1154,9 +1221,10 @@ var url=URL.createObjectURL(blob);
 var a=document.createElement('a');a.href=url;a.download='xice_shareholders_'+_allData.date+'.csv';a.click();URL.revokeObjectURL(url)}
 function renderGrid(cs){const g=document.getElementById('company-grid');if(!cs.length){g.innerHTML='<div class="empty-state"><p>No matches.</p></div>';return}
 _cardData={};
-g.innerHTML=cs.map((c,i)=>{const id='card-'+i;_cardData[id]={shareholders:c.shareholders,ticker:c.ticker,name:c.name};const hasMore=c.shareholders.length>10;const srcBadge=c.data_source==='morningstar'?'<span class="source-badge" title="Shareholder data from Morningstar">Morningstar</span>':'';const srcLink=c.source_url?'<a href="'+c.source_url+'" target="_blank" rel="noopener" class="source-link" title="View source data" style="margin-left:'+(srcBadge?'8px':'auto')+'">\u2197</a>':'';return'<div class="company-card"><div class="company-card-header" data-card="'+id+'"><span class="ticker">'+c.ticker+'</span><span class="name" title="'+c.name.replace(/"/g,'&quot;')+'">'+c.name+'</span>'+srcBadge+srcLink+'</div><div class="company-card-body"><div id="'+id+'-rows">'+( c.shareholders.length?c.shareholders.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join(''):'<div class="no-data">No data available</div>')+'</div>'+(hasMore?'<div class="toggle-row" data-toggle="'+id+'" data-expanded="0" style="text-align:center;color:var(--accent);font-size:12px;cursor:pointer;user-select:none;padding:8px 0">&#9660; Show all '+c.shareholders.length+'</div>':'')+'</div></div>'}).join('')}
+g.innerHTML=cs.map((c,i)=>{const id='card-'+i;_cardData[id]={shareholders:c.shareholders,ticker:c.ticker,name:c.name};const hasMore=c.shareholders.length>10;const srcBadge=c.data_source==='morningstar'?'<span class="source-badge" title="Shareholder data from Morningstar">Morningstar</span>':'';const srcLink=c.source_url?'<a href="'+esc(c.source_url)+'" target="_blank" rel="noopener" class="source-link" title="View source data" style="margin-left:'+(srcBadge?'8px':'auto')+'">\u2197</a>':'';return'<div class="company-card"><div class="company-card-header" data-card="'+id+'"><span class="ticker">'+esc(c.ticker)+'</span><span class="name" title="'+esc(c.name)+'">'+esc(c.name)+'</span>'+srcBadge+srcLink+'</div><div class="company-card-body"><div id="'+id+'-rows">'+( c.shareholders.length?c.shareholders.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+esc(s.name)+'" title="'+esc(s.name)+'">'+esc(s.name)+'</span><span class="pct">'+s.pct+'%</span></div>').join(''):'<div class="no-data">No data available</div>')+'</div>'+(hasMore?'<div class="toggle-row" data-toggle="'+id+'" data-expanded="0" style="text-align:center;color:var(--accent);font-size:12px;cursor:pointer;user-select:none;padding:8px 0">&#9660; Show all '+c.shareholders.length+'</div>':'')+'</div></div>'}).join('')}
 document.getElementById('company-grid').addEventListener('click',function(e){if(e.target.closest('.source-link'))return;var shEl=e.target.closest('.sh-name[data-sh]');if(shEl){e.stopPropagation();openShareholderProfile(shEl.dataset.sh);return}var hdr=e.target.closest('.company-card-header');if(hdr&&hdr.dataset.card){var d=_cardData[hdr.dataset.card];if(d)openHistory(d.ticker,d.name);return}var tog=e.target.closest('.toggle-row');if(tog&&tog.dataset.toggle){toggleCard(tog,tog.dataset.toggle)}});
-function toggleCard(el,id){var d=_cardData[id];if(!d)return;var sh=d.shareholders;var rows=document.getElementById(id+'-rows');var expanded=el.getAttribute('data-expanded')==='1';if(expanded){rows.innerHTML=sh.slice(0,10).map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join('');el.innerHTML='&#9660; Show all '+sh.length;el.setAttribute('data-expanded','0')}else{rows.innerHTML=sh.map(s=>'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+s.name.replace(/"/g,'&quot;')+'" title="'+s.name.replace(/"/g,'&quot;')+'">'+s.name+'</span><span class="pct">'+s.pct+'%</span></div>').join('');el.innerHTML='&#9650; Show less';el.setAttribute('data-expanded','1')}}
+function shRow(s){return'<div class="shareholder-row"><span class="rank">#'+s.rank+'</span><span class="sh-name" data-sh="'+esc(s.name)+'" title="'+esc(s.name)+'">'+esc(s.name)+'</span><span class="pct">'+s.pct+'%</span></div>'}
+function toggleCard(el,id){var d=_cardData[id];if(!d)return;var sh=d.shareholders;var rows=document.getElementById(id+'-rows');var expanded=el.getAttribute('data-expanded')==='1';if(expanded){rows.innerHTML=sh.slice(0,10).map(shRow).join('');el.innerHTML='&#9660; Show all '+sh.length;el.setAttribute('data-expanded','0')}else{rows.innerHTML=sh.map(shRow).join('');el.innerHTML='&#9650; Show less';el.setAttribute('data-expanded','1')}}
 function openHistory(ticker,name){if(!_allData||!_allData.history||_allData.history.length<1)return;
 document.getElementById('modal-title').textContent=name;document.getElementById('modal-ticker').textContent=ticker;
 const hist=_allData.history.filter(h=>h.companies&&h.companies[ticker]&&h.companies[ticker].length>0);
@@ -1166,8 +1234,8 @@ for(let i=0;i<hist.length;i++){const snap=hist[i];const sh=snap.companies[ticker
 const prevMap={};if(prevSh)prevSh.forEach(s=>{prevMap[s.name]=s.pct});
 html+=`<div class="hist-date-row"><div class="hist-date">${snap.date}</div><table class="hist-table"><thead><tr><th>#</th><th>Shareholder</th><th style="text-align:right">Ownership</th>${prevSh?'<th style="text-align:right">Change</th>':''}</tr></thead><tbody>`;
 sh.forEach((s,idx)=>{let deltaHtml='';if(prevSh){if(prevMap[s.name]!==undefined){const d=Math.round((s.pct-prevMap[s.name])*100)/100;if(d>0)deltaHtml=`<td class="delta-cell delta-up">\u25B2 +${d}pp</td>`;else if(d<0)deltaHtml=`<td class="delta-cell delta-down">\u25BC ${d}pp</td>`;else deltaHtml='<td class="delta-cell" style="color:var(--text-muted)">\u2014</td>'}else{deltaHtml='<td class="delta-cell delta-new">NEW</td>'}}
-html+=`<tr><td style="color:var(--text-muted);font-family:'JetBrains Mono',monospace;font-size:11px">${idx+1}</td><td>${s.name}</td><td class="pct-cell">${s.pct}%</td>${deltaHtml}</tr>`});
-if(prevSh){const curNames=new Set(sh.map(s=>s.name));prevSh.forEach(s=>{if(!curNames.has(s.name)){html+=`<tr style="opacity:.6"><td></td><td style="text-decoration:line-through">${s.name}</td><td class="pct-cell">${s.pct}%</td><td class="delta-cell delta-exit">EXIT</td></tr>`}})}
+html+=`<tr><td style="color:var(--text-muted);font-family:'JetBrains Mono',monospace;font-size:11px">${idx+1}</td><td>${esc(s.name)}</td><td class="pct-cell">${s.pct}%</td>${deltaHtml}</tr>`});
+if(prevSh){const curNames=new Set(sh.map(s=>s.name));prevSh.forEach(s=>{if(!curNames.has(s.name)){html+=`<tr style="opacity:.6"><td></td><td style="text-decoration:line-through">${esc(s.name)}</td><td class="pct-cell">${s.pct}%</td><td class="delta-cell delta-exit">EXIT</td></tr>`}})}
 html+='</tbody></table></div>'}
 document.getElementById('modal-body').innerHTML=html;document.getElementById('modal-overlay').classList.add('active')}
 function openShareholderProfile(name){if(!_allData)return;
@@ -1179,7 +1247,7 @@ _allData.companies.forEach(function(c){c.shareholders.forEach(function(s){if(s.n
 if(holdings.length>0){
 html+='<div class="sh-profile-section"><h3>Current Holdings<span class="sh-section-badge" style="background:var(--green-bg);color:var(--green)">'+holdings.length+' companies</span></h3>';
 holdings.sort(function(a,b){return b.pct-a.pct});
-holdings.forEach(function(h){html+='<div class="sh-holding-card"><div class="sh-holding-left"><span class="sh-holding-ticker">'+h.ticker+'</span><span class="sh-holding-name">'+h.company+'</span></div><div class="sh-holding-right"><span class="sh-holding-rank">#'+h.rank+'</span><span class="sh-holding-pct">'+h.pct+'%</span></div></div>'});
+holdings.forEach(function(h){html+='<div class="sh-holding-card"><div class="sh-holding-left"><span class="sh-holding-ticker">'+esc(h.ticker)+'</span><span class="sh-holding-name">'+esc(h.company)+'</span></div><div class="sh-holding-right"><span class="sh-holding-rank">#'+h.rank+'</span><span class="sh-holding-pct">'+h.pct+'%</span></div></div>'});
 html+='</div>'}else{html+='<div class="sh-profile-section"><h3>Current Holdings</h3><div class="empty-state" style="padding:16px">Not currently in any top-20 list.</div></div>'}
 /* Historical timeline per company */
 if(_allData.history&&_allData.history.length>0){
@@ -1194,7 +1262,7 @@ tickers.forEach(function(ticker){
 var entries=companySet[ticker];
 var companyName=ticker;
 _allData.companies.forEach(function(c){if(c.ticker===ticker)companyName=c.name});
-html+='<div class="sh-holding-card" style="flex-direction:column;align-items:stretch"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><div class="sh-holding-left"><span class="sh-holding-ticker">'+ticker+'</span><span class="sh-holding-name">'+companyName+'</span></div></div>';
+html+='<div class="sh-holding-card" style="flex-direction:column;align-items:stretch"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><div class="sh-holding-left"><span class="sh-holding-ticker">'+esc(ticker)+'</span><span class="sh-holding-name">'+esc(companyName)+'</span></div></div>';
 if(entries.length>0){
 html+='<table class="hist-table" style="margin:0"><thead><tr><th>Date</th><th style="text-align:right">Ownership</th><th style="text-align:right">Rank</th><th style="text-align:right">Change</th></tr></thead><tbody>';
 entries.sort(function(a,b){return b.date.localeCompare(a.date)});
