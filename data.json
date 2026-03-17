@@ -1,6 +1,6 @@
 {
   "date": "2026-03-17",
-  "generated_at": "2026-03-17T14:04:47.296155+00:00",
+  "generated_at": "2026-03-17T14:23:22.751593+00:00",
   "companies": [
     {
       "ticker": "ALVO",
@@ -128,6 +128,13 @@
         }
       ],
       "count": 20,
+      "data_source": ""
+    },
+    {
+      "ticker": "ALVO US",
+      "name": "Alvotech hf. (US)",
+      "shareholders": [],
+      "count": 0,
       "data_source": "morningstar"
     },
     {
@@ -3133,6 +3140,7 @@
             "rank": 20
           }
         ],
+        "ALVO US": [],
         "AMRQ": [
           {
             "name": "Industriens Pensionsforsikring A/S",
