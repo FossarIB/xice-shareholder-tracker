@@ -1,6 +1,6 @@
 {
   "date": "2026-03-17",
-  "generated_at": "2026-03-17T14:23:22.751593+00:00",
+  "generated_at": "2026-03-17T14:35:57.680986+00:00",
   "companies": [
     {
       "ticker": "ALVO",
@@ -128,14 +128,16 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://investors.alvotech.com/shareholders"
     },
     {
       "ticker": "ALVO US",
       "name": "Alvotech hf. (US)",
       "shareholders": [],
       "count": 0,
-      "data_source": "morningstar"
+      "data_source": "morningstar",
+      "source_url": "https://www.morningstar.com/stocks/xnas/alvo/ownership"
     },
     {
       "ticker": "AMRQ",
@@ -185,7 +187,8 @@
         }
       ],
       "count": 7,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.amaroqminerals.com/investors/shareholders/"
     },
     {
       "ticker": "ARION",
@@ -289,14 +292,16 @@
         }
       ],
       "count": 16,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.arionbanki.is/bankinn/fjarfestar/hlutabref/hluthafalisti/"
     },
     {
       "ticker": "BERA",
       "name": "Bera (Ölgerðin Egill Skallagrímsson hf.)",
       "shareholders": [],
       "count": 0,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.olgerdin.is/fjarfestar/hluthafaupplysingar/"
     },
     {
       "ticker": "BRIM",
@@ -424,7 +429,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.brim.is/is/fjarfestar/hluthafaupplysingar"
     },
     {
       "ticker": "EIK",
@@ -552,7 +558,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.eik.is/hluthafar"
     },
     {
       "ticker": "EIM",
@@ -680,7 +687,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.eimskip.com/investors/share-information/"
     },
     {
       "ticker": "FESTI",
@@ -808,7 +816,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.festi.is/hluthafaupplysingar"
     },
     {
       "ticker": "HAGA",
@@ -936,7 +945,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.hagar.is/fjarfestar/hluthafaupplysingar/hluthafalisti/"
     },
     {
       "ticker": "HAMP",
@@ -1064,7 +1074,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://hampidjan.is/fjarmal/hluthafar/"
     },
     {
       "ticker": "HEIMAR",
@@ -1192,7 +1203,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.heimar.is/fjarfestar/adrar-upplysingar/staerstu-hluthafar/"
     },
     {
       "ticker": "ICEAIR",
@@ -1320,7 +1332,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.icelandairgroup.com/investors"
     },
     {
       "ticker": "ICESEA",
@@ -1448,7 +1461,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://icelandseafood.com/investors/shareholders/"
     },
     {
       "ticker": "ISB",
@@ -1528,7 +1542,8 @@
         }
       ],
       "count": 12,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.islandsbanki.is/is/grein/hluthafar"
     },
     {
       "ticker": "ISF",
@@ -1656,21 +1671,24 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://isfelag.is/fjarfestar/"
     },
     {
       "ticker": "JBTM",
       "name": "JBT Marel Corporation",
       "shareholders": [],
       "count": 0,
-      "data_source": "morningstar"
+      "data_source": "morningstar",
+      "source_url": "https://www.morningstar.com/stocks/xnys/jbtm/ownership"
     },
     {
       "ticker": "KALD",
       "name": "Kaldalón hf.",
       "shareholders": [],
       "count": 0,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://kaldalon.is/fjarfestar/"
     },
     {
       "ticker": "KVIKA",
@@ -1768,7 +1786,8 @@
         }
       ],
       "count": 15,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://kvika.is/fjarfestaupplysingar/?category=shareholderCatalog"
     },
     {
       "ticker": "NOVA",
@@ -1896,14 +1915,16 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.nova.is/baksvids/hluthafar"
     },
     {
       "ticker": "OCS",
       "name": "Oculis Holding AG",
       "shareholders": [],
       "count": 0,
-      "data_source": "morningstar"
+      "data_source": "morningstar",
+      "source_url": "https://www.morningstar.com/stocks/xnas/ocs/ownership"
     },
     {
       "ticker": "REITIR",
@@ -2031,7 +2052,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.reitir.is/fjarfestar/hluthafaupplysingar"
     },
     {
       "ticker": "SIMINN",
@@ -2159,7 +2181,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.siminn.is/fjarfestar/hluthafar-og-hlutabref"
     },
     {
       "ticker": "SJOVA",
@@ -2287,7 +2310,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.sjova.is/sjova/upplysingagjof/fjarfestar/hluthafalisti"
     },
     {
       "ticker": "SKAGI",
@@ -2415,7 +2439,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://skagi.is/hluthafar"
     },
     {
       "ticker": "SKEL",
@@ -2543,7 +2568,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://skel.is/hluthafar/staerstu-hluthafar"
     },
     {
       "ticker": "SVN",
@@ -2671,7 +2697,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://svn.is/fjarfestar/"
     },
     {
       "ticker": "SYN",
@@ -2799,7 +2826,8 @@
         }
       ],
       "count": 20,
-      "data_source": ""
+      "data_source": "",
+      "source_url": "https://www.syn.is/fjarfestatengsl/staerstu-hluthafar"
     }
   ],
   "changes_today": [
