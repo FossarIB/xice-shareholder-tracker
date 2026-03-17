@@ -10,7 +10,7 @@ for sites that render shareholder data via JavaScript.
 
 Usage:
   python tracker.py                  # Run a single scan
-  python tracker.py --schedule       # Run daily at 18:00 UTC (= IST)
+  python tracker.py --schedule       # Run daily at 08:30 UTC (= IST) on weekdays
   python tracker.py --dashboard      # Only regenerate the dashboard
   python tracker.py --test-email     # Send a test email
 """
@@ -991,8 +991,8 @@ def run_scan():
     log.info(f"=== Done. {ok}/{len(XICE_COMPANIES)} scraped, {sum(1 for c in all_changes if c['has_changes'])} with changes. ===")
 
 
-def run_scheduler(run_time="18:00"):
-    log.info(f"Scheduler started. Daily at {run_time} UTC.")
+def run_scheduler(run_time="08:30"):
+    log.info(f"Scheduler started. Weekdays at {run_time} UTC.")
     schedule.every().day.at(run_time).do(run_scan)
     run_scan()
     while True:
@@ -1254,7 +1254,7 @@ def run_debug_html(ticker: str):
 def main():
     parser = argparse.ArgumentParser(description="XICE Shareholder Tracker")
     parser.add_argument("--schedule", action="store_true")
-    parser.add_argument("--time", default="18:00")
+    parser.add_argument("--time", default="08:30")
     parser.add_argument("--dashboard", action="store_true")
     parser.add_argument("--test-email", action="store_true")
     parser.add_argument("--debug-html", metavar="TICKER", help="Scrape one company and save raw HTML for debugging")
